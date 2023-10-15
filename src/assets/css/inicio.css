@@ -846,7 +846,7 @@ width: 100%;
     text-shadow: 0rem -0.063rem 0rem rgba(0,0,0,0.4);
 }
 
-.wrapper .whatsapp span, .wrapper .whatsapp:hover .tooltip, .wrapper .whatsapp:hover .tooltip:before{
+.wrapper .whats span, .wrapper .whats:hover .tooltip, .wrapper .whats:hover .tooltip:before{
     background: #14de36;
     border-radius: 50%;
     -webkit-animation: pulse-border 1500ms ease-out infinite;
