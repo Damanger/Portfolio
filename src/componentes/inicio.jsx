@@ -129,13 +129,13 @@ const Inicio = () => {
                                 <span><i className="fab fa-whatsapp"></i></span>
                             </a>
                         </div>                
-                        <div className="icon linkedin">
+                        <div className="icon linked">
                             <div className="tooltip">
                                 LinkedIn
                             </div>
                             <a href="https://www.linkedin.com/in/omar-cruzr97" target="_blank" rel='noreferrer'><span><i className="fab fa-linkedin"></i></span></a>
                         </div>
-                        <div className="icon github">
+                        <div className="icon git">
                             <div className="tooltip">
                                 Github
                             </div>
