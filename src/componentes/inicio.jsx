@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import '../assets/css/inicio.css';
-import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import emailjs from 'emailjs-com';
 import 'font-awesome/css/font-awesome.min.css';
@@ -94,7 +93,7 @@ const Inicio = () => {
         <div>
             <input type="checkbox" id="toggle"></input>
             <header className="header">
-                <a href="#" className="logo" rel='noreferrer'>
+                <a href="/" className="logo" rel='noreferrer'>
                     Omar ♱
                 </a>
                 <div className="bx bx-menu" id="menu-icon"></div>
@@ -357,7 +356,7 @@ const Inicio = () => {
                         <h3 className="title">Headphone Raffle</h3>
                         <div className="education-box">
                             <div className="education-content">
-                                <a href="https://damanger.github.io/Headphones-Raffle/" target="_blank" rel='noreferrer' id="raffle-link">
+                                <a href="https://www.omar-cruz-rmz.com/raffle" target="_blank" rel='noreferrer' id="raffle-link">
                                     <div className="content">
                                         <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
                                         <h3>Oaxaca-México</h3>
@@ -560,7 +559,7 @@ const Inicio = () => {
                     <p>Copyright &copy; 2023 by Omar A. Cruz Ramírez All Rights Reserved. </p>
                     </div>
                     <div className="footer-iconTop">
-                        <a href="#"><i className="bx bx-up-arrow-alt"></i></a>
+                        <a href="/"><i className="bx bx-up-arrow-alt"></i></a>
                     </div>
                 </div>
             </footer>
