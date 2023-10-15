@@ -126,7 +126,7 @@ const Inicio = () => {
                     <div className="wrapper">
                         <div className="icon whats">
                             <a href="https://wa.me/5219514084765?text=Buen%20d%C3%ADa,%20quise%20contactarlo%20para%20desarrollar%20un%20servicio%20web." target="_blank" rel='noreferrer'>
-                                <span><i className="fab fa-whats"></i></span>
+                                <span><i className="fab fa-whatsapp"></i></span>
                             </a>
                         </div>                
                         <div className="icon linkedin">
