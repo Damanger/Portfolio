@@ -559,7 +559,7 @@ const Inicio = () => {
                     <p>Copyright &copy; 2023 by Omar A. Cruz Ramírez All Rights Reserved. </p>
                     </div>
                     <div className="footer-iconTop">
-                        <a href="/"><i className="bx bx-up-arrow-alt"></i></a>
+                        <a href="#"><i className="bx bx-up-arrow-alt"></i></a>
                     </div>
                 </div>
             </footer>
