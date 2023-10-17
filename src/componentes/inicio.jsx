@@ -93,7 +93,7 @@ const Inicio = () => {
         <div>
             <input type="checkbox" id="toggle"></input>
             <header className="header">
-                <a href="/" className="logo" rel='noreferrer'>
+                <a href="#" className="logo" rel='noreferrer'>
                     Omar ♱
                 </a>
                 <div className="bx bx-menu" id="menu-icon"></div>
