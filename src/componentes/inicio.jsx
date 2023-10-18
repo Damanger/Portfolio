@@ -89,11 +89,25 @@ const Inicio = () => {
         });
     });
 
+    useEffect(() => {
+        const hiddenElements = document.querySelectorAll('.hidden');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            });
+        });
+        hiddenElements.forEach((el) => observer.observe(el));
+    }, []);
+
     return (
         <div>
             <input type="checkbox" id="toggle"></input>
             <header className="header">
-                <a href="/" className="logo" rel='noreferrer'>
+                <a href="#" className="logo" rel='noreferrer'>
                     Omar ♱
                 </a>
                 <div className="bx bx-menu" id="menu-icon"></div>
@@ -108,7 +122,7 @@ const Inicio = () => {
                 </nav>
             </header>
 
-            <section className="home" id="home">
+            <section className="home hidden" id="home">
                 <div className="home-content">
                     <h1>Hello, I'm <span> Omar Cruz</span></h1>
                     <div className="text-animate">
@@ -124,18 +138,18 @@ const Inicio = () => {
                         <a href="#contact" className="btn">Let's talk.</a>
                     </div>
                     <div className="wrapper">
-                        <div className="icon whatsapp">
+                        <div className="icon whats">
                             <a href="https://wa.me/5219514084765?text=Buen%20d%C3%ADa,%20quise%20contactarlo%20para%20desarrollar%20un%20servicio%20web." target="_blank" rel='noreferrer'>
                                 <span><i className="fab fa-whatsapp"></i></span>
                             </a>
                         </div>                
-                        <div className="icon linkedin">
+                        <div className="icon linked">
                             <div className="tooltip">
                                 LinkedIn
                             </div>
                             <a href="https://www.linkedin.com/in/omar-cruzr97" target="_blank" rel='noreferrer'><span><i className="fab fa-linkedin"></i></span></a>
                         </div>
-                        <div className="icon github">
+                        <div className="icon git">
                             <div className="tooltip">
                                 Github
                             </div>
@@ -146,7 +160,7 @@ const Inicio = () => {
                 <div className="home-imgHover"><img src="./yo.jpeg" alt="selfie"/></div>
             </section>
 
-            <section className="about" id="about">
+            <section className="about hidden" id="about">
                 <h2 className="heading">About <span>Me</span></h2>
                 <div className="about-img">
                     <img src="./yo.png" alt="selfie"/>
@@ -158,7 +172,7 @@ const Inicio = () => {
                 </div>
             </section>
 
-            <section className="education" id="journey">
+            <section className="education hidden" id="journey">
                 <h2 className="heading">My <span>Journey</span></h2>
                 <div className="education-row">
                     <div className="education-column">
@@ -255,7 +269,7 @@ const Inicio = () => {
                 </div>
             </section>
 
-            <section className="skills" id="skills">
+            <section className="skills hidden" id="skills">
                 <h2 className="heading">My <span>Skills</span></h2>
                 <div className="skills-row">
                     <div className="skills-column">
@@ -264,24 +278,22 @@ const Inicio = () => {
                             <div className="skills-content">
                                 <div className="progress">
                                     <h3> Apple, Linux, Windows, Angular, React, JavaScript, HTML, CSS, Git, SQL, C, Java, Python, Node, Terminal, Swift</h3>
-                                    <div className="carousel-container">
-                                        <div className="carousel-items">
-                                            <FontAwesomeIcon icon={faApple} className='Apple'/>
-                                            <FontAwesomeIcon icon={faLinux} className='Linux'/>
-                                            <FontAwesomeIcon icon={faWindows} className='Windows'/>
-                                            <FontAwesomeIcon icon={faAngular} className='Angular'/>
-                                            <FontAwesomeIcon icon={faReact} className='React'/>
-                                            <FontAwesomeIcon icon={faJs} className='JavaScript'/>
-                                            <FontAwesomeIcon icon={faHtml5} className='HTML'/>
-                                            <FontAwesomeIcon icon={faCss3} className='CSS'/>
-                                            <FontAwesomeIcon icon={faGit} className='Git'/>
-                                            <i className="fa-solid fa-database SQL"></i>
-                                            <i className="fa-solid fa-c C"></i>
-                                            <FontAwesomeIcon icon={faJava} className='Java'/>
-                                            <FontAwesomeIcon icon={faPython} className='Python'/>
-                                            <FontAwesomeIcon icon={faNode} className='Node'/>
-                                            <FontAwesomeIcon icon={faSwift} className='Swift'/>
-                                        </div>
+                                    <div className="items">
+                                        <FontAwesomeIcon icon={faApple} className='Apple'/>
+                                        <FontAwesomeIcon icon={faLinux} className='Linux'/>
+                                        <FontAwesomeIcon icon={faWindows} className='Windows'/>
+                                        <FontAwesomeIcon icon={faAngular} className='Angular'/>
+                                        <FontAwesomeIcon icon={faReact} className='React'/>
+                                        <FontAwesomeIcon icon={faJs} className='JavaScript'/>
+                                        <FontAwesomeIcon icon={faHtml5} className='HTML'/>
+                                        <FontAwesomeIcon icon={faCss3} className='CSS'/>
+                                        <FontAwesomeIcon icon={faGit} className='Git'/>
+                                        <i className="fa-solid fa-database SQL"></i>
+                                        <i className="fa-solid fa-c C"></i>
+                                        <FontAwesomeIcon icon={faJava} className='Java'/>
+                                        <FontAwesomeIcon icon={faPython} className='Python'/>
+                                        <FontAwesomeIcon icon={faNode} className='Node'/>
+                                        <FontAwesomeIcon icon={faSwift} className='Swift'/>
                                     </div>
                                 </div>
                             </div>
@@ -350,7 +362,7 @@ const Inicio = () => {
                 </div>
             </section>
 
-            <section className="education" id="projects">
+            <section className="education hidden" id="projects">
                 <h2 className="heading">My <span>Projects</span></h2>
                     <div className="education-column">
                         <h3 className="title">Headphone Raffle</h3>
@@ -500,7 +512,7 @@ const Inicio = () => {
                     </div>
             </section>
 
-            <section className="contact" id="contact">
+            <section className="contact hidden" id="contact">
                 <h2 className="heading">Contact <span>Me!</span></h2>
                 <form action="#">
                     <div className="input-box">
@@ -559,7 +571,7 @@ const Inicio = () => {
                     <p>Copyright &copy; 2023 by Omar A. Cruz Ramírez All Rights Reserved. </p>
                     </div>
                     <div className="footer-iconTop">
-                        <a href="/"><i className="bx bx-up-arrow-alt"></i></a>
+                        <a href="#"><i className="bx bx-up-arrow-alt"></i></a>
                     </div>
                 </div>
             </footer>

@@ -22,10 +22,11 @@ body{
     transition: all 1.5s ease;
     color: var(--tex-color);
     background-color: #030712;
+	overflow-x: hidden;
 }
 
 section{
-    min-height: 100vh;
+	min-height: 100vh;
 }
 
 .wrap span {

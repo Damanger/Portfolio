@@ -71,8 +71,28 @@
     display: none;
 }
 
+.home, .education{
+    transform: translateX(-100%);
+}
+
+.about, .skills, .contact{
+    transform: translateX(100%);
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 section{
-    min-height: 100vh;
+    min-height: 101vh;
 }
 
 .home{
@@ -487,29 +507,11 @@ width: 100%;
     color: var(--tex-color);
 }
 
-.carousel-container {
-    display: flex;
-    overflow: hidden;
-    font-size: 4rem;
-    width: 100%;
-}
-
-.carousel-items {
+.items {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    animation: carouselScroll 5s linear infinite;
-    transform: translateX(1350%);
-    max-width: 50px;
-}
-
-@keyframes carouselScroll {
-    0% {
-        transform: translateX(1350%);
-    }
-    100% {
-        transform: translateX(-1350%);
-    }
+    font-size: 3rem;
 }
 
 .centrado {
@@ -846,7 +848,7 @@ width: 100%;
     text-shadow: 0rem -0.063rem 0rem rgba(0,0,0,0.4);
 }
 
-.wrapper .whatsapp span, .wrapper .whatsapp:hover .tooltip, .wrapper .whatsapp:hover .tooltip:before{
+.wrapper .whats span, .wrapper .whats:hover .tooltip, .wrapper .whats:hover .tooltip:before{
     background: #14de36;
     border-radius: 50%;
     -webkit-animation: pulse-border 1500ms ease-out infinite;
@@ -854,17 +856,18 @@ width: 100%;
     top: 1.8rem;
 }
 
-.wrapper .github span, .wrapper .github:hover .tooltip, .wrapper .github:hover .tooltip:before{
+.wrapper .git span, .wrapper .git:hover .tooltip, .wrapper .git:hover .tooltip:before{
     background: #333;
 }
 
-.wrapper .linkedin span, .wrapper .linkedin:hover .tooltip, .wrapper .linkedin:hover .tooltip:before{
+.wrapper .linked span, .wrapper .linked:hover .tooltip, .wrapper .linked:hover .tooltip:before{
     background: #2a4e9c;
 }
 
 @media (max-width: 1200px){
     html{
         font-size: 55%;
+        overflow-x: hidden;
     }
     .home img{
         height: 35rem;
@@ -999,6 +1002,7 @@ width: 100%;
 @media (max-width: 520px){
     html{
         font-size: 50%;
+        overflow-x: hidden;
     }
 
     .home-content h1{
@@ -1088,6 +1092,10 @@ width: 100%;
 
     .home-content .text-animate h3{
         font-size: 2rem;
+    }
+
+    .home .btn-box{
+        margin-bottom: -8rem;
     }
 
     .home img{
