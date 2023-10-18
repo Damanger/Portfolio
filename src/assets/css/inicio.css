@@ -71,24 +71,26 @@
     display: none;
 }
 
-.home, .education{
-    transform: translateX(-100%);
-}
-
-.about, .skills, .contact{
-    transform: translateX(100%);
-}
-
-.hidden{
+.home, .education {
     opacity: 0;
     filter: blur(5px);
-    transition: all 1s;
+    transition: opacity 1s, filter 1s;
 }
 
-.show{
+.about, .skills, .contact {
+    opacity: 0;
+    filter: blur(5px);
+    transition: opacity 1s, filter 1s;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+}
+
+.show {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0);
 }
 
 section{
@@ -867,7 +869,6 @@ width: 100%;
 @media (max-width: 1200px){
     html{
         font-size: 55%;
-        overflow-x: hidden;
     }
     .home img{
         height: 35rem;
@@ -913,28 +914,6 @@ width: 100%;
 @media (max-width: 768px){
     .header{
         background: #3b82f6;
-    }
-
-    .home, .education {
-        opacity: 0;
-        filter: blur(5px);
-        transition: opacity 1s, filter 1s;
-    }
-    
-    .about, .skills, .contact {
-        opacity: 0;
-        filter: blur(5px);
-        transition: opacity 1s, filter 1s;
-    }
-    
-    .hidden {
-        opacity: 0;
-        filter: blur(5px);
-    }
-    
-    .show {
-        opacity: 1;
-        filter: blur(0);
     }
 
     .home-content h1{
@@ -1024,7 +1003,6 @@ width: 100%;
 @media (max-width: 520px){
     html{
         font-size: 50%;
-        overflow-x: hidden;
     }
 
     .home-content h1{
