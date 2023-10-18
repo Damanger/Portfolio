@@ -915,6 +915,28 @@ width: 100%;
         background: #3b82f6;
     }
 
+    .home, .education {
+        opacity: 0;
+        filter: blur(5px);
+        transition: opacity 1s, filter 1s;
+    }
+    
+    .about, .skills, .contact {
+        opacity: 0;
+        filter: blur(5px);
+        transition: opacity 1s, filter 1s;
+    }
+    
+    .hidden {
+        opacity: 0;
+        filter: blur(5px);
+    }
+    
+    .show {
+        opacity: 1;
+        filter: blur(0);
+    }
+
     .home-content h1{
         font-size: 5.5rem;
         display: flex;
