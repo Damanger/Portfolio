@@ -16,6 +16,7 @@
 
 html{
 	font-size: 70%;
+    scroll-behavior: smooth;
 }
 
 body{
