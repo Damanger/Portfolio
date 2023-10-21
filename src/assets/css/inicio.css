@@ -744,10 +744,6 @@ width: 100%;
     transform: translate(-50%, -50%);
 }
 
-#toggle{
-    display: none;
-}
-
 .wrapper{
     display: inline-flex;
     position: relative;

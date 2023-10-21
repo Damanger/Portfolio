@@ -105,7 +105,6 @@ const Inicio = () => {
 
     return (
         <div>
-            <input type="checkbox" id="toggle"></input>
             <header className="header">
                 <a href="#" className="logo" rel='noreferrer'>
                     Omar ♱
