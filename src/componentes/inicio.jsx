@@ -107,7 +107,7 @@ const Inicio = () => {
         <div>
             <header className="header">
                 <a href="#" className="logo" rel='noreferrer'>
-                    Omar ♱
+                    Omar Cruz
                 </a>
                 <div className="bx bx-menu" id="menu-icon"></div>
                 <nav className="navbar">
