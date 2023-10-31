@@ -153,7 +153,7 @@ const Inicio = () => {
                         </div>
                     </div>
                 </div>
-                <div className="home-imgHover"><img src="./yo.jpeg" alt="selfie"/></div>
+                <div className="home-imgHover"><img src="./yoMemoji.png" alt="selfie"/></div>
             </section>
 
             <section className="about hidden" id="about">
