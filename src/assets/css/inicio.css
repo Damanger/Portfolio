@@ -339,6 +339,22 @@ section{
     align-items: center;
 }
 
+.certificados {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.certificados a {
+    text-decoration: none;
+}
+
+.certificados img {
+    max-width: 80%;
+    height: auto;
+}
+
 .education{
     display: flex;
     justify-content: center;

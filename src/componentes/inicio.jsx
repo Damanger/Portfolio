@@ -166,6 +166,20 @@ const Inicio = () => {
                     <h3>Hello and welcome to my website! My name is Omar Cruz and I would like to share a bit about who I am as a person.</h3>
                     <p>I am a responsible individual with a strong sense of initiative and a proactive mindset. Taking ownership of my responsibilities comes naturally to me, as I believe in delivering high-quality results and meeting deadlines consistently. Furthermore, I possess strong leadership qualities, which allow me to guide and inspire others towards achieving common goals. I thrive in collaborative environments, valuing teamwork and actively contributing to the success of the group.</p>
                 </div>
+                <div className="certificados">
+                    <a href="https://app.aluracursos.com/program/certificate/3b86f076-e7b1-420b-b3ac-f08d03cbf4d7" target="_blank" rel='noreferrer'>
+                        <img alt="Oracle + Alura LATAM certificate" src="./Front-End.png"/>
+                    </a>
+                    <a href='https://www.hackerrank.com/certificates/6d532874392b' target='_blank' rel='noreferrer'>
+                        <img alt="SQL HackerRank" src="./SQL.png"/>
+                    </a>
+                    <a href='https://app.aluracursos.com/degree/certificate/1fa2dc74-672d-4a1c-bd5b-e50077a537b9' target='_blank' rel='noreferrer'>
+                        <img src="React.png" alt="React" />
+                    </a>
+                    <a href='https://www.linkedin.com/in/omar-cruzr97/details/certifications/' target='_blank' rel='noreferrer'>
+                        <img src="./plus.png" alt="More certificates" />
+                    </a>
+                </div>
             </section>
 
             <section className="education hidden" id="journey">
