@@ -4,7 +4,7 @@ import Swal from 'sweetalert2';
 import emailjs from 'emailjs-com';
 import 'font-awesome/css/font-awesome.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngular, faReact, faSwift, faNode, faJs, faApple, faWindows, faLinux, faHtml5, faCss3, faGit, faJava, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faLaptopCode} from '@fortawesome/free-solid-svg-icons';
 
 const Inicio = () => {
     useEffect(() => {
@@ -107,7 +107,7 @@ const Inicio = () => {
         <div>
             <header className="header">
                 <a href="#" className="logo" rel='noreferrer'>
-                    Omar ♱
+                    Omar <FontAwesomeIcon icon={faLaptopCode} />
                 </a>
                 <div className="bx bx-menu" id="menu-icon"></div>
                 <nav className="navbar">
@@ -127,11 +127,8 @@ const Inicio = () => {
                     <div className="text-animate">
                         <h2>Jr. Web Developer</h2>
                     </div>
-                    <p>Computer engineering student at Universidad Tecnológica de la Mixteca.
-                        Adept in multiple programming languages and offers great task prioritization.
-                        Willingness to take on added responsibilities to meet team goals. 
-                        Ability to handle multiple projects simultaneously with a high degree of accuracy.
-                    </p>
+                    <p>I'm a Jr. Front-End Web Developer based in Oaxaca, México.</p><p>🚀 Looking to bring your web ideas to life? 🌐💡</p>
+                    
                     <div className="btn-box">
                         <a href="https://drive.google.com/uc?export=download&id=1R6TWe_8ONA1OViFb4XFXTxa8x-pBUI8u" className="btn" download="CV.pdf">CV<i className="fas fa-cloud-download-alt"></i></a>
                         <a href="#contact" className="btn">Let's talk.</a>
@@ -177,7 +174,6 @@ const Inicio = () => {
                     <div className="education-column">
                         <h3 className="title">Professional Experience</h3>
                         <div className="education-box">
-
                             <div className="education-content">
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2023</div>
@@ -272,29 +268,107 @@ const Inicio = () => {
                 <h2 className="heading">My <span>Skills</span></h2>
                 <div className="skills-row">
                     <div className="skills-column">
-                        <h3 className="title">Coding Skills</h3>
+                        <h3 className="title">Front-End</h3>
                         <div className="skills-box">
                             <div className="skills-content">
-                                <div className="progress">
-                                    <h3> Apple, Linux, Windows, Angular, React, JavaScript, HTML, CSS, Git, SQL, C, Java, Python, Node, Terminal, Swift</h3>
-                                    <div className="items">
-                                        <FontAwesomeIcon icon={faApple} className='Apple'/>
-                                        <FontAwesomeIcon icon={faLinux} className='Linux'/>
-                                        <FontAwesomeIcon icon={faWindows} className='Windows'/>
-                                        <FontAwesomeIcon icon={faAngular} className='Angular'/>
-                                        <FontAwesomeIcon icon={faReact} className='React'/>
-                                        <FontAwesomeIcon icon={faJs} className='JavaScript'/>
-                                        <FontAwesomeIcon icon={faHtml5} className='HTML'/>
-                                        <FontAwesomeIcon icon={faCss3} className='CSS'/>
-                                        <FontAwesomeIcon icon={faGit} className='Git'/>
-                                        <i className="fa-solid fa-database SQL"></i>
-                                        <i className="fa-solid fa-c C"></i>
-                                        <FontAwesomeIcon icon={faJava} className='Java'/>
-                                        <FontAwesomeIcon icon={faPython} className='Python'/>
-                                        <FontAwesomeIcon icon={faNode} className='Node'/>
-                                        <FontAwesomeIcon icon={faSwift} className='Swift'/>
+                                <div className="items">
+                                    <div className="group">
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/Angular-FFC8DC?logo=angular&amp;logoColor=f00&amp;style=flat" className="my-1 angular-badge"></object>
+                                        </div>
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/React-61DAFB?logo=react&amp;logoColor=000&amp;style=flat" className="my-1"></object>
+                                        </div>
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/HTML5-E34F26?logo=html5&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                        </div>
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/CSS3-1572B6?logo=css3&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                        </div>
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&amp;logoColor=000&amp;style=flat" className="my-1"></object>
+                                        </div>
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/Materialize-F48BAA?logo=materialize&amp;logoColor=fff&amp;style=flat" className="my-1 materialize-badge"></object>
+                                        </div>
+
+                                    </div>
+                                    <div className="group">
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                        </div>
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/Next.js-000?logo=nextdotjs&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                        </div>
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                        </div>
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/jQuery-0769AD?logo=jquery&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                        </div>
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/Figma-0078D7?logo=figma&logoColor=fff&style=flat" className="my-1 figma-badge"></object>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="skills-column">
+                        <h3 className="title">Back-End</h3>
+                        <div className="skills-box">
+                            <div className="skills-content">
+                                <div className="items">
+                                    <div className="group">
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/Node.js-393?logo=nodedotjs&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                        </div>
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                        </div>
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/phpMyAdmin-B73767?logo=phpmyadmin&amp;logoColor=fff&amp;style=flat" className="my-1 phpmmyadmin-badge"></object>
+                                        </div>
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&amp;logoColor=fff&amp;style=flat" className="my-1 postgresql-badge"></object>
+                                        </div>
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/Oracle_Cloud-F80000?logo=oracle&amp;logoColor=fff&amp;style=flat" className="my-1 oracle-cloud-badge"></object>
+                                        </div>
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/Apple-A9A9A9?logo=apple&logoColor=fff&style=flat" className="my-1 apple-badge"></object>
+                                        </div>
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/Linux-000000?logo=linux&logoColor=fff&style=flat" className="my-1 linux-badge"></object>
+                                        </div>
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/Windows-0050F0?logo=windows&logoColor=fff&style=flat" className="my-1 windows-badge"></object>
+                                        </div>
+                                    </div>
+                                    <div className="group">
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/Python-3776AB?logo=python&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                        </div>
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/Django-092E20?logo=django&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                        </div>
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/Java-ED8B00?logo=java&logoColor=fff&style=flat" className="my-1 java-badge"></object>
+                                        </div>
+
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/C-00599C?logo=c&logoColor=fff&style=flat" className="my-1 c-badge"></object>
+                                        </div>
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/Haskell-29B6F6?logo=haskell&logoColor=fff&style=flat" className="my-1 haskell-badge"></object>
+                                        </div>
+                                        <div className="inline-flex mr-2">
+                                            <object data="https://img.shields.io/badge/Swift-F05138?logo=swift&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -304,23 +378,8 @@ const Inicio = () => {
                         <div className="skills-box">
                             <div className="skills-content">
                                 <div className="progress">
-                                    <h3> Respectfulness, Empathic, Motivated, Team-building, Confidence <span>100%</span></h3>
-                                    <div className="bar"><span></span></div>
-                                </div>
-
-                                <div className="progress">
-                                    <h3> Analytical thinking, Adaptability, Decision-making <span>90%</span></h3>
-                                    <div className="bar"><span></span></div>
-                                </div>
-
-                                <div className="progress">
-                                    <h3> Analysis, Communication, Research, Prioritization <span>85%</span></h3>
-                                    <div className="bar"><span></span></div>
-                                </div>
-
-                                <div className="progress">
-                                    <h3> Ambitious, Innovation<span>80%</span></h3>
-                                    <div className="bar"><span></span></div>
+                                    <h3> Respectfulness<p>Empathic</p><p>Motivated</p><p>Team-building</p><p>Confidence</p><p>Analytical thinking</p><p>Adaptability</p>
+                                    <p>Decision-making</p><p>Analysis</p><p>Communication</p><p>Research</p><p>Prioritization</p><p>Ambitious</p><p>Innovation</p> </h3>
                                 </div>
 
                             </div>
@@ -332,28 +391,43 @@ const Inicio = () => {
                         <div className="skills-box">
                             <div className="skills-content">
                                 <div className="progress">
-                                    <h3> Spanish (Native) <span>100%</span></h3>
-                                    <div className="bar"><span></span></div>
+                                    <h3> Spanish (Native)<p>English (C1)</p><p>Italian (In progress)</p><p>German (In progress)</p>
+                                    <p>Web Design</p><p>Web Development</p>
+                                    <p>Blender</p><p>SolidWorks</p></h3>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="skills-column">
+                        <h3 className="title">Tools</h3>
+                        <div className="skills-box">
+                            <div className="skills-content">
+                                <div className="items tools">
+                                    <div className="inline-flex mr-2">
+                                        <object data="https://img.shields.io/badge/Git-F05032?logo=git&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                    </div>
+                                    <div className="inline-flex mr-2">
+                                        <object data="https://img.shields.io/badge/GitHub-181717?logo=github&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                    </div>
+                                    <div className="inline-flex mr-2">
+                                        <object data="https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                    </div>
+                                    <div className="inline-flex mr-2">
+                                        <object data="https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=fff&style=flat" className="my-1 vercel-badge"></object>
+                                    </div>
+                                    <div className="inline-flex mr-2">
+                                        <object data="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?logo=visualstudiocode&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                    </div>
+                                    <div className="inline-flex mr-2">
+                                        <object data="https://img.shields.io/badge/Xcode-147EFB?logo=xcode&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                    </div>
+                                    <div className="inline-flex mr-2">
+                                        <object data="https://img.shields.io/badge/Blender-F5799F?logo=blender&amp;logoColor=fff&amp;style=flat" className="my-1 blender-badge"></object>
+                                    </div>
+                                    <div className="inline-flex mr-2">
+                                        <object data="https://img.shields.io/badge/SolidWorks-FF3300?logo=solidworks&amp;logoColor=fff&amp;style=flat" className="my-1 solidworks-badge"></object>
+                                    </div>
 
-                                <div className="progress">
-                                    <h3> English, Web Design, Web Development <span>80%</span></h3>
-                                    <div className="bar"><span></span></div>
-                                </div>
-
-                                <div className="progress">
-                                    <h3> Blender, SolidWorks<span>75%</span></h3>
-                                    <div className="bar"><span></span></div>
-                                </div>
-
-                                <div className="progress">
-                                    <h3> Italian <span>30%</span></h3>
-                                    <div className="bar"><span></span></div>
-                                </div>
-
-                                <div className="progress">
-                                    <h3> German <span>20%</span></h3>
-                                    <div className="bar"><span></span></div>
                                 </div>
                             </div>
                         </div>

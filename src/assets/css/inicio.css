@@ -492,6 +492,7 @@ width: 100%;
     font-size: 1.7rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .skills-content .progress h3 span{
@@ -532,82 +533,6 @@ width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.Apple{
-    color: gold;
-}
-
-.Linux{
-    color: black;
-}
-
-.Windows{
-    color: inherit;
-}
-
-.Angular{
-    color: red;
-}
-
-.React{
-    color: #61DAFB;
-}
-
-.JavaScript, .Python{
-    color: yellow;
-}
-
-.HTML, .SQL, .Java, .Swift{
-    color: orange;
-}
-
-.CSS, .C{
-    color: #1572B6;
-}
-
-.Node{
-    color: #8bc500;
-}
-
-.skills-column:nth-child(1) .Git{
-    color: #f04f32;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
-    width: 100%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span{
-    width: 90%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span{
-    width: 85%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span{
-    width: 80%;
-}
-
-.skills-column:nth-child(3) .skills-content .progress:nth-child(1) .bar span{
-    width: 100%;
-}
-
-.skills-column:nth-child(3) .skills-content .progress:nth-child(2) .bar span{
-    width: 80%;
-}
-
-.skills-column:nth-child(3) .skills-content .progress:nth-child(3) .bar span{
-    width: 75%;
-}
-
-.skills-column:nth-child(3) .skills-content .progress:nth-child(4) .bar span{
-    width: 30%;
-}
-
-.skills-column:nth-child(3) .skills-content .progress:nth-child(5) .bar span{
-    width: 20%;
 }
 
 .education-content a{
@@ -1014,6 +939,12 @@ width: 100%;
     .home-content h1{
         flex-direction: column;
         z-index: -1;
+    }
+
+    .tools{
+        display: flex;
+        flex-direction: column;
+        margin-right: 2px;
     }
 
     .footer{
