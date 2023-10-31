@@ -27,14 +27,6 @@ main {
     color: #ddd;
 }
 
-/* Estilos para los elementos h5 (Meses, Días, Horas, Minutos, Segundos) */
-.countdown h5 {
-    display: inline-block;
-    margin: 0 0.75rem;
-    font-size: 1rem;
-    color: #333;
-}
-
 /* Estilos para la cuenta regresiva */
 .countdown {
     text-align: center;
@@ -60,16 +52,13 @@ main {
     display: inline-block;
     text-align: center;
     margin: 0 0.625rem;
+    color: white;
 }
 
 .countdown-part span {
     display: block;
     font-size: 1.5rem;
     font-weight: bold;
-}
-
-.countdown-part div {
-    font-size: 0.875rem;
 }
 
 .video{
