@@ -213,16 +213,8 @@ footer .Raffle-icon{
     color: #3b5998;
 }
 
-.social-button.linkedin:hover .fab.fa-linkedin {
-    color: #0A66C2;
-}
-
 .social-button.instagram:hover .fab.fa-instagram {
     color: #c13584;
-}
-
-.social-button.github:hover .fab.fa-github {
-    color: #181717;
 }
 
 .social-button:hover {
@@ -238,16 +230,8 @@ footer .Raffle-icon{
     background-color: #25d366;
 }
 
-.linkedin {
-    background-color: #0A66C2;
-}
-
 .instagram {
     background-color: #c13584;
-}
-
-.github {
-    background-color: #181717;
 }
 
 #generarPDF{

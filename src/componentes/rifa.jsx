@@ -277,17 +277,11 @@ const Raffle = () =>{
                         <a href="https://wa.me/5219514084765?text=Buen%20d%C3%ADa,%20quisiera%20comprar%20un%20boleto%20por%20favor." target="_blank" rel='noreferrer' className="social-button whatsapp">
                             <i className="Raffle-icon fab fa-whatsapp"></i>                 
                         </a>
-                        <a href="https://www.linkedin.com/in/omar-cruzr97/" target="_blank" rel='noreferrer' className="social-button linkedin">
-                            <i className="Raffle-icon fab fa-linkedin"></i>
-                        </a>
                         <a href="https://www.facebook.com/Damanger/" target="_blank" rel='noreferrer' className="social-button facebook">
                             <i className="Raffle-icon fab fa-facebook"></i>
                         </a>
                         <a href="https://www.instagram.com/ich_bin_omarrmz/" target="_blank" rel='noreferrer' className="social-button instagram">
                             <i className="Raffle-icon fab fa-instagram"></i>
-                        </a>
-                        <a href="https://github.com/Damanger" target="_blank" rel='noreferrer' className="social-button github">
-                            <i className="Raffle-icon fab fa-github"></i>
                         </a>
                     </div>
                 </footer>
