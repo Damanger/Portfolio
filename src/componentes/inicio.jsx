@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../assets/css/inicio.css';
 import Swal from 'sweetalert2';
 import emailjs from 'emailjs-com';
 import 'font-awesome/css/font-awesome.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode} from '@fortawesome/free-solid-svg-icons';
+import { faLaptopCode, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const Inicio = () => {
     useEffect(() => {
@@ -103,6 +103,50 @@ const Inicio = () => {
         hiddenElements.forEach((el) => observer.observe(el));
     }, []);
 
+    const [searchQuery, setSearchQuery] = useState('');
+
+    function handleSearch() {
+        // Utiliza el valor de searchQuery para determinar a qué sección redirigir
+        const section = searchQuery.toLowerCase();
+        if (section.includes('skills') || section.includes('soft') || section.includes('front') || section.includes('back') || section.includes('tools') || section.includes('habilidades')) {
+            window.location.href = '#skills';
+        }else if (section.includes('about') || section.includes('certificates') || section.includes('certificados') || section.includes('info')) {
+            window.location.href = '#about';
+        }else if (section.includes('journey') || section.includes('jobs') || section.includes('experience') || section.includes('trabajos') || section.includes('experiencia')) {
+            window.location.href = '#journey';
+        }else if (section.includes('home') || section.includes('whatsapp') || section.includes('linkedin') || section.includes('github') || section.includes('cv') || section.includes('inicio')) {
+            window.location.href = '#home';
+        } else {
+            switch (section) {
+                case 'projects':
+                case 'proyectos':
+                    window.location.href = '#projects';
+                    break;
+                case 'contact':
+                case 'contacto':
+                    window.location.href = '#contact';
+                    break;
+                default:
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Something went wrong, your search did not yield any results!'
+                    });
+            }
+        }
+        setSearchQuery('');
+    }
+
+    function handleSearchInputChange(event) {
+        setSearchQuery(event.target.value);
+    }
+
+    function handleKeyPress(event) {
+        if (event.key === 'Enter') {
+            handleSearch();
+        }
+    }
+
     return (
         <div>
             <header className="header">
@@ -111,6 +155,8 @@ const Inicio = () => {
                 </a>
                 <div className="bx bx-menu" id="menu-icon"></div>
                 <nav className="navbar">
+                    <input type="text" id="search-input" autoComplete='off' name="text" className="input" placeholder=" type 'certificates'" value={searchQuery} onChange={handleSearchInputChange} onKeyPress={handleKeyPress}/>
+                    <button className='magnifying' onClick={handleSearch}><FontAwesomeIcon icon={faSearch} /></button>
                     <a href="#home" className="active cipher" rel='noreferrer'>Home</a>
                     <a href="#about" className="cipher" rel='noreferrer'>About</a>
                     <a href="#journey" className="cipher" rel='noreferrer'>Journey</a>

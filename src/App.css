@@ -8,6 +8,7 @@
     scroll-behavior: smooth;
     font-family: Helvetica, sans-serif;
     font-weight: 700;
+	user-select: none;
 }
 
 :root{
