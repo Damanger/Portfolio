@@ -147,6 +147,18 @@ const Inicio = () => {
         }
     }
 
+    const placeholders = ['type "certificates"', 'type "contact"', 'type "home"', 'type "projects"', 'type "skills"', 'type "about"', 'type "front end"', 'type "back end"', 'type "soft skills"'];
+    let currentPlaceholderIndex = 0;
+
+    function changePlaceholder() {
+        document.getElementById('search-input').placeholder = placeholders[currentPlaceholderIndex];
+        currentPlaceholderIndex = (currentPlaceholderIndex + 1) % placeholders.length;
+        if (currentPlaceholderIndex === 9){
+            currentPlaceholderIndex = 0
+        }
+    }
+    setTimeout(changePlaceholder, 3000);
+
     return (
         <div>
             <header className="header">
@@ -155,7 +167,7 @@ const Inicio = () => {
                 </a>
                 <div className="bx bx-menu" id="menu-icon"></div>
                 <nav className="navbar">
-                    <input type="text" id="search-input" autoComplete='off' name="text" className="input" placeholder=" type 'certificates'" value={searchQuery} onChange={handleSearchInputChange} onKeyPress={handleKeyPress}/>
+                    <input type="text" id="search-input" autoComplete='off' name="text" className="input" value={searchQuery} onChange={handleSearchInputChange} onKeyPress={handleKeyPress}/>
                     <button className='magnifying' onClick={handleSearch}><FontAwesomeIcon icon={faSearch} /></button>
                     <a href="#home" className="active cipher" rel='noreferrer'>Home</a>
                     <a href="#about" className="cipher" rel='noreferrer'>About</a>
