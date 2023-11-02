@@ -171,6 +171,41 @@ const Inicio = () => {
         };
     }, []);
 
+    document.addEventListener('DOMContentLoaded', function () {
+        const projectBoxes = document.querySelectorAll('.projects');
+    
+        projectBoxes.forEach((box) => {
+            const hoverImage = box.querySelector('.hover-image');
+    
+            if (hoverImage) {
+                box.addEventListener('mouseover', () => {
+                    hoverImage.style.display = 'block';
+                });
+    
+                box.addEventListener('mouseout', () => {
+                    hoverImage.style.display = 'none';
+                });
+            }
+        });
+    
+        document.addEventListener('mousemove', (e) => {
+            const hoverImages = document.querySelectorAll('.hover-image');
+            hoverImages.forEach((image) => {
+                if (image.style.display === 'block') {
+                    updateHoverImagePosition(e, image);
+                }
+            });
+        });
+    
+        function updateHoverImagePosition(e, image) {
+            const x = e.clientX;
+            const y = e.clientY;
+    
+            image.style.left = x + 'px';
+            image.style.top = y + 'px';
+        }
+    });    
+
     return (
         <div>
             <header className="header">
@@ -521,152 +556,158 @@ const Inicio = () => {
 
             <section className="education hidden" id="projects">
                 <h2 className="heading">My <span>Projects</span></h2>
-                    <div className="education-column">
-                        <h3 className="title">Headphone Raffle</h3>
-                        <div className="education-box">
-                            <div className="education-content">
-                                <a href="https://www.omar-cruz-rmz.com/raffle" target="_blank" rel='noreferrer' id="raffle-link">
-                                    <div className="content">
-                                        <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
-                                        <h3>Oaxaca-México</h3>
-                                        <i className="fa-solid fa-link"> Raffle of a Sony headphone</i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 className="title">Web Browser</h3>
-                        <div className="education-box">
-                            <div className="education-content">
-                                <a href="https://github.com/Damanger/Squirrel-Web-Browser.git" target="_blank" rel='noreferrer' id="web-browser">
-                                    <div className="content">
-                                        <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
-                                        <h3>Oaxaca-México</h3>
-                                        <i className="fa-solid fa-link"> Simple Web Browser in Python </i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 className="title">Virtual-Assistant</h3>
-                        <div className="education-box">
-                            <div className="education-content">
-                                <a href="https://github.com/Damanger/Virtual-Assistant" target="_blank" rel='noreferrer' id="raffle-link">
-                                    <div className="content">
-                                        <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
-                                        <h3>Oaxaca-México</h3>
-                                        <i className="fa-solid fa-link"> Virtual-Assistant </i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 className="title">LaPI (React)</h3>
-                        <div className="education-box">
-                            <div className="education-content">
-                                <a href="https://org-mu-seven.vercel.app/" target="_blank" rel='noreferrer' id="raffle-link">
-                                    <div className="content">
-                                        <div className="year"><i className="bx bxs-calendar"></i>2023</div>
-                                        <h3>Oaxaca-México</h3>
-                                        <i className="fa-solid fa-link"> LaPI Organization</i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 className="title">Encrypter</h3>
-                        <div className="education-box">
-                            <div className="education-content">
-                                <a href="https://damanger.github.io/Challenge1-Alura-Oracle-ONE/" target="_blank" rel='noreferrer' id="raffle-link">
-                                    <div className="content">
-                                        <div className="year"><i className="bx bxs-calendar"></i>2023</div>
-                                        <h3>Oaxaca-México</h3>
-                                        <i className="fa-solid fa-link"> Alura - Oracle Encrypter/Desencrypter</i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 className="title">Mexico Map</h3>
-                        <div className="education-box">
-                            <div className="education-content">
-                                <a href="https://damanger.github.io/Mexico-svg/" target="_blank" rel='noreferrer' id="raffle-link">
-                                    <div className="content">
-                                        <div className="year"><i className="bx bxs-calendar"></i>2023</div>
-                                        <h3>Universidad Nacional Autónoma de México</h3>
-                                        <i className="fa-solid fa-link"> Internship works (Mexico map)</i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 className="title">World Map</h3>
-                        <div className="education-box">
-                            <div className="education-content">
-                                <a href="https://damanger.github.io/World-svg/" target="_blank" rel='noreferrer' id="raffle-link">
-                                    <div className="content">
-                                        <div className="year"><i className="bx bxs-calendar"></i>2023</div>
-                                        <h3>Universidad Nacional Autónoma de México</h3>
-                                        <i className="fa-solid fa-link"> Internship works (World map)</i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 className="title">Rappi-like app</h3>
-                        <div className="education-box">
-                            <div className="education-content">
-                                <a href="https://damanger.github.io/login_UTasteM/" target="_blank" rel='noreferrer' id="raffle-link">
-                                    <div className="content">
-                                        <div className="year"><i className="bx bxs-calendar"></i>2022-2023</div>
-                                        <h3>Universidad Tecnológica de la Mixteca</h3>
-                                        <i className="fa-solid fa-link"> Rappi-like website (Contact me for more info)</i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 className="title">Spanish Version of Python (compiler)</h3>
-                        <div className="education-box">
-                            <div className="education-content">
-                                <a href="https://github.com/Damanger/Compilador-python" target="_blank" rel='noreferrer' id="raffle-link">
-                                    <div className="content">
-                                        <div className="year"><i className="bx bxs-calendar"></i>2022</div>
-                                        <h3>Universidad Tecnológica de la Mixteca</h3>
-                                        <i className="fa-solid fa-link"> A spanish compiled version of Python (Contact me for more info)</i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 className="title">Carrer Project</h3>
-                        <div className="education-box">
-                            <div className="education-content">
-                                <a href="https://damanger.github.io/login-glassmorphism/" target="_blank" rel='noreferrer' id="raffle-link">
-                                    <div className="content">
-                                        <div className="year"><i className="bx bxs-calendar"></i>2022</div>
-                                        <h3>Universidad Tecnológica de la Mixteca</h3>
-                                        <i className="fa-solid fa-link"> Computer Engineering career project (Contact me for more info)</i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 className="title">3D Game</h3>
-                        <div className="education-box">
-                            <div className="education-content">
-                                <a href="https://github.com/Damanger/3DGame" target="_blank" rel='noreferrer' id="raffle-link">
-                                    <div className="content">
-                                        <div className="year"><i className="bx bxs-calendar"></i>2022</div>
-                                        <h3>Universidad Tecnológica de la Mixteca</h3>
-                                        <i className="fa-solid fa-link"> 3D basic cars game (Contact me for more info)</i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 className="title">2D Game</h3>
-                        <div className="education-box">
-                            <div className="education-content">
-                                <a href="https://damanger.github.io/Car-Game-Js/" target="_blank" rel='noreferrer' id="raffle-link">
-                                    <div className="content">
-                                        <div className="year"><i className="bx bxs-calendar"></i>2021</div>
-                                        <h3>Universidad Tecnológica de la Mixteca</h3>
-                                        <i className="fa-solid fa-link"> 2D basic cars game</i>
-                                    </div>
-                                </a>
-                            </div>
+                <div className="education-column">
+                    <h3 className="title">Headphone Raffle</h3>
+                    <div className="education-box projects">
+                        <img src="./rifa.png" alt="raffle" className="hover-image" />
+                        <div className="education-content">
+                            <a href="https://www.omar-cruz-rmz.com/raffle" target="_blank" rel='noreferrer' id="raffle-link">
+                                <div className="content">
+                                    <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
+                                    <h3>Oaxaca-México</h3>
+                                    <i className="fa-solid fa-link"> Raffle of a Sony headphone</i>
+                                </div>
+                            </a>
                         </div>
                     </div>
+                    <div className="education-column"></div>
+                    <h3 className="title">Web Browser</h3>
+                    <div className="education-box">
+                        <div className="education-content">
+                            <a href="https://github.com/Damanger/Squirrel-Web-Browser.git" target="_blank" rel='noreferrer' id="web-browser">
+                                <div className="content">
+                                    <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
+                                    <h3>Oaxaca-México</h3>
+                                    <i className="fa-solid fa-link"> Simple Web Browser in Python </i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 className="title">Virtual-Assistant</h3>
+                    <div className="education-box">
+                        <div className="education-content">
+                            <a href="https://github.com/Damanger/Virtual-Assistant" target="_blank" rel='noreferrer' id="raffle-link">
+                                <div className="content">
+                                    <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
+                                    <h3>Oaxaca-México</h3>
+                                    <i className="fa-solid fa-link"> Virtual-Assistant </i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 className="title">LaPI (React)</h3>
+                    <div className="education-box projects">
+                        <img src="./lapi.png" alt="lapi" className="hover-image" />
+                        <div className="education-content">
+                            <a href="https://org-mu-seven.vercel.app/" target="_blank" rel='noreferrer' id="raffle-link">
+                                <div className="content">
+                                    <div className="year"><i className="bx bxs-calendar"></i>2023</div>
+                                    <h3>Oaxaca-México</h3>
+                                    <i className="fa-solid fa-link"> LaPI Organization</i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 className="title">Encrypter</h3>
+                    <div className="education-box projects">
+                        <img src="./encrypter.png" alt="encrypter" className="hover-image" />
+                        <div className="education-content">
+                            <a href="https://damanger.github.io/Challenge1-Alura-Oracle-ONE/" target="_blank" rel='noreferrer' id="raffle-link">
+                                <div className="content">
+                                    <div className="year"><i className="bx bxs-calendar"></i>2023</div>
+                                    <h3>Oaxaca-México</h3>
+                                    <i className="fa-solid fa-link"> Alura - Oracle Encrypter/Desencrypter</i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 className="title">Mexico Map</h3>
+                    <div className="education-box">
+                        <div className="education-content">
+                            <a href="https://damanger.github.io/Mexico-svg/" target="_blank" rel='noreferrer' id="raffle-link">
+                                <div className="content">
+                                    <div className="year"><i className="bx bxs-calendar"></i>2023</div>
+                                    <h3>Universidad Nacional Autónoma de México</h3>
+                                    <i className="fa-solid fa-link"> Internship works (Mexico map)</i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 className="title">World Map</h3>
+                    <div className="education-box projects">
+                        <img src="./world.png" alt="world" className="hover-image" />
+                        <div className="education-content">
+                            <a href="https://damanger.github.io/World-svg/" target="_blank" rel='noreferrer' id="raffle-link">
+                                <div className="content">
+                                    <div className="year"><i className="bx bxs-calendar"></i>2023</div>
+                                    <h3>Universidad Nacional Autónoma de México</h3>
+                                    <i className="fa-solid fa-link"> Internship works (World map)</i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 className="title">Rappi-like app</h3>
+                    <div className="education-box">
+                        <div className="education-content">
+                            <a href="https://damanger.github.io/login_UTasteM/" target="_blank" rel='noreferrer' id="raffle-link">
+                                <div className="content">
+                                    <div className="year"><i className="bx bxs-calendar"></i>2022-2023</div>
+                                    <h3>Universidad Tecnológica de la Mixteca</h3>
+                                    <i className="fa-solid fa-link"> Rappi-like website (Contact me for more info)</i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 className="title">Spanish Version of Python (compiler)</h3>
+                    <div className="education-box">
+                        <div className="education-content">
+                            <a href="https://github.com/Damanger/Compilador-python" target="_blank" rel='noreferrer' id="raffle-link">
+                                <div className="content">
+                                    <div className="year"><i className="bx bxs-calendar"></i>2022</div>
+                                    <h3>Universidad Tecnológica de la Mixteca</h3>
+                                    <i className="fa-solid fa-link"> A spanish compiled version of Python (Contact me for more info)</i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 className="title">3D Game</h3>
+                    <div className="education-box">
+                        <div className="education-content">
+                            <a href="https://github.com/Damanger/3DGame" target="_blank" rel='noreferrer' id="raffle-link">
+                                <div className="content">
+                                    <div className="year"><i className="bx bxs-calendar"></i>2022</div>
+                                    <h3>Universidad Tecnológica de la Mixteca</h3>
+                                    <i className="fa-solid fa-link"> 3D basic cars game (Contact me for more info)</i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 className="title">2D Game</h3>
+                    <div className="education-box projects">
+                        <img src="./2DGame.png" alt="2DGame" className="hover-image" />
+                        <div className="education-content">
+                            <a href="https://damanger.github.io/Car-Game-Js/" target="_blank" rel='noreferrer' id="raffle-link">
+                                <div className="content">
+                                    <div className="year"><i className="bx bxs-calendar"></i>2021</div>
+                                    <h3>Universidad Tecnológica de la Mixteca</h3>
+                                    <i className="fa-solid fa-link"> 2D basic cars game</i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 className="title">Carrer Project</h3>
+                    <div className="education-box">
+                        <div className="education-content">
+                            <a href="https://damanger.github.io/login-glassmorphism/" target="_blank" rel='noreferrer' id="raffle-link">
+                                <div className="content">
+                                    <div className="year"><i className="bx bxs-calendar"></i>2022</div>
+                                    <h3>Universidad Tecnológica de la Mixteca</h3>
+                                    <i className="fa-solid fa-link"> Computer Engineering career project (Contact me for more info)</i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section className="contact hidden" id="contact">

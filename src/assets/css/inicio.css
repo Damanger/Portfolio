@@ -585,6 +585,20 @@ width: 100%;
     color: green;
 }
 
+.hover-image {
+    display: none;
+    position: absolute;
+    width: 50rem;
+    height: auto;
+    pointer-events: none;
+    z-index: 100;
+    transform: translate(100%, -50%);
+}
+
+.projects:hover .hover-image {
+    display: block;
+}
+
 .contact{
     min-height: auto;
     padding-bottom: 7rem;
@@ -827,6 +841,9 @@ width: 100%;
         top: 25%;
         right: 0%;
         left: 25%;
+    }
+    .education-box.projects:hover .hover-image {
+        display: none;
     }
 }
 
