@@ -147,17 +147,29 @@ const Inicio = () => {
         }
     }
 
-    const placeholders = ['type "certificates"', 'type "contact"', 'type "home"', 'type "projects"', 'type "skills"', 'type "about"', 'type "front end"', 'type "back end"', 'type "soft skills"'];
-    let currentPlaceholderIndex = 0;
+    const placeholders = [
+        'type "certificates"',
+        'type "contact"',
+        'type "home"',
+        'type "projects"',
+        'type "skills"',
+        'type "about"',
+        'type "front end"',
+        'type "back end"',
+        'type "soft skills"',
+    ];
 
-    function changePlaceholder() {
-        document.getElementById('search-input').placeholder = placeholders[currentPlaceholderIndex];
-        currentPlaceholderIndex = (currentPlaceholderIndex + 1) % placeholders.length;
-        if (currentPlaceholderIndex === 9){
-            currentPlaceholderIndex = 0
-        }
-    }
-    setTimeout(changePlaceholder, 3000);
+    const [placeholderN, setPlaceholderN] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setPlaceholderN(prevN => (prevN + 1) % placeholders.length);
+        }, 3000);
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, []);
 
     return (
         <div>
@@ -167,7 +179,7 @@ const Inicio = () => {
                 </a>
                 <div className="bx bx-menu" id="menu-icon"></div>
                 <nav className="navbar">
-                    <input type="text" id="search-input" autoComplete='off' name="text" className="input" value={searchQuery} onChange={handleSearchInputChange} onKeyPress={handleKeyPress}/>
+                    <input type="text" id="search-input" autoComplete='off' name="text" className="input" placeholder={placeholders[placeholderN]} value={searchQuery} onChange={handleSearchInputChange} onKeyPress={handleKeyPress}/>
                     <button className='magnifying' onClick={handleSearch}><FontAwesomeIcon icon={faSearch} /></button>
                     <a href="#home" className="active cipher" rel='noreferrer'>Home</a>
                     <a href="#about" className="cipher" rel='noreferrer'>About</a>
@@ -690,7 +702,7 @@ const Inicio = () => {
                             <span className="focus"></span>                    
                         </div>
                         <div className="input-field">
-                            <input type="text" placeholder="Email Subject" required pattern="[a-zA-Z]{2,}" autoComplete="off"/>
+                            <input id='subject' type="text" placeholder="Email Subject" required pattern="[a-zA-Z]{2,}" autoComplete="off"/>
                             <div className="subject-container">
                                 <div className="subject-requirements" style={{ fontSize: '1.2rem' }}>
                                     Enter a subject.
@@ -701,7 +713,7 @@ const Inicio = () => {
                     </div>
 
                     <div className="textarea-field">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Your message goes here" required></textarea>
+                        <textarea id="textarea" cols="30" rows="10" placeholder="Your message goes here" required></textarea>
                         <span className="focus"></span>
                     </div>
                     <div className="btn-box btns">
