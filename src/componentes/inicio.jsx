@@ -258,13 +258,13 @@ const Inicio = () => {
                         </div>
                     </div>
                 </div>
-                <div className="home-imgHover"><img src="./yoMemoji.png" alt="selfie"/></div>
+                <div className="home-imgHover"><img src="./yoMemoji.webp" alt="selfie"/></div>
             </section>
 
             <section className="about hidden" id="about">
                 <h2 className="heading">About <span>Me</span></h2>
                 <div className="about-img">
-                    <img src="./yo.png" alt="selfie"/>
+                    <img src="./yo.webp" alt="selfie"/>
                     <span className="circle-spin"></span>
                 </div>
                 <div className="about-content">
@@ -273,16 +273,16 @@ const Inicio = () => {
                 </div>
                 <div className="certificados">
                     <a href="https://app.aluracursos.com/program/certificate/3b86f076-e7b1-420b-b3ac-f08d03cbf4d7" target="_blank" rel='noreferrer'>
-                        <img alt="Oracle + Alura LATAM certificate" src="./Front-End.png"/>
+                        <img alt="Oracle + Alura LATAM certificate" src="./Front-End.webp"/>
                     </a>
-                    <a href='https://www.hackerrank.com/certificates/6d532874392b' target='_blank' rel='noreferrer'>
-                        <img alt="SQL HackerRank" src="./SQL.png"/>
+                    <a href='https://app.aluracursos.com/user/omar-cruzr97/fullCertificate/78801b3b7069693e6a6c314528f4b87f' target='_blank' rel='noreferrer'>
+                        <img alt="Jr. Developer" src="./Jr.webp"/>
                     </a>
                     <a href='https://app.aluracursos.com/degree/certificate/1fa2dc74-672d-4a1c-bd5b-e50077a537b9' target='_blank' rel='noreferrer'>
-                        <img src="React.png" alt="React" />
+                        <img src="React.webp" alt="React" />
                     </a>
                     <a href='https://www.linkedin.com/in/omar-cruzr97/details/certifications/' target='_blank' rel='noreferrer'>
-                        <img src="./plus.png" alt="More certificates" />
+                        <img src="./plus.webp" alt="More certificates" />
                     </a>
                 </div>
             </section>
@@ -559,7 +559,7 @@ const Inicio = () => {
                 <div className="education-column">
                     <h3 className="title">Headphone Raffle</h3>
                     <div className="education-box projects">
-                        <img src="./rifa.png" alt="raffle" className="hover-image" />
+                        <img src="./rifa.webp" alt="raffle" className="hover-image" />
                         <div className="education-content">
                             <a href="https://www.omar-cruz-rmz.com/raffle" target="_blank" rel='noreferrer' id="raffle-link">
                                 <div className="content">
@@ -597,7 +597,7 @@ const Inicio = () => {
                     </div>
                     <h3 className="title">LaPI (React)</h3>
                     <div className="education-box projects">
-                        <img src="./lapi.png" alt="lapi" className="hover-image" />
+                        <img src="./lapi.webp" alt="lapi" className="hover-image" />
                         <div className="education-content">
                             <a href="https://org-mu-seven.vercel.app/" target="_blank" rel='noreferrer' id="raffle-link">
                                 <div className="content">
@@ -610,7 +610,7 @@ const Inicio = () => {
                     </div>
                     <h3 className="title">Encrypter</h3>
                     <div className="education-box projects">
-                        <img src="./encrypter.png" alt="encrypter" className="hover-image" />
+                        <img src="./encrypter.webp" alt="encrypter" className="hover-image" />
                         <div className="education-content">
                             <a href="https://damanger.github.io/Challenge1-Alura-Oracle-ONE/" target="_blank" rel='noreferrer' id="raffle-link">
                                 <div className="content">
@@ -635,7 +635,7 @@ const Inicio = () => {
                     </div>
                     <h3 className="title">World Map</h3>
                     <div className="education-box projects">
-                        <img src="./world.png" alt="world" className="hover-image" />
+                        <img src="./world.webp" alt="world" className="hover-image" />
                         <div className="education-content">
                             <a href="https://damanger.github.io/World-svg/" target="_blank" rel='noreferrer' id="raffle-link">
                                 <div className="content">
@@ -684,7 +684,7 @@ const Inicio = () => {
                     </div>
                     <h3 className="title">2D Game</h3>
                     <div className="education-box projects">
-                        <img src="./2DGame.png" alt="2DGame" className="hover-image" />
+                        <img src="./2DGame.webp" alt="2DGame" className="hover-image" />
                         <div className="education-content">
                             <a href="https://damanger.github.io/Car-Game-Js/" target="_blank" rel='noreferrer' id="raffle-link">
                                 <div className="content">
