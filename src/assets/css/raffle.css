@@ -234,3 +234,110 @@ footer .Raffle-icon{
 #generarPDF:hover{
     color: #0A66C2;
 }
+
+.modal {
+    font-family: monospace;
+    background-color: #f3f7fe;
+    color: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    width: 10rem;
+    height: 3.5rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.modal:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+}
+
+.modal-content{
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-container {
+    text-align: center;
+}
+
+.title-container h1 {
+    margin: 0;
+}
+
+.title-container img {
+    margin-top: 10px;
+}
+
+.container{
+	width:44.5rem;
+	height:44.5rem;
+	background-color: #ccc;
+	border-radius:50%;
+	border:5px solid #dde;
+	position: relative;
+	overflow: hidden;
+    margin: 0;
+    padding: 0;
+	transition: 5s;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.container div{
+	height:50%;
+	width: 17.3rem;
+	position: absolute;
+	clip-path: polygon(100% 0 , 50% 100% , 0 0 );
+	transform:translateX(-50%);
+	transform-origin:bottom;
+	text-align:center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	font-size:20px;
+	font-weight:bold;
+	font-family:sans-serif;
+	color:#fff;
+}
+
+.arrow{
+    width: 3rem;
+    height: auto;
+}
+
+#spin{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:10;
+	background-color: #e2e2e2;
+	text-transform: uppercase;
+	border:8px solid #fff;
+	font-weight:bold;
+	font-size:20px;
+	color:#a2a2a2;
+	width: 80px;
+	height:80px;
+	font-family: sans-serif;
+	border-radius:50%;
+	cursor: pointer;
+	outline:none;
+	letter-spacing: 1px;
+}
+
+#spin:hover{
+    background-color: #a6c1ee;
+    color: gold;
+}

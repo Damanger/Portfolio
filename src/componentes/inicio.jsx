@@ -169,7 +169,7 @@ const Inicio = () => {
         return () => {
             clearInterval(interval);
         };
-    }, []);
+    });
 
     document.addEventListener('DOMContentLoaded', function () {
         const projectBoxes = document.querySelectorAll('.projects');
@@ -272,16 +272,16 @@ const Inicio = () => {
                     <p>I am a responsible individual with a strong sense of initiative and a proactive mindset. Taking ownership of my responsibilities comes naturally to me, as I believe in delivering high-quality results and meeting deadlines consistently. Furthermore, I possess strong leadership qualities, which allow me to guide and inspire others towards achieving common goals. I thrive in collaborative environments, valuing teamwork and actively contributing to the success of the group.</p>
                 </div>
                 <div className="certificados">
-                    <a href="https://app.aluracursos.com/program/certificate/3b86f076-e7b1-420b-b3ac-f08d03cbf4d7" target="_blank" rel='noreferrer'>
+                    <a className="certificado-link" href="https://app.aluracursos.com/program/certificate/3b86f076-e7b1-420b-b3ac-f08d03cbf4d7" target="_blank" rel='noreferrer'>
                         <img alt="Oracle + Alura LATAM certificate" src="./Front-End.webp"/>
                     </a>
-                    <a href='https://app.aluracursos.com/user/omar-cruzr97/fullCertificate/78801b3b7069693e6a6c314528f4b87f' target='_blank' rel='noreferrer'>
+                    <a className="certificado-link" href='https://app.aluracursos.com/user/omar-cruzr97/fullCertificate/78801b3b7069693e6a6c314528f4b87f' target='_blank' rel='noreferrer'>
                         <img alt="Jr. Developer" src="./Jr.webp"/>
                     </a>
-                    <a href='https://app.aluracursos.com/degree/certificate/1fa2dc74-672d-4a1c-bd5b-e50077a537b9' target='_blank' rel='noreferrer'>
+                    <a className="certificado-link" href='https://app.aluracursos.com/degree/certificate/1fa2dc74-672d-4a1c-bd5b-e50077a537b9' target='_blank' rel='noreferrer'>
                         <img src="React.webp" alt="React" />
                     </a>
-                    <a href='https://www.linkedin.com/in/omar-cruzr97/details/certifications/' target='_blank' rel='noreferrer'>
+                    <a className="certificado-link" href='https://www.linkedin.com/in/omar-cruzr97/details/certifications/' target='_blank' rel='noreferrer'>
                         <img src="./plus.webp" alt="More certificates" />
                     </a>
                 </div>
@@ -393,40 +393,40 @@ const Inicio = () => {
                                 <div className="items">
                                     <div className="group">
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/Angular-FFC8DC?logo=angular&amp;logoColor=f00&amp;style=flat" className="my-1 angular-badge"></object>
+                                            <object data="https://img.shields.io/badge/Angular-FFC8DC?logo=angular&amp;logoColor=f00&amp;style=flat" className="my-1 angular-badge" aria-label="Angular Badge"></object>
                                         </div>
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/React-61DAFB?logo=react&amp;logoColor=000&amp;style=flat" className="my-1"></object>
+                                            <object data="https://img.shields.io/badge/React-61DAFB?logo=react&amp;logoColor=000&amp;style=flat" className="my-1" aria-label="React Badge"></object>
                                         </div>
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/HTML5-E34F26?logo=html5&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                            <object data="https://img.shields.io/badge/HTML5-E34F26?logo=html5&amp;logoColor=fff&amp;style=flat" className="my-1" aria-label="HTML 5 Badge"></object>
                                         </div>
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/CSS3-1572B6?logo=css3&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                            <object data="https://img.shields.io/badge/CSS3-1572B6?logo=css3&amp;logoColor=fff&amp;style=flat" className="my-1" aria-label="CSS 3 Badge"></object>
                                         </div>
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&amp;logoColor=000&amp;style=flat" className="my-1"></object>
+                                            <object data="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&amp;logoColor=000&amp;style=flat" className="my-1" aria-label="JavaScript Badge"></object>
                                         </div>
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/Materialize-F48BAA?logo=materialize&amp;logoColor=fff&amp;style=flat" className="my-1 materialize-badge"></object>
+                                            <object data="https://img.shields.io/badge/Materialize-F48BAA?logo=materialize&amp;logoColor=fff&amp;style=flat" className="my-1 materialize-badge" aria-label="Materialize Badge"></object>
                                         </div>
 
                                     </div>
                                     <div className="group">
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                            <object data="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&amp;logoColor=fff&amp;style=flat" className="my-1" aria-label="TypeScript Badge"></object>
                                         </div>
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/Next.js-000?logo=nextdotjs&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                            <object data="https://img.shields.io/badge/Next.js-000?logo=nextdotjs&amp;logoColor=fff&amp;style=flat" className="my-1" aria-label="Next.js Badge"></object>
                                         </div>
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                            <object data="https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&amp;logoColor=fff&amp;style=flat" className="my-1" aria-label="Bootstrap Badge"></object>
                                         </div>
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/jQuery-0769AD?logo=jquery&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                            <object data="https://img.shields.io/badge/jQuery-0769AD?logo=jquery&amp;logoColor=fff&amp;style=flat" className="my-1" aria-label="Jquerry Badge"></object>
                                         </div>
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/Figma-0078D7?logo=figma&logoColor=fff&style=flat" className="my-1 figma-badge"></object>
+                                            <object data="https://img.shields.io/badge/Figma-0078D7?logo=figma&logoColor=fff&style=flat" className="my-1 figma-badge" aria-label="Figma Badge"></object>
                                         </div>
                                     </div>
                                 </div>
@@ -441,49 +441,49 @@ const Inicio = () => {
                                 <div className="items">
                                     <div className="group">
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/Node.js-393?logo=nodedotjs&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                            <object data="https://img.shields.io/badge/Node.js-393?logo=nodedotjs&amp;logoColor=fff&amp;style=flat" className="my-1" aria-label="Node Badge"></object>
                                         </div>
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                            <object data="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&amp;logoColor=fff&amp;style=flat" className="my-1" aria-label="MySQL Badge"></object>
                                         </div>
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/phpMyAdmin-B73767?logo=phpmyadmin&amp;logoColor=fff&amp;style=flat" className="my-1 phpmmyadmin-badge"></object>
+                                            <object data="https://img.shields.io/badge/phpMyAdmin-B73767?logo=phpmyadmin&amp;logoColor=fff&amp;style=flat" className="my-1 phpmmyadmin-badge" aria-label="PHPMyAdmin Badge"></object>
                                         </div>
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&amp;logoColor=fff&amp;style=flat" className="my-1 postgresql-badge"></object>
+                                            <object data="https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&amp;logoColor=fff&amp;style=flat" className="my-1 postgresql-badge" aria-label="PostgeSQL Badge"></object>
                                         </div>
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/Oracle_Cloud-F80000?logo=oracle&amp;logoColor=fff&amp;style=flat" className="my-1 oracle-cloud-badge"></object>
+                                            <object data="https://img.shields.io/badge/Oracle_Cloud-F80000?logo=oracle&amp;logoColor=fff&amp;style=flat" className="my-1 oracle-cloud-badge" aria-label="Oracle Cloud Badge"></object>
                                         </div>
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/Apple-A9A9A9?logo=apple&logoColor=fff&style=flat" className="my-1 apple-badge"></object>
+                                            <object data="https://img.shields.io/badge/Apple-A9A9A9?logo=apple&logoColor=fff&style=flat" className="my-1 apple-badge" aria-label="Apple Badge"></object>
                                         </div>
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/Linux-000000?logo=linux&logoColor=fff&style=flat" className="my-1 linux-badge"></object>
+                                            <object data="https://img.shields.io/badge/Linux-000000?logo=linux&logoColor=fff&style=flat" className="my-1 linux-badge" aria-label="Linux Badge"></object>
                                         </div>
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/Windows-0050F0?logo=windows&logoColor=fff&style=flat" className="my-1 windows-badge"></object>
+                                            <object data="https://img.shields.io/badge/Windows-0050F0?logo=windows&logoColor=fff&style=flat" className="my-1 windows-badge" aria-label="Windows Badge"></object>
                                         </div>
                                     </div>
                                     <div className="group">
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/Python-3776AB?logo=python&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                            <object data="https://img.shields.io/badge/Python-3776AB?logo=python&amp;logoColor=fff&amp;style=flat" className="my-1" aria-label="Python Badge"></object>
                                         </div>
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/Django-092E20?logo=django&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                            <object data="https://img.shields.io/badge/Django-092E20?logo=django&amp;logoColor=fff&amp;style=flat" className="my-1" aria-label="Django Badge"></object>
                                         </div>
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/Java-ED8B00?logo=java&logoColor=fff&style=flat" className="my-1 java-badge"></object>
+                                            <object data="https://img.shields.io/badge/Java-ED8B00?logo=java&logoColor=fff&style=flat" className="my-1 java-badge" aria-label="Java Badge"></object>
                                         </div>
 
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/C-00599C?logo=c&logoColor=fff&style=flat" className="my-1 c-badge"></object>
+                                            <object data="https://img.shields.io/badge/C-00599C?logo=c&logoColor=fff&style=flat" className="my-1 c-badge" aria-label="C Badge"></object>
                                         </div>
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/Haskell-29B6F6?logo=haskell&logoColor=fff&style=flat" className="my-1 haskell-badge"></object>
+                                            <object data="https://img.shields.io/badge/Haskell-29B6F6?logo=haskell&logoColor=fff&style=flat" className="my-1 haskell-badge" aria-label="Haskell Badge"></object>
                                         </div>
                                         <div className="inline-flex mr-2">
-                                            <object data="https://img.shields.io/badge/Swift-F05138?logo=swift&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                            <object data="https://img.shields.io/badge/Swift-F05138?logo=swift&amp;logoColor=fff&amp;style=flat" className="my-1" aria-label="Swift Badge"></object>
                                         </div>
                                     </div>
                                 </div>
@@ -523,28 +523,28 @@ const Inicio = () => {
                             <div className="skills-content">
                                 <div className="items tools">
                                     <div className="inline-flex mr-2">
-                                        <object data="https://img.shields.io/badge/Git-F05032?logo=git&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                        <object data="https://img.shields.io/badge/Git-F05032?logo=git&amp;logoColor=fff&amp;style=flat" className="my-1" aria-label="Git Badge"></object>
                                     </div>
                                     <div className="inline-flex mr-2">
-                                        <object data="https://img.shields.io/badge/GitHub-181717?logo=github&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                        <object data="https://img.shields.io/badge/GitHub-181717?logo=github&amp;logoColor=fff&amp;style=flat" className="my-1" aria-label="Github Badge"></object>
                                     </div>
                                     <div className="inline-flex mr-2">
-                                        <object data="https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                        <object data="https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&amp;logoColor=fff&amp;style=flat" className="my-1" aria-label="Netlify Badge"></object>
                                     </div>
                                     <div className="inline-flex mr-2">
-                                        <object data="https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=fff&style=flat" className="my-1 vercel-badge"></object>
+                                        <object data="https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=fff&style=flat" className="my-1 vercel-badge" aria-label="Vercel Badge"></object>
                                     </div>
                                     <div className="inline-flex mr-2">
-                                        <object data="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?logo=visualstudiocode&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                        <object data="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?logo=visualstudiocode&amp;logoColor=fff&amp;style=flat" className="my-1" aria-label="VSCode Badge"></object>
                                     </div>
                                     <div className="inline-flex mr-2">
-                                        <object data="https://img.shields.io/badge/Xcode-147EFB?logo=xcode&amp;logoColor=fff&amp;style=flat" className="my-1"></object>
+                                        <object data="https://img.shields.io/badge/Xcode-147EFB?logo=xcode&amp;logoColor=fff&amp;style=flat" className="my-1" aria-label="XCode Badge"></object>
                                     </div>
                                     <div className="inline-flex mr-2">
-                                        <object data="https://img.shields.io/badge/Blender-F5799F?logo=blender&amp;logoColor=fff&amp;style=flat" className="my-1 blender-badge"></object>
+                                        <object data="https://img.shields.io/badge/Blender-F5799F?logo=blender&amp;logoColor=fff&amp;style=flat" className="my-1 blender-badge" aria-label="Blender Badge"></object>
                                     </div>
                                     <div className="inline-flex mr-2">
-                                        <object data="https://img.shields.io/badge/SolidWorks-FF3300?logo=solidworks&amp;logoColor=fff&amp;style=flat" className="my-1 solidworks-badge"></object>
+                                        <object data="https://img.shields.io/badge/SolidWorks-FF3300?logo=solidworks&amp;logoColor=fff&amp;style=flat" className="my-1 solidworks-badge" aria-label="SolidWorks Badge"></object>
                                     </div>
 
                                 </div>

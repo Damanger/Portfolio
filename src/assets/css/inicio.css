@@ -366,18 +366,23 @@ section{
 
 .certificados {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
-.certificados a {
-    text-decoration: none;
-}
-
 .certificados img {
+    display: block;
     max-width: 80%;
     height: auto;
+}
+
+.certificado-link {
+    text-decoration: none;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
 }
 
 .education{
