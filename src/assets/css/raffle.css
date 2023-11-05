@@ -292,6 +292,7 @@ footer .Raffle-icon{
     display: flex;
     align-items: start;
     justify-content: center;
+    margin-top: -1rem;
 }
 
 .container div{
@@ -340,4 +341,63 @@ footer .Raffle-icon{
 #spin:hover{
     background-color: #a6c1ee;
     color: gold;
+}
+
+.base{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.modalC {
+    font-family: monospace;
+    background-color: #f3f7fe;
+    color: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    width: 7rem;
+    height: 3.5rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.modalC:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+}
+
+#number-input {
+    border: 3px solid rgb(127, 170, 170);
+    border-radius: 20px;
+    color: rgb(127, 170, 170);
+    cursor: text;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    transition: all 1s;
+    max-width: 170px;
+    padding-left: 5px;
+}
+
+#number-input:focus {
+    outline-color: rgb(127, 170, 170);
+}
+
+.eliminar {
+    font-family: monospace;
+    background-color: #f3f7fe;
+    color: #f63b3b;
+    border: none;
+    border-radius: 8px;
+    width: 7rem;
+    height: 3.5rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.eliminar:hover {
+    background-color: #f63b3b;
+    box-shadow: 0 0 0 5px #f63b3b5f;
+    color: #fff;
 }

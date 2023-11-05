@@ -10,6 +10,7 @@ const Raffle = () =>{
     const [tiros, setTiros] = useState(4);
     const [showConfetti, setShowConfetti] = useState(false);
     const [spinButtonDisabled, setSpinButtonDisabled] = useState(false);
+    const [inputNumber, setInputNumber] = useState('');
 
     const openModal = () => {
         setModalIsOpen(true);
@@ -37,6 +38,17 @@ const Raffle = () =>{
             setShowConfetti(true);
         }
     };    
+    
+    const handleRemoveNumber = () => {
+        const numberToRemove = parseInt(inputNumber);
+        if (!isNaN(numberToRemove)) {
+            const updatedNumbers = clienteNumbers.filter(
+                (number) => parseInt(number) !== numberToRemove
+            );
+            setClienteNumbers(updatedNumbers);
+            setInputNumber('');
+        }
+    };      
 
     useEffect(() => {
 
@@ -335,7 +347,8 @@ const Raffle = () =>{
                             <div className="middle">
                                 <div className="title-container">
                                     <h1 style={{ marginTop: '0' }}>Ruleta aleatoria</h1>
-                                    <img className="arrow" src="./arrow.webp" alt="flecha" />
+                                    <p>Tiros restantes: #{tiros}</p>
+                                    <img className="arrow" src="./arrow.webp" alt="flecha" style={{ position: 'relative', zIndex: '1' }}/>
                                 </div>
                             </div>
                             <button id="spin" onClick={handleSpinClick} disabled={spinButtonDisabled}>Spin</button>
@@ -353,7 +366,7 @@ const Raffle = () =>{
                                         alignItems: 'start',
                                         justifyContent: 'center',
                                         fontSize: '1rem',
-                                        clipPath: 'polygon(50% 100%, 45% 0%, 55% 0)',
+                                        clipPath: 'polygon(50% 100%, 44% 0%, 56% 0)',
                                         backgroundClip: 'border-box',
                                         backgroundColor: backgroundColor,
                                         transform: `rotate(${(360 / clienteNumbers.length) * index}deg)`,
@@ -365,8 +378,11 @@ const Raffle = () =>{
                                     );
                                 })}
                             </div>
-                            <p>Tiros restantes: #{tiros}</p>
-                            <button className='modal' onClick={closeModal} >Cerrar</button>
+                            <div className="base">
+                                <button className='modalC' onClick={closeModal} >Cerrar</button>
+                                <input type="number" id='number-input' autoComplete='off' value={inputNumber} onChange={(e) => setInputNumber(e.target.value)} placeholder="# a eliminar"/>
+                                <button className='eliminar' onClick={handleRemoveNumber}>Descartar</button>
+                            </div>
                         </div>
                     </ReactModal>
                 </div>
