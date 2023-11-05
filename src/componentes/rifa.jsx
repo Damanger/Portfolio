@@ -325,7 +325,6 @@ const Raffle = () =>{
                             <div className="middle">
                                 <div className="title-container">
                                     <h1 style={{ marginTop: '0' }}>Ruleta aleatoria</h1>
-                                    <p>Tiros restantes: #{tiros}</p>
                                     <img className="arrow" src="./arrow.webp" alt="flecha" />
                                 </div>
                             </div>
@@ -356,6 +355,7 @@ const Raffle = () =>{
                                     );
                                 })}
                             </div>
+                            <p>Tiros restantes: #{tiros}</p>
                             <button className='modal' onClick={closeModal} >Cerrar</button>
                         </div>
                     </ReactModal>
