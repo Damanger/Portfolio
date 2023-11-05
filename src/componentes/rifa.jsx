@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import '../assets/css/raffle.css';
 import jsPDF from 'jspdf';
 import ReactModal from 'react-modal';
+import Confetti from 'react-confetti';
 
 const Raffle = () =>{
 
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [tiros, setTiros] = useState(4);
+    const [showConfetti, setShowConfetti] = useState(false);
 
     const openModal = () => {
         setModalIsOpen(true);
@@ -25,6 +27,9 @@ const Raffle = () =>{
             setNumber(number + Math.ceil(Math.random() * 500000));
             setClicks(clicks + 1);
             setTiros(tiros - 1);
+        }
+        if (tiros === 1) {
+            setShowConfetti(true);
         }
     };    
 
@@ -387,6 +392,16 @@ const Raffle = () =>{
                 <span></span>
                 <span></span>
             </div>
+            {showConfetti && <Confetti
+                width={window.innerWidth}
+                height={window.innerHeight*2}
+                recycle={true}
+                numberOfPieces={1000}
+                initialVelocityY={5}
+                friction={0.99}
+                gravity={0.1}
+                colors={['#ff0000', '#00ff00', '#0000ff']}
+            />}
         </>
     )
 }
