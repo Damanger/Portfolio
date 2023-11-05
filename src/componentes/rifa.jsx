@@ -9,6 +9,7 @@ const Raffle = () =>{
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [tiros, setTiros] = useState(4);
     const [showConfetti, setShowConfetti] = useState(false);
+    const [spinButtonDisabled, setSpinButtonDisabled] = useState(false);
 
     const openModal = () => {
         setModalIsOpen(true);
@@ -27,6 +28,10 @@ const Raffle = () =>{
             setNumber(number + Math.ceil(Math.random() * 500000));
             setClicks(clicks + 1);
             setTiros(tiros - 1);
+            setSpinButtonDisabled(true);
+            setTimeout(() => {
+                setSpinButtonDisabled(false);
+            }, 3000);
         }
         if (tiros === 1) {
             setShowConfetti(true);
@@ -333,7 +338,7 @@ const Raffle = () =>{
                                     <img className="arrow" src="./arrow.webp" alt="flecha" />
                                 </div>
                             </div>
-                            <button id="spin" onClick={handleSpinClick}>Spin</button>
+                            <button id="spin" onClick={handleSpinClick} disabled={spinButtonDisabled}>Spin</button>
                             <div className="container" style={{ transform: `rotate(${number}deg)` }}>
                                 
                                 {clienteNumbers.map((numero, index) => {
