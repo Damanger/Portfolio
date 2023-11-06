@@ -34,6 +34,7 @@
 63 Edith del Pilar Ramírez Ramírez
 66 Ixchel Ramírez Villegas
 67 Eréndira Cruz Ramírez
+68 Asenet Alcántara
 69 Kharentt Robles
 70 Dayán Zurishadai
 75 Ivanna Mairim
@@ -58,6 +59,7 @@
 138 Tonalli Ramírez Villegas
 147 Erik Ramos
 150 Josué Gamaliel Reyes
+155 Asenet Alcántara
 158 Ricardo Daniel López
 160 Tonalli Ramírez Villegas
 177 Rosa Ma. Muñoz
