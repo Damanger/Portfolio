@@ -115,16 +115,6 @@ section{
     display: flex;
     align-items: center;
     padding: 0 10%;
-    animation: fadeIn 1s ease-in 2s;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 .home img{
