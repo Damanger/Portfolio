@@ -56,6 +56,7 @@
     height: auto;
     margin: 0;
     padding: 0;
+    filter: invert(100%);
 }
 
 #search-input {
