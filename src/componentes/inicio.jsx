@@ -295,9 +295,11 @@ const Inicio = () => {
                         <div className="education-box">
                             <div className="education-content">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2023</div>
-                                    <h3>Laboratory of Advanced Image Processing (LAPI)-U.N.A.M.</h3>
-                                    <p>Intern, Laboratory of Advanced Image Processing (LAPI), National Autonomous University of Mexico (UNAM)</p>
+                                    <a href='http://lapi.fi-p.unam.mx/' target='_blank' rel='noreferrer'>
+                                        <div className="year"><i className="bx bxs-calendar"></i>2023</div>
+                                        <h3>Laboratory of Advanced Image Processing (LAPI)-U.N.A.M.</h3>
+                                        <p>Intern, Laboratory of Advanced Image Processing (LAPI), National Autonomous University of Mexico (UNAM)</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -309,26 +311,32 @@ const Inicio = () => {
 
                             <div className="education-content">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2023 - Today</div>
-                                    <h3>ONE - Oracle & Alura</h3>
-                                    <p>In this year, I enrolled in a course called Oracle Next Education (ONE), offered by Oracle and Alura. I am currently part of Group 5 and still actively pursuing the program.</p>
+                                    <a href='https://www.aluracursos.com/cursos-online-front-end' target='_blank' rel='noreferrer'>
+                                        <div className="year"><i className="bx bxs-calendar"></i>2023 - Today</div>
+                                        <h3>ONE - Oracle & Alura</h3>
+                                        <p>In this year, I enrolled in a course called Oracle Next Education (ONE), offered by Oracle and Alura. I am currently part of Group 5 and still actively pursuing the program.</p>
+                                    </a>
                                 </div>
                             </div>
 
                             <div className="education-content">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2020 - Today</div>
-                                    <h3>Computer Engineering - Universidad Tecnológica de la Mixteca</h3>
-                                    <p>I am currently pursuing a Bachelor's degree in Computer Engineering and I am in my 7th semester out of 10.</p>
+                                    <a href='https://www.utm.mx/investigacion.html#ic' target='_blank' rel='noreferrer'>
+                                        <div className="year"><i className="bx bxs-calendar"></i>2020 - Today</div>
+                                        <h3>Computer Engineering - Universidad Tecnológica de la Mixteca</h3>
+                                        <p>I am currently pursuing a Bachelor's degree in Computer Engineering and I am in my 7th semester out of 10.</p>
+                                    </a>
                                 </div>
                             </div>
 
                             <div className="education-content">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2009  - 2013</div>
-                                    <h3>English Courses - Harmon Hall</h3>
-                                    <p>I completed over 50 levels of basic English for children and an additional 15 levels of intermediate English for young learners at a private school.</p>
-                                    <p>Also completed 4 advanced levels of conversational English for adults.</p>
+                                    <a href='https://www.harmonhall.com/' target='_blank' rel='noreferrer'>
+                                        <div className="year"><i className="bx bxs-calendar"></i>2009  - 2013</div>
+                                        <h3>English Courses - Harmon Hall</h3>
+                                        <p>I completed over 50 levels of basic English for children and an additional 15 levels of intermediate English for young learners at a private school.</p>
+                                        <p>Also completed 4 advanced levels of conversational English for adults.</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
