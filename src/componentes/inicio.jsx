@@ -294,6 +294,23 @@ const Inicio = () => {
                         <h3 className="title">Professional Experience</h3>
                         <div className="education-box">
                             <div className="education-content">
+
+                                <div className="content">
+                                    <a href='www.escolta.io/' target='_blank' rel='noreferrer'>
+                                        <div className="year"><i className="bx bxs-calendar"></i>2023 - Today</div>
+                                        <h3>Private security company , San Francisco Ca. USA</h3>
+                                        <p>Front-End developer, UI design</p>
+                                    </a>
+                                </div>
+
+                                <div className="content">
+                                    <a href='https://dropet.io/' target='_blank' rel='noreferrer'>
+                                        <div className="year"><i className="bx bxs-calendar"></i>2023</div>
+                                        <h3>Automated deployments, San Francisco Ca. USA</h3>
+                                        <p>Front-End developer, UI design</p>
+                                    </a>
+                                </div>
+
                                 <div className="content">
                                     <a href='http://lapi.fi-p.unam.mx/' target='_blank' rel='noreferrer'>
                                         <div className="year"><i className="bx bxs-calendar"></i>2023</div>
