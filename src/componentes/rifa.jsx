@@ -257,7 +257,7 @@ const Raffle = () =>{
 
             const image = new Image()
 
-            image.src = "./Ardilla.png"
+            image.src = "./Ardilla.webp"
 
             // Establecer el color de fondo de la página a "#a6c1ee"
             doc.setFillColor(166, 193, 238); // Código de color "#a6c1ee"
