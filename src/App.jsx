@@ -15,29 +15,25 @@ function App() {
   }, 2000);
   return (
     <Router>
-      {isLoading ? (
-        <Cargando imagen="ardilla.webp" />
-      ) : (
-        <div>
-          <div className="wrap">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <Routes>
-            <Route path='/' element={<Inicio/>} />
-            <Route path='/raffle' element={<Raffle></Raffle>} />
-            <Route path="*" element={<><Error404/><Navigate to="/not-found" replace /></>}/>
-          </Routes>
+      <div>
+        <div className="wrap">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      )}
+        <Routes>
+          <Route path='/' element={<Inicio/>} />
+          <Route path='/raffle' element={<Raffle></Raffle>} />
+          <Route path="*" element={<><Error404/><Navigate to="/not-found" replace /></>}/>
+        </Routes>
+      </div>      
     </Router>
   );
 }
