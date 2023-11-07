@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Error404 = () =>{
     return (
-        <div className="container"> 
+        <div className="containerE"> 
             <div className="window"> 
                 <div className="window-title">
                     <p>Squirrel cmd</p>
