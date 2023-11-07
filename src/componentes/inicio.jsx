@@ -210,7 +210,7 @@ const Inicio = () => {
         <div>
             <header className="header">
                 <a href="#" className="logo" rel='noreferrer'>
-                    Omar <FontAwesomeIcon icon={faLaptopCode} />
+                    <img className='logo-img' src="./cruz.webp" alt="Omar Cruz" />
                 </a>
                 <div className="bx bx-menu" id="menu-icon"></div>
                 <nav className="navbar">
