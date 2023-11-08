@@ -4,7 +4,8 @@ import Swal from 'sweetalert2';
 import emailjs from 'emailjs-com';
 import 'font-awesome/css/font-awesome.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import 'aframe';
 
 const Inicio = () => {
     useEffect(() => {
@@ -210,7 +211,7 @@ const Inicio = () => {
         <div>
             <header className="header">
                 <a href="#" className="logo" rel='noreferrer'>
-                    <img className='logo-img' src="./cruz.webp" alt="Omar Cruz" />
+                    <img className='logo-img' src="./omar.webp" alt="Omar Cruz" />
                 </a>
                 <div className="bx bx-menu" id="menu-icon"></div>
                 <nav className="navbar">
