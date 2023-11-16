@@ -361,6 +361,7 @@ section{
     margin: 2rem 0 3rem;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .certificados {
@@ -472,6 +473,7 @@ width: 100%;
 .education-content .content p{
     font-size:  1.6rem;
     padding-top: 1rem;
+    width: 100%;
 }
 
 .skills-column span{
@@ -540,6 +542,14 @@ width: 100%;
     align-items: center;
 }
 
+.skills-content .progress p{
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .skills-content .progress h3 span{
     color: var(--tex-color);
 }
@@ -555,21 +565,6 @@ width: 100%;
     display: inline-block !important;
     text-align: center;
     margin: 0 5px;
-}
-
-.skills-content .progress .bar{
-    height: 2.5rem;
-    border-radius: 0.6rem;
-    border: 0.2rem solid #22c55e;
-    padding: 0.5rem;
-    margin: 1rem 0;
-}
-
-.skills-content .progress .bar span{
-    display: block;
-    height: 100%;
-    border-radius: 0.3rem;
-    background-color: #22c55e;
 }
 
 .skills-column h3 ,.skills-column .icon{

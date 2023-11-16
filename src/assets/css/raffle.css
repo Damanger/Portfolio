@@ -117,6 +117,8 @@ main {
 #ticket-owner-info p {
     margin: 0;
     font-weight: bold;
+    width: 100%;
+    font-size: 1.25rem;
 }
 
 /* Estilos para el indicador "Comprado" */
