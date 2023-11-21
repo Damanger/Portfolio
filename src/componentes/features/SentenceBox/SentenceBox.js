@@ -401,19 +401,6 @@ const SentenceBox = ({
                       </span>
                     </Tooltip>
                   </IconButton>
-                  <IconButton
-                    onClick={() => {
-                      reset(sentencesCountConstant, CHINESE_MODE, false);
-                    }}
-                  >
-                    <Tooltip title={CHINESE_SENTENCE_MODE_TOOLTIP_TITLE}>
-                      <span
-                        className={getLanguageButtonClassName(CHINESE_MODE)}
-                      >
-                        chn
-                      </span>
-                    </Tooltip>
-                  </IconButton>
                 </>
               )}
             </Box>
