@@ -5,7 +5,6 @@ import React from 'react';
 import Inicio from './componentes/inicio';
 import Error404 from './componentes/Error404';
 import Raffle from './componentes/rifa';
-import Monster from './componentes/Monster';
 import Clock from './componentes/Clock';
 
 function App() {
