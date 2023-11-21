@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.digital-clock{
+    position: relative;
+    color: #fff;
+    background-color: #2d2f41;
+    width: 5%;
+    padding: 10px 45px;
+    margin: 0;
+    box-shadow: 0 5px 25px rgba(14, 21, 37, 0.8);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.time{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hours, .dots, .minutes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    padding: 0 1px;
+}
+
+.hours, .minutes{
+    font-size: 2.25rem;
+}
+
+.dots{
+    font-size: 1.5rem;
+    color: #929292;
+}
+
+.right-side{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.period, .seconds{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.period{
+    transform: translateY(-5px);
+}
+
+.seconds{
+    transform: translateY(5px);
+}
+
+.calendar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.day-name, .day-number, .year{
+    margin-left: 5px;
+}
+
+@media (max-width: 1024px){
+    .digital-clock{
+        width: 10%;
+    }
+}
+
+
+@media (max-width: 768px){
+    .digital-clock{
+        width: 15%;
+    }
+}

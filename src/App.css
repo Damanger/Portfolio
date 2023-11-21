@@ -104,6 +104,14 @@ section{
 	}
 }
 
+#sticky-clock {
+    position: fixed;
+    bottom: 9rem;
+    right: 4rem;
+    z-index: 999;
+    cursor: pointer;
+}
+
 #sticky-image {
     position: fixed;
     bottom: 2rem;

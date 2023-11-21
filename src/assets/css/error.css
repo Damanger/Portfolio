@@ -86,14 +86,35 @@
 }
 
 .console pre {
+    width: 30%;
     margin: 0;
     padding: 5px;
-    font-size: 15px;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .console pre code {
     color: #0f0;
     outline: none;
+}
+
+.console pre code h1 {
+    margin-left: -30%;
+}
+
+.console pre code p{
+    margin-left: -20%;
+}
+
+.console pre code a{
+    margin-left: -10%;
+}
+
+.console pre code p{
+    font-size: 1.25rem;
 }
 
 .console::-webkit-scrollbar {
