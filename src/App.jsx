@@ -5,6 +5,7 @@ import React from 'react';
 import Inicio from './componentes/inicio';
 import Error404 from './componentes/Error404';
 import Raffle from './componentes/rifa';
+import Typing from './componentes/Typing'
 import Clock from './componentes/Clock';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Inicio/>} />
           <Route path='/raffle' element={<Raffle/>} />
+          <Route path='/typing' element={<Typing/>} />
           <Route path="*" element={<><Error404/><Navigate to="/not-found" replace /></>}/>
         </Routes>
       </div>
