@@ -3,14 +3,22 @@ import '../assets/css/clock.css';
 
 const Clock = () => {
     const [time, setTime] = useState(new Date());
+    const [date, setDate] = useState(new Date());
 
     useEffect(() => {
         const updateClock = setInterval(() => {
             setTime(new Date());
         }, 1000);
 
-        return () => clearInterval(updateClock);
-    }, []); // Se ejecuta solo una vez al montar el componente
+        const updateDate = setInterval(() => {
+            setDate(new Date());
+        }, 60000);
+
+        return () => {
+            clearInterval(updateClock);
+            clearInterval(updateDate);
+        };
+    }, []);
 
     const formatTime = (value) => (value < 10 ? `0${value}` : value);
 
@@ -18,6 +26,12 @@ const Clock = () => {
     const minutes = formatTime(time.getMinutes());
     const seconds = formatTime(time.getSeconds());
     const period = time.getHours() >= 12 ? 'PM' : 'AM';
+
+    const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const month = monthNames[date.getMonth()];
+    const day = date.toLocaleDateString('en-US', { weekday: 'short' });
+    const dayNumber = date.getDate();
+    const year = date.getFullYear();
 
     return (
         <>
@@ -32,10 +46,10 @@ const Clock = () => {
                 </div>
             </div>
             <div className="calendar">
-                <span className="month-name">Nov</span>,
-                <span className="day-name">Tus</span>
-                <span className="day-number">21</span>
-                <span className="year">2023</span>
+                <span className="month-name">{month}</span>,
+                <span className="day-name">{day}</span>
+                <span className="day-number">{dayNumber}</span>
+                <span className="year">{year}</span>
             </div>
         </div>
         </>
