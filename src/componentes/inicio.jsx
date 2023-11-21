@@ -225,6 +225,7 @@ const Inicio = () => {
                     <a href="#contact" className="cipher" rel='noreferrer'>Contact</a>
                     <span className="active-nav"></span>
                 </nav>
+                <img className='views' src="https://hitwebcounter.com/counter/counter.php?page=9944997&style=0006&nbdigits=4&type=page&initCount=0" alt="Visit counter For Websites"/>
             </header>
 
             <section className="home hidden" id="home">
