@@ -819,17 +819,6 @@ const TypeBox = ({
                     </span>
                   </Tooltip>
                 </IconButton>
-                <IconButton
-                  onClick={() => {
-                    reset(countDownConstant, difficulty, CHINESE_MODE, false);
-                  }}
-                >
-                  <Tooltip title={CHINESE_MODE_TOOLTIP_TITLE}>
-                    <span className={getLanguageButtonClassName(CHINESE_MODE)}>
-                      chn
-                    </span>
-                  </Tooltip>
-                </IconButton>
               </Box>
             )}
             {menuEnabled && (
