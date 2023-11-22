@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import '../assets/css/raffle.css';
 import jsPDF from 'jspdf';
 import ReactModal from 'react-modal';
@@ -24,11 +24,24 @@ const Raffle = () =>{
     const [clicks, setClicks] = useState(0);
     const [clienteNumbers, setClienteNumbers] = useState([]);
 
+    const spinAudioRef = useRef(null);
+    const victoryAudioRef = useRef(null);
+
+    useEffect(() => {
+        const audio = new Audio('spin.mp3');
+        const audio2 = new Audio('victory.mp3')
+        spinAudioRef.current = audio;
+        victoryAudioRef.current = audio2
+    }, []);
+
     const handleSpinClick = () => {
         if (clicks < 4) {
             setNumber(number + Math.ceil(Math.random() * 500000));
             setClicks(clicks + 1);
             setTiros(tiros - 1);
+            if (spinAudioRef.current) {
+                spinAudioRef.current.play();
+            }
             setSpinButtonDisabled(true);
             setTimeout(() => {
                 setSpinButtonDisabled(false);
@@ -36,6 +49,7 @@ const Raffle = () =>{
         }
         if (tiros === 1) {
             setShowConfetti(true);
+            victoryAudioRef.current.play();
         }
     };    
     
@@ -351,7 +365,9 @@ const Raffle = () =>{
                                     <img className="arrow" src="./arrow.webp" alt="flecha" style={{ position: 'relative', zIndex: '1' }}/>
                                 </div>
                             </div>
-                            <button id="spin" onClick={handleSpinClick} disabled={spinButtonDisabled}>Spin</button>
+                            <audio id="spinAudio" src="spin.mp3" user-interaction="true"></audio>
+                            <audio id="winner" src="victory.mp3" user-interaction="true"></audio>
+                            <button id="spin" data-audio-src="spin.mp3" onClick={handleSpinClick} disabled={spinButtonDisabled}>Spin</button>
                             <div className="container" style={{ transform: `rotate(${number}deg)` }}>
                                 
                                 {clienteNumbers.map((numero, index) => {
