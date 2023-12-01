@@ -123,7 +123,7 @@ const Raffle = () =>{
         // Función para generar la lista de números de boletos como un calendario
         function generateTicketCalendar() {
             const ticketList = document.getElementById("ticket-numbers");
-            for (let i = 1; i <= 200; i++) {
+            for (let i = 89; i <= 89; i++) {
                 const listItem = document.createElement("li");
                 listItem.textContent = i;
                 listItem.addEventListener("click", toggleTicketSelection);
@@ -258,6 +258,8 @@ const Raffle = () =>{
             generateTicketCalendar(); // Generar el calendario de números
         };
 
+        setShowConfetti(true);
+
         document.getElementById("generarPDF").addEventListener("click", function () {
             const nombre = document.getElementById("ticket-owner-name").innerText;
             const numeroBoleto = document.getElementById("selected-ticket-number").innerText; 
@@ -317,16 +319,19 @@ const Raffle = () =>{
                 </div>
                 <div className="video">
                     <iframe className="responsive-iframe" src="https://www.youtube.com/embed/o1eoCYG7c0c?si=NddVIav7i3alVaLo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen loading="lazy"></iframe>
-                </div>                       
+                </div>              
+                        
                 <div className="ticket-calendar">
-                    <h2>Números de Boletos</h2>
-                    <h3>*Costo del boleto 1 x $30 o 2 x $50*</h3>
-                    <h4>**Si eres Utemita 1 boleto $20**</h4>
+                    {/*  <h2>Números de Boletos</h2> */}
+                    <h2>¡Ganador de la Rifa!</h2>
+                    {/* <h3>*Costo del boleto 1 x $30 o 2 x $50*</h3>
+                    <h4>**Si eres Utemita 1 boleto $20**</h4> */}
                     <div id="ticket-owner-info">
                         <p>#<span id="selected-ticket-number"></span><span id="ticket-owner-name"></span>
                         <i id="generarPDF" className="fas fa-download download-icon" style={{display: "none"}}></i></p>
                     </div>            
-                    <ul id="ticket-numbers"></ul>                                   
+                    <ul id="ticket-numbers"></ul>    
+                    {/*                               
                     <div id="comprado-indicator">
                         <div className="comprado-box" style={{backgroundColor: "#76a57f"}}></div>
                         <div className="comprado-label">Comprado</div>
@@ -335,8 +340,9 @@ const Raffle = () =>{
                         <div className="disponible-box" style={{backgroundColor: "#d3d3d3"}}></div>
                         <div className="disponible-label">Disponible</div>
                     </div>
-                    <button className='modal' onClick={openModal}>Probar Suerte</button>
-                    <ReactModal isOpen={modalIsOpen} onRequestClose={closeModal} contentLabel="Ejemplo Modal" ariaHideApp={false} style={{
+                    */}
+                    {/* <button className='modal' onClick={openModal}>Probar Suerte</button> */}
+                    {/* <ReactModal isOpen={modalIsOpen} onRequestClose={closeModal} contentLabel="Ejemplo Modal" ariaHideApp={false} style={{
                         overlay: {
                             display: 'flex',
                             alignItems: 'center',
@@ -356,7 +362,7 @@ const Raffle = () =>{
                             alignItems: 'center',
                             justifyContent: 'space-between',
                         },
-                    }}>
+                    }}> 
                         <div className="modal-content">
                             <div className="middle">
                                 <div className="title-container">
@@ -400,8 +406,9 @@ const Raffle = () =>{
                                 <button className='eliminar' onClick={handleRemoveNumber}>Descartar</button>
                             </div>
                         </div>
-                    </ReactModal>
+                    </ReactModal> */}
                 </div>
+                
                 <footer>
                     <h4 style={{textAlign: "center"}}>¿Interesad@? Contáctame</h4>
                     <div className="social-buttons">
