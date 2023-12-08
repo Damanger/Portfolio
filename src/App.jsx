@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import React from 'react';
 import Inicio from './componentes/inicio';
+import ARM from './componentes/ARM'
 import Error404 from './componentes/Error404';
 import Raffle from './componentes/rifa';
 import Typing from './componentes/Typing'
@@ -27,6 +28,7 @@ function App() {
         <Clock/>
         <Routes>
           <Route path='/' element={<Inicio/>} />
+          <Route path='/ARM' element={<ARM/>} />
           <Route path='/raffle' element={<Raffle/>} />
           <Route path='/typing' element={<Typing/>} />
           <Route path="*" element={<><Error404/><Navigate to="/not-found" replace /></>}/>
