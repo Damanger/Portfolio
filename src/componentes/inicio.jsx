@@ -586,7 +586,6 @@ const Inicio = () => {
                 <div className="education-column">
                 <h3 className="title">ARM Instructions</h3>
                     <div className="education-box projects">
-                        <img src="./rifa.webp" alt="raffle" className="hover-image" />
                         <div className="education-content">
                             <a href="https://www.omar-cruz-rmz.com/ARM" target="_blank" rel='noreferrer' id="raffle-link">
                                 <div className="content">
