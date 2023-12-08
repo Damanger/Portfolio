@@ -584,13 +584,26 @@ const Inicio = () => {
             <section className="education hidden" id="projects">
                 <h2 className="heading">My <span>Projects</span></h2>
                 <div className="education-column">
+                <h3 className="title">ARM Instructions</h3>
+                    <div className="education-box projects">
+                        <img src="./rifa.webp" alt="raffle" className="hover-image" />
+                        <div className="education-content">
+                            <a href="https://www.omar-cruz-rmz.com/ARM" target="_blank" rel='noreferrer' id="raffle-link">
+                                <div className="content">
+                                    <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
+                                    <h3>Oaxaca-México</h3>
+                                    <i className="fa-solid fa-link"> Computer Architecture and Organization</i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                     <h3 className="title">Headphone Raffle</h3>
                     <div className="education-box projects">
                         <img src="./rifa.webp" alt="raffle" className="hover-image" />
                         <div className="education-content">
                             <a href="https://damanger.github.io/Headphones-Raffle/" target="_blank" rel='noreferrer' id="raffle-link">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
+                                    <div className="year"><i className="bx bxs-calendar"></i>2023</div>
                                     <h3>Oaxaca-México</h3>
                                     <i className="fa-solid fa-link"> Raffle of a Sony headphone</i>
                                 </div>
