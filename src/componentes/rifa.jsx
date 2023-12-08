@@ -327,7 +327,7 @@ const Raffle = () =>{
                     {/* <h3>*Costo del boleto 1 x $30 o 2 x $50*</h3>
                     <h4>**Si eres Utemita 1 boleto $20**</h4> */}
                     <div id="ticket-owner-info">
-                        <p>#<span id="selected-ticket-number"></span><span id="ticket-owner-name"></span>
+                        <p>Eduardo Soto<span id="selected-ticket-number"></span><span id="ticket-owner-name"></span>
                         <i id="generarPDF" className="fas fa-download download-icon" style={{display: "none"}}></i></p>
                     </div>            
                     <ul id="ticket-numbers"></ul>    
