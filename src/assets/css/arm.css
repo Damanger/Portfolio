@@ -3,8 +3,7 @@
     position: relative;
     border: 1px solid #ccc;
     width: 100%;
-    max-width: 350px;
-    height: 100px;
+    max-width: 40rem;
     margin: 50px auto;
 }
 .main_page{
@@ -28,11 +27,18 @@
     left:36px;
 }
 .page_content{
-    min-height: calc(24px * 15 + 1px);
-    background:repeating-linear-gradient(#00f 0px, #fff 1px, #fff 24px );
-    font-size: 16px;
-    line-height: 24px;
+    min-height: calc(2.25rem * 15 + 1px);
+    background:repeating-linear-gradient(#00f 0px, #fff 1px, #fff 2.25rem );
+    font-size: 1.5rem;
+    line-height: 2.25rem;
     padding: 6px 20px 0px 50px;
     outline: none;
-    color:rgb(0, 0, 0);
+    color:black;
+}
+
+.checkbox-wrapper{
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
