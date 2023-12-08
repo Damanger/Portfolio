@@ -588,7 +588,7 @@ const Inicio = () => {
                     <div className="education-box projects">
                         <img src="./rifa.webp" alt="raffle" className="hover-image" />
                         <div className="education-content">
-                            <a href="https://www.omar-cruz-rmz.com/raffle" target="_blank" rel='noreferrer' id="raffle-link">
+                            <a href="https://damanger.github.io/Headphones-Raffle/" target="_blank" rel='noreferrer' id="raffle-link">
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
                                     <h3>Oaxaca-México</h3>
