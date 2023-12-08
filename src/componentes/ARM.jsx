@@ -1,4 +1,3 @@
-// Home.jsx
 import React, { useState } from 'react';
 import '../assets/css/arm.css';
 
