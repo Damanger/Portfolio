@@ -4,7 +4,8 @@
     border: 1px solid #ccc;
     width: 100%;
     max-width: 40rem;
-    margin: 50px auto;
+    margin-left: 2rem;
+    margin-top: 2rem;
 }
 .main_page{
     width: 100%;
@@ -39,6 +40,6 @@
 .checkbox-wrapper{
     font-size: 1.25rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 2rem;
+    margin-top: 2rem;
 }

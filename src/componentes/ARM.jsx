@@ -3,7 +3,7 @@ import '../assets/css/arm.css';
 
 const ARM = () => {
     const [textContent, setTextContent] = useState('Ingrese sus instrucciones :)');
-    const [isCheckedInstruccion, setIsCheckedInstruccion] = useState(false);
+    const [isCheckedInstruccion, setIsCheckedInstruccion] = useState(true);
     const [isCheckedHexadecimal, setIsCheckedHexadecimal] = useState(false);
     const [isCheckedBinario, setIsCheckedBinario] = useState(false);
 
