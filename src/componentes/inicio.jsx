@@ -763,7 +763,7 @@ const Inicio = () => {
                             <span className="focus"></span>                    
                         </div>
                         <div className="input-field">
-                            <input type="email" id="email-input" placeholder="Email Adress" required pattern="/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/" autoComplete="off"/>
+                            <input type="email" id="email-input" placeholder="Email Adress" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" autoComplete="off"/>
                             <div className="email-requirements" style={{ fontSize: '1.2rem' }}>
                                 Enter a valid email.
                             </div>
