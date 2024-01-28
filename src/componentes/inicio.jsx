@@ -584,7 +584,19 @@ const Inicio = () => {
             <section className="education hidden" id="projects">
                 <h2 className="heading">My <span>Projects</span></h2>
                 <div className="education-column">
-                <h3 className="title">ARM Instructions</h3>
+                    <h3 className="title">Web-Assistant</h3>
+                    <div className="education-box projects">
+                        <div className="education-content">
+                            <a href="https://www.omar-cruz-rmz.com/Assistant" target="_blank" rel='noreferrer' id="raffle-link">
+                                <div className="content">
+                                    <div className="year"><i className="bx bxs-calendar"></i>2024-today</div>
+                                    <h3>Oaxaca-México</h3>
+                                    <i className="fa-solid fa-link"> Terminal to facilitate web searches</i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 className="title">ARM Instructions (In process)</h3>
                     <div className="education-box projects">
                         <div className="education-content">
                             <a href="https://www.omar-cruz-rmz.com/ARM" target="_blank" rel='noreferrer' id="raffle-link">
