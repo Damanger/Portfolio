@@ -171,11 +171,11 @@ const Assistant = () => {
             <div className="mainCont">
                 <h1>Squirrel Web Terminal</h1>
                 <h3>Welcome to the Squirrel Web Terminal!</h3>
-                <p>
+                <h5>
                     Explore the power of a terminal-style interface right in your browser.
                     Type commands, search the web, and get information at your fingertips.
                     For a list of available commands, type <code>help</code>.
-                </p>
+                </h5>
                 <div className="terminalCont">
                     <div id="terminalReslutsCont"></div>
                     <form onSubmit={handleFormSubmit}>
