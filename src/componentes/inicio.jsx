@@ -608,6 +608,18 @@ const Inicio = () => {
                             </a>
                         </div>
                     </div>
+                    <h3 className="title">Typing game</h3>
+                    <div className="education-box projects">
+                        <div className="education-content">
+                            <a href="https://www.omar-cruz-rmz.com/typing" target="_blank" rel='noreferrer' id="raffle-link">
+                                <div className="content">
+                                    <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
+                                    <h3>Oaxaca-México</h3>
+                                    <i className="fa-solid fa-link"> Typing game and practice</i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                     <h3 className="title">Headphone Raffle</h3>
                     <div className="education-box projects">
                         <img src="./rifa.webp" alt="raffle" className="hover-image" />
