@@ -248,6 +248,7 @@ const ARM = () => {
                     <textarea value={inputText} onChange={handleInputChange} style={textAreaStyle}></textarea>
                 </div>
             </div>
+            <img src='map.jpeg' alt="Imagen" className="mapa" />
             <div className="checkbox-wrapper">
                 <span style={checkboxStyle}>
                     Instrucción

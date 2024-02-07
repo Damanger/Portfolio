@@ -6,6 +6,7 @@
     max-width: 48rem;
     margin-left: 1.5rem;
     margin-top: 2rem;
+    flex: 1;
 }
 .main_page{
     width: 100%;
@@ -72,4 +73,18 @@
     user-select: none;
     margin-left: 2rem;
     margin-bottom: 3rem;
+}
+
+.mapa{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 55rem;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .mapa {
+        display: none;
+    }
 }
