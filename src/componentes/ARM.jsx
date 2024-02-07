@@ -243,6 +243,7 @@ const ARM = () => {
 
     return (
         <>
+            <h1 className='ArqARM'> Arquitectura ARM </h1>
             <div className="page_wrap">
                 <div className="main_page">
                     <textarea value={inputText} onChange={handleInputChange} style={textAreaStyle}></textarea>
