@@ -10,7 +10,6 @@
     font-weight: 300;
     font-size: 48px;
     margin: 60px 0 0 0;
-    color: aliceblue;
     opacity: 0;
     animation: fadeInAnimation 1s ease-in-out 0s forwards;
 }
@@ -22,7 +21,6 @@
     font-weight: 300;
     font-size: 24px;
     margin: 30px 0 0 0;
-    color: aliceblue;
     opacity: 0;
     animation: fadeInAnimation 1s ease-in-out 0s forwards;
 }
