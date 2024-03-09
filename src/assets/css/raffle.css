@@ -1,0 +1,406 @@
+.headerRaffle {
+    background-color: #a6c1ee;
+    color: #fff;
+    text-align: center;
+    padding: 1.25rem 0;
+}
+
+main {
+    max-width: 50rem; 
+    margin: 0 auto;
+    padding: 1.25rem; 
+    background: rgba(202, 202, 202, 0.25);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 1rem; 
+}
+
+.blue-span {
+    color: #5981c6;
+    transition: color 0.5s ease;
+}  
+
+/* Estilos para el título "Cuenta regresiva para el 1 de Diciembre" y el contador */
+.countdown h2 {
+    text-align: center;
+    margin-bottom: 0.625rem;
+    color: #ddd;
+}
+
+/* Estilos para la cuenta regresiva */
+.countdown {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.25rem; 
+}
+
+/* Estilos para los números en la cuenta regresiva */
+.countdown span {
+    display: inline-block;
+    width: 2.5rem;
+    margin: 0 0.625rem; 
+    padding: 0.625rem;
+    background-color: #a6c1ee;
+    color: white;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+}
+
+.countdown-part {
+    display: inline-block;
+    text-align: center;
+    margin: 0 0.625rem;
+    color: white;
+}
+
+.countdown-part span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.video{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.video iframe {
+    display: inline-block;
+}
+
+.responsive-iframe {
+    width: 100%;
+    height: 24rem;
+}
+
+.ticket-calendar {
+    text-align: center;
+}
+
+#ticket-numbers {
+    list-style: none;
+    padding: 0;
+}
+
+#ticket-numbers li {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0.3125rem; 
+    font-size: 1.125rem; 
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.5rem;
+    background-color: #d3d3d3;
+    color: #333;
+    border-radius: 0.3125rem; 
+    cursor: pointer;
+}
+
+#ticket-numbers li:hover {
+    background-color: #a6c1ee;
+    color: white;
+}
+
+#ticket-owner-info {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: rgba(219, 219, 219, 0.25);
+    backdrop-filter: blur(20px);
+}
+
+#ticket-owner-info p {
+    margin: 0;
+    font-weight: bold;
+    width: 100%;
+    font-size: 1.25rem;
+}
+
+/* Estilos para el indicador "Comprado" */
+#comprado-indicator {
+    display: flex;
+    align-items: center;
+    margin-top: 1.25rem; 
+}
+
+.comprado-box {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: #76a57f;
+    margin-right: 0.625rem;
+    border: 0.063rem solid #000;
+}
+
+.comprado-label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Estilos para el indicador "Disponible" */
+#disponible-indicator {
+    display: flex;
+    align-items: center;
+    margin-top: 1.25rem;
+}
+
+.disponible-box {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: #d3d3d3;
+    margin-right: 0.625rem;
+    border: 0.063rem solid #000;
+}
+
+.disponible-label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/*footer*/
+
+footer .social-button{
+    text-decoration: none;
+}
+
+footer .Raffle-icon{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 15px #00000027;
+    padding: 15px 10px;
+    border-radius: 5em;
+    background: rgba(219, 219, 219, 0.25);
+    backdrop-filter: blur(20px);
+}
+
+.social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px #00000027;
+    transition: 0.3s;
+}
+
+.social-button.whatsapp:hover .fab.fa-whatsapp {
+    color: #25d366;
+}
+
+.social-button.facebook:hover .fab.fa-facebook {
+    color: #3b5998;
+}
+
+.social-button.instagram:hover .fab.fa-instagram {
+    color: #c13584;
+}
+
+.social-button:hover {
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 6px 3px #00000027;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.whatsapp {
+    background-color: #25d366;
+}
+
+.instagram {
+    background-color: #c13584;
+}
+
+#generarPDF{
+    cursor: pointer;
+    border: 2px solid #0A66C2;
+    border-radius: 50%;
+    padding: 1px;
+    color: aliceblue;
+}
+
+#generarPDF:hover{
+    color: #0A66C2;
+}
+
+.modal {
+    font-family: monospace;
+    background-color: #f3f7fe;
+    color: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    width: 10rem;
+    height: 3.5rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.modal:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+}
+
+.modal-content{
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-container {
+    text-align: center;
+}
+
+.title-container h1 {
+    margin: 0;
+}
+
+.title-container img {
+    margin-top: 10px;
+}
+
+.container{
+	width:44.5rem;
+	height:44.5rem;
+	background-color: #ccc;
+	border-radius:50%;
+	border:5px solid #dde;
+	position: relative;
+	overflow: hidden;
+    margin: 0;
+    padding: 0;
+	transition: 5s;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-top: -1rem;
+}
+
+.container div{
+	height:50%;
+	width: 17.3rem;
+	position: absolute;
+	clip-path: polygon(100% 0 , 50% 100% , 0 0 );
+	transform:translateX(-50%);
+	transform-origin:bottom;
+	text-align:center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	font-size:20px;
+	font-weight:bold;
+	font-family:sans-serif;
+	color:#fff;
+}
+
+.arrow{
+    width: 3rem;
+    height: auto;
+}
+
+#spin{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-40%);
+	z-index:10;
+	background-color: #e2e2e2;
+	text-transform: uppercase;
+	border:8px solid #fff;
+	font-weight:bold;
+	font-size:20px;
+	color:#a2a2a2;
+	width: 80px;
+	height:80px;
+	font-family: sans-serif;
+	border-radius:50%;
+	cursor: pointer;
+	outline:none;
+	letter-spacing: 1px;
+}
+
+#spin:hover{
+    background-color: #a6c1ee;
+    color: gold;
+}
+
+.base{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.75rem;
+}
+
+.modalC {
+    font-family: monospace;
+    background-color: #f3f7fe;
+    color: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    width: 7rem;
+    height: 3.5rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.modalC:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+}
+
+#number-input {
+    border: 3px solid rgb(127, 170, 170);
+    border-radius: 20px;
+    color: rgb(127, 170, 170);
+    cursor: text;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    transition: all 1s;
+    max-width: 170px;
+    padding-left: 5px;
+}
+
+#number-input:focus {
+    outline-color: rgb(127, 170, 170);
+}
+
+.eliminar {
+    font-family: monospace;
+    background-color: #f3f7fe;
+    color: #f63b3b;
+    border: none;
+    border-radius: 8px;
+    width: 7rem;
+    height: 3.5rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.eliminar:hover {
+    background-color: #f63b3b;
+    box-shadow: 0 0 0 5px #f63b3b5f;
+    color: #fff;
+}

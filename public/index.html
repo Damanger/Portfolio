@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/Ardilla.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/Ardilla.webp" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VR0KWHQLC7"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="./jspdf.min.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VR0KWHQLC7');
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <title>Omar A. Cruz Rmz</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div class="play-button" id="play-button" onclick="toggleAudio()">
+      <img src="./Ardilla.webp" alt="Ardilla" id="sticky-image">
+      <audio id="audio" loop src="./song.mp3"></audio>
+    </div>
+  </body>
+  <script>
+    const audioElement = document.getElementById("audio");
+    const playButton = document.getElementById("play-button");
+    function toggleAudio() {
+      if (audioElement.paused) {
+        audioElement.play();
+        playButton.classList.add("playing");
+      } else {
+        audioElement.pause();
+        playButton.classList.remove("playing");
+      }
+    }
+  </script>
+</html>

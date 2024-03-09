@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+	user-select: none;
+}
+
+:root{
+    --tex-color: #93c5fd;
+}
+
+html{
+	font-size: 70%;
+    scroll-behavior: smooth;
+}
+
+body{
+    transition: all 1.5s ease;
+    color: var(--tex-color);
+    background-color: #030712;
+	overflow-x: hidden;
+}
+
+section{
+	min-height: 100vh;
+}
+
+.wrap span {
+	position: fixed;
+	bottom: -180px;
+	height: 50px;
+	width: 50px;
+	z-index: -1;
+	background-color: #000000;
+	box-shadow: 0 0 50px #00ff5e, 0 0 100px #00ff5e, 0 0 150px #00ff5e, 0 0 200px #00ff5e;
+	animation: animate 10s linear infinite;
+}
+.wrap span:nth-child(1) {
+	left: 60px;
+	animation-delay: 0.6s;
+}
+.wrap span:nth-child(2) {
+	left: 10%;
+	animation-delay: 3s;
+	width: 60px;
+	height: 60px;
+}
+.wrap span:nth-child(3) {
+	left: 20%;
+	animation-delay: 2s;
+}
+.wrap span:nth-child(4) {
+	left: 30%;
+	animation-delay: 5s;
+	width: 80px;
+	height: 80px;
+}
+.wrap span:nth-child(5) {
+	left: 40%;
+	animation-delay: 1s;
+}
+.wrap span:nth-child(6) {
+	left: 50%;
+	animation-delay: 7s;
+}
+.wrap span:nth-child(7) {
+	left: 60%;
+	animation-delay: 6s;
+	width: 100px;
+	height: 100px;
+}
+.wrap span:nth-child(8) {
+	left: 70%;
+	animation-delay: 8s;
+}
+.wrap span:nth-child(9) {
+	left: 80%;
+	animation-delay: 6s;
+	width: 90px;
+	height: 90px;
+}
+.wrap span:nth-child(10) {
+	left: 90%;
+	animation-delay: 4s;
+}
+
+@keyframes animate {
+	0% {
+		transform: translateY(0);
+		opacity: 0.3;
+	}
+	80% {
+		opacity: .1;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
+
+#sticky-clock {
+    position: fixed;
+    bottom: 9rem;
+    right: 4rem;
+    z-index: 999;
+    cursor: pointer;
+}
+
+#sticky-image {
+    position: fixed;
+    bottom: 2rem;
+    right: 4rem;
+    z-index: 999;
+    width: 7rem;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.play-button::before {
+    content: "Press to play/pause music";
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.play-button:hover::before {
+    display: block;
+}
+
+::-webkit-scrollbar{
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, #30ff00);
+    border-radius: 0.5rem;
+}
