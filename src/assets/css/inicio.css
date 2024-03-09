@@ -1,3 +1,14 @@
+.scroll-watcher {
+    background-color: #30ff00;
+    height: 4px;
+    position: fixed;
+    top: 10%;
+    left: 0;
+    width: 0; /* Por defecto, la barra de desplazamiento está oculta */
+    z-index: 1000;
+    transition: width 0.3s ease; /* Agregamos una transición para suavizar el cambio de tamaño */
+}
+
 #sticky-image {
     position: fixed;
     bottom: 2rem;

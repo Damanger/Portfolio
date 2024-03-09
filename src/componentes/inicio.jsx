@@ -9,6 +9,17 @@ import 'aframe';
 
 const Inicio = () => {
     useEffect(() => {
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY; // Obtener la posición de desplazamiento vertical
+            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight; // Calcular la altura total de la página
+            const scrolled = (scrollTop / scrollHeight) * 100; // Calcular el porcentaje de desplazamiento
+
+            const scrollWatcher = document.querySelector('.scroll-watcher');
+            scrollWatcher.style.width = scrolled + '%'; // Establecer el ancho de la barra de desplazamiento según el porcentaje de desplazamiento
+        });
+    }, []);
+
+    useEffect(() => {
         //navbar icon
         let menuIcon = document.querySelector('#menu-icon');
         let navbar = document.querySelector('.navbar');
@@ -227,6 +238,8 @@ const Inicio = () => {
                 </nav>
                 <img className='views' src="https://hitwebcounter.com/counter/counter.php?page=9944997&style=0006&nbdigits=4&type=page&initCount=0" alt="Visit counter For Websites"/>
             </header>
+
+            <div className="scroll-watcher"></div>
 
             <section className="home hidden" id="home">
                 <div className="home-content">
