@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../assets/css/binary.css';
-import { Link } from 'react-router-dom';
+import NavBar from './NavBar';
 
 const Binary = () => {
     const [convertedText, setConvertedText] = useState('');
@@ -26,6 +26,7 @@ const Binary = () => {
 
     return (
         <>
+            <NavBar/>
             <div className="binary-container">
                 <h1>Binary-Text and Text-Binary</h1>
             </div>
