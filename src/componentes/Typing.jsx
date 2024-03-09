@@ -84,8 +84,9 @@ function Typing() {
     ]);
 
     return (
+    <>
+        <NavBar/>
         <ThemeProvider theme={theme}>
-            <>
                 <div className="canvas">
                     <GlobalStyles />
                     {isWordGameMode && (
@@ -119,8 +120,8 @@ function Typing() {
                         handleGameModeChange={handleGameModeChange}
                     ></FooterMenu>
                 </div>
-            </>
         </ThemeProvider>
+    </>
     );
 }
 

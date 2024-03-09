@@ -168,6 +168,7 @@ const Assistant = () => {
 
     return (
         <>
+            <NavBar/>
             <div className="mainCont">
                 <h1>Squirrel Web Terminal</h1>
                 <h3>Welcome to the Squirrel Web Terminal!</h3>

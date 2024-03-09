@@ -243,6 +243,7 @@ const ARM = () => {
 
     return (
         <>
+            <NavBar/>
             <h1 className='ArqARM'> Arquitectura ARM </h1>
             <div className="page_wrap">
                 <div className="main_page">
