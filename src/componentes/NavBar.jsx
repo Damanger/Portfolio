@@ -1,32 +1,32 @@
 import React from 'react';
 import '../assets/css/navbar.css';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const NavBar = () => {
+const NavBar = () =>{
     return (
-        <nav className="navbar2" style={{ backgroundColor: "#3b82f6", display: "flex", justifyContent: "space-between", padding: "1rem 10%", height: "10%", alignItems: "center" }}>
-            <NavLink to="/" className="logo" rel='noreferrer'>
+        <nav className="navbar2" style={{backgroundColor: "#3b82f6", display: "flex", justifyContent: "space-between", padding: "1rem 10%", height: "10%", alignItems: "center"}}>
+            <Link to="/" className="logo" rel='noreferrer'>
                 <img className='logo-img' src="./omar.webp" alt="Omar Cruz" />
-            </NavLink>
-            <div className="cipher Project-Links" style={{ fontSize: "1.75rem" }}>
-                <NavLink className="Link-Project" activeClassName="active-link" exact to="https://www.omar-cruz-rmz.com/Binary">
+            </Link>
+            <div className="cipher Project-Links" style={{fontSize: "1.75rem"}}>
+                <Link className="Link-Project" to="https://www.omar-cruz-rmz.com/Binary" target="_blank" rel='noreferrer'>
                     Binary
-                </NavLink>
-                <NavLink className="Link-Project" activeClassName="active-link" exact to="https://ixvanna.vercel.app/">
+                </Link>
+                <Link className="Link-Project" to="https://ixvanna.vercel.app/" target="_blank" rel='noreferrer'>
                     Ixvanna
-                </NavLink>
-                <NavLink className="Link-Project" activeClassName="active-link" exact to="https://www.omar-cruz-rmz.com/Assistant">
+                </Link>
+                <Link className="Link-Project" to="https://www.omar-cruz-rmz.com/Assistant" target="_blank" rel='noreferrer'>
                     Assistant
-                </NavLink>
-                <NavLink className="Link-Project" activeClassName="active-link" exact to="https://www.omar-cruz-rmz.com/ARM">
+                </Link>
+                <Link className="Link-Project" to="https://www.omar-cruz-rmz.com/ARM" target="_blank" rel='noreferrer'>
                     ARM
-                </NavLink>
-                <NavLink className="Link-Project" activeClassName="active-link" exact to="https://www.omar-cruz-rmz.com/typing">
+                </Link>
+                <Link className="Link-Project" to="https://www.omar-cruz-rmz.com/typing" target="_blank" rel='noreferrer'>
                     Typing
-                </NavLink>
-                <NavLink className="Link-Project" activeClassName="active-link" exact to="https://damanger.github.io/Headphones-Raffle/">
+                </Link>
+                <Link className="Link-Project" to="https://damanger.github.io/Headphones-Raffle/" target="_blank" rel='noreferrer'>
                     Raffle
-                </NavLink>
+                </Link>
             </div>
         </nav>
     )
