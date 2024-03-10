@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const NavBar = () =>{
     return (
-        <nav className="navbar2" style={{backgroundColor: "#3b82f6", display: "flex", justifyContent: "space-between", height: "10%", alignItems: "center", width:"100%"}}>
+        <nav className="navbar2" style={{backgroundColor: "#3b82f6", display: "flex", justifyContent: "space-between", padding: "1rem 10%", height: "10%", alignItems: "center"}}>
             <Link to="/" className="logo" rel='noreferrer'>
                 <img className='logo-img' src="./omar.webp" alt="Omar Cruz" />
             </Link>
