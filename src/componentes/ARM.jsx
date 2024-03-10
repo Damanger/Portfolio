@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../assets/css/arm.css';
+import NavBar from './NavBar';
 
 const ARM = () => {
     const [inputText, setInputText] = useState('Ingrese sus instrucciones :)\nSerán leidas linea por linea al dar clic en traducir');

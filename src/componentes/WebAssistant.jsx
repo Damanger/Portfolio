@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../assets/css/assistant.css';
+import NavBar from './NavBar';
 
 const Assistant = () => {
     const [textInputValue, setTextInputValue] = useState('');

@@ -8,6 +8,7 @@ import FooterMenu from "./common/FooterMenu";
 import { GAME_MODE, GAME_MODE_DEFAULT, GAME_MODE_SENTENCE } from "../constants/Constants";
 import useLocalPersistState from "../hooks/useLocalPersistState";
 import { SOUND_MODE, soundOptions, DEFAULT_SOUND_TYPE, DEFAULT_SOUND_TYPE_KEY } from "./features/sound/sound";
+import NavBar from "./NavBar";
 
 function Typing() {
     // localStorage persist theme setting
