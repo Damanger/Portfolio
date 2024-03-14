@@ -2,29 +2,46 @@ import React, { useEffect } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import markerIcon from './placeholder.png';
+import 'leaflet-routing-machine';
 
 const Map = () => {
     useEffect(() => {
+        // Crear el mapa
         const map = L.map('mi_mapa').setView([17.826701, -97.804359], 16);
 
+        // Añadir capa de mapa base
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
+        // Icono personalizado para marcadores
         const customIcon = L.icon({
-            iconUrl: markerIcon, // imagen del marcador
-            iconSize: [38, 38], // ancho y alto
-            iconAnchor: [20, 40], // posición en x, y 
+            iconUrl: markerIcon,
+            iconSize: [38, 38],
+            iconAnchor: [20, 40]
         });
 
-        L.marker([17.826701, -97.804359], { icon: customIcon }).addTo(map).bindPopup("Universidad Tecnológica de la Mixteca"); // posición inicial del marcador
+        // Añadir marcador con popup
+        L.marker([17.826701, -97.804359], { icon: customIcon }).addTo(map).bindPopup("Universidad Tecnológica de la Mixteca");
 
-        map.on('click', onMapClick);
-
+        // Función para manejar clics en el mapa
         function onMapClick(e) {
             alert("Posición: " + e.latlng);
         }
 
+        // Agregar evento de clic al mapa
+        map.on('click', onMapClick);
+
+        // Crear control de enrutamiento
+        const routingControl = L.Routing.control({
+            waypoints: [
+                L.latLng(57.74, 11.94),
+                L.latLng(57.6792, 11.949)
+            ],
+            routeWhileDragging: true
+        }).addTo(map);
+
+        // Función de limpieza que se ejecuta al desmontar el componente
         return () => {
             map.remove();
         };
@@ -33,7 +50,7 @@ const Map = () => {
     return (
         <>
             <h1 style={{ display : 'flex', justifyContent : 'center', alignContent : 'center', color : 'aliceblue'}}>Open Street Map implementation</h1>
-            <div id="mi_mapa" style={{ width: '100%', height: '500px', border : 'solid 2px #30ff00' }}></div>
+            <div id="mi_mapa" style={{ width: '100%', height: '500px', border : 'solid 2px #30ff00', color : 'black' }}></div>
         </>
     );
 }
