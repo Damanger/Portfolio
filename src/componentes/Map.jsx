@@ -33,12 +33,19 @@ const Map = () => {
         map.on('click', onMapClick);
 
         // Crear control de enrutamiento
-        const routingControl = L.Routing.control({
+        L.Routing.control({
             waypoints: [
-                L.latLng(57.74, 11.94),
-                L.latLng(57.6792, 11.949)
+                L.latLng(17.826701, -97.804359),
+                L.latLng(17.068682, -96.713113)
             ],
-            routeWhileDragging: true
+            routeWhileDragging: true,
+            createMarker: function(waypointIndex, waypoint, number) {
+                // Crea un marcador personalizado para cada waypoint
+                return L.marker(waypoint.latLng, {
+                    icon: customIcon,
+                    draggable: true
+                })
+            }
         }).addTo(map);
 
         // Función de limpieza que se ejecuta al desmontar el componente
