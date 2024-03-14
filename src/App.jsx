@@ -11,7 +11,6 @@ import Typing from './componentes/Typing'
 import Clock from './componentes/Clock';
 import Cargando from './componentes/Cargando';
 import Binary from './componentes/binary';
-import Map from './componentes/Map';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -45,7 +44,6 @@ function App() {
             <Route path='/raffle' element={<Raffle/>} />
             <Route path='/typing' element={<Typing/>} />
             <Route path='/binary' element={<Binary/>} />
-            <Route path='/map' element={<Map/>} />
             <Route path="*" element={<><Error404/><Navigate to="/not-found" replace /></>}/>
           </Routes>
         </div>
