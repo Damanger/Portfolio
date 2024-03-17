@@ -56,7 +56,7 @@ const Map = () => {
 
     return (
         <>
-            <h1 style={{ display : 'flex', justifyContent : 'center', alignContent : 'center', color : 'aliceblue'}}>Open Street Map implementation</h1>
+            <h1 style={{ display : 'flex', justifyContent : 'center', alignContent : 'center', color : 'aliceblue'}}>Destination Discovery</h1>
             <div id="mi_mapa" style={{ width: '100%', height: '500px', border : 'solid 2px #30ff00', color : 'black' }}></div>
         </>
     );
