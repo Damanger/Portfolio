@@ -46,3 +46,8 @@
     background: aliceblue;
     color: #7dd3fc;
 }
+
+.leaflet-routing-alt{
+    background-color: aliceblue;
+    border: solid 2px #30ff00;
+}
