@@ -2,13 +2,14 @@ import React, { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import markerIcon from './placeholder.png';
+import yah from './yah.png'
 import 'leaflet-routing-machine';
 import NavBar from './NavBar';
 import '../assets/css/map.css';
 
 const Map = () => {
-    const mapRef = useRef(null); // Utilizamos useRef para mantener una referencia al mapa
-    const controlRef = useRef(null); // Utilizamos useRef para mantener una referencia al control de enrutamiento
+    const mapRef = useRef(null); // Se utiliza useRef para mantener una referencia al mapa
+    const controlRef = useRef(null); // Se utiliza useRef para mantener una referencia al control de enrutamiento
     const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
@@ -34,6 +35,13 @@ const Map = () => {
                     iconAnchor: [20, 40]
                 });
 
+                // Ícono personalizado para el primer marcador
+                const firstMarkerIcon = L.icon({
+                    iconUrl: yah,
+                    iconSize: [45, 45],
+                    iconAnchor: [20, 40]
+                });
+
                 // Crear control de enrutamiento
                 const control = L.Routing.control({
                     waypoints: [
@@ -44,15 +52,17 @@ const Map = () => {
                     createMarker: function(waypointIndex, waypoint, number) {
                         // Crea un marcador personalizado para cada waypoint
                         let title;
+                        let markerIcon = customIcon;
                         if (waypointIndex === 0) {
                             title = "You are here";
+                            markerIcon = firstMarkerIcon; // Icono para el primer marcador
                         } else if (controlRef.current && waypointIndex === controlRef.current.getWaypoints().length - 1) {
                             title = "Destination";
                         } else {
                             title = `Stop #${waypointIndex}`;
                         }
                         const marker = L.marker(waypoint.latLng, {
-                            icon: customIcon,
+                            icon: markerIcon,
                             draggable: true
                         });
                         marker.bindPopup(title);
@@ -60,7 +70,7 @@ const Map = () => {
                     }
                 }).addTo(map);
                 
-                controlRef.current = control; // Asignar el control de enrutamiento al ref
+                controlRef.current = control; // Se asigna el control de enrutamiento al ref
             }
         });
     }, []);
