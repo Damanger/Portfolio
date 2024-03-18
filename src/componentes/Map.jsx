@@ -113,6 +113,7 @@ const Map = () => {
                         <ul style={{ fontSize: '1.5rem', textAlign: 'center', margin: 'auto', width: 'fit-content' }}>
                             <li>Allow access to your location.</li>
                             <li>Drag pins named "You are here" and "Destination" wherever you like.</li>
+                            <li>You can search for a destination.</li>
                             <li>You can add stops along the way by clicking on the red path drawn.</li>
                         </ul>
                     </div>
