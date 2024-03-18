@@ -1,57 +1,65 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import markerIcon from './placeholder.png';
 import 'leaflet-routing-machine';
 
 const Map = () => {
+    const mapRef = useRef(null); // Utilizamos useRef para mantener una referencia al mapa
+    const controlRef = useRef(null); // Utilizamos useRef para mantener una referencia al control de enrutamiento
+
     useEffect(() => {
-        // Crear el mapa
-        const map = L.map('mi_mapa').setView([17.826701, -97.804359], 16);
+        // Obtener la ubicación actual del usuario
+        navigator.geolocation.getCurrentPosition(position => {
+            const { latitude, longitude } = position.coords;
 
-        // Mapa
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
+            // Verificar si el mapa ya está inicializado
+            if (!mapRef.current) {
+                // Crear el mapa con la ubicación actual del usuario
+                const map = L.map('mi_mapa').setView([latitude, longitude], 16);
+                mapRef.current = map; // Asignar el mapa al ref
 
-        // Ícono personalizado para marcadores
-        const customIcon = L.icon({
-            iconUrl: markerIcon,
-            iconSize: [38, 38],
-            iconAnchor: [20, 40]
-        });
+                // Mapa
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
 
-        // Añadir marcador con popup
-        L.marker([17.826701, -97.804359], { icon: customIcon }).addTo(map).bindPopup("Universidad Tecnológica de la Mixteca");
+                // Ícono personalizado para marcadores
+                const customIcon = L.icon({
+                    iconUrl: markerIcon,
+                    iconSize: [38, 38],
+                    iconAnchor: [20, 40]
+                });
 
-        // Función para manejar clics en el mapa
-        function onMapClick(e) {
-            alert("Posición: " + e.latlng);
-        }
-
-        // Agregar evento de clic al mapa
-        map.on('click', onMapClick);
-
-        // Crear control de enrutamiento
-        L.Routing.control({
-            waypoints: [
-                L.latLng(17.826701, -97.804359),
-                L.latLng(17.068682, -96.713113)
-            ],
-            routeWhileDragging: true,
-            createMarker: function(waypointIndex, waypoint, number) {
-                // Crea un marcador personalizado para cada waypoint
-                return L.marker(waypoint.latLng, {
-                    icon: customIcon,
-                    draggable: true
-                })
+                // Crear control de enrutamiento
+                const control = L.Routing.control({
+                    waypoints: [
+                        L.latLng(latitude, longitude),
+                        L.latLng(latitude + 0.0005, longitude + 0.0005)
+                    ],
+                    routeWhileDragging: true,
+                    createMarker: function(waypointIndex, waypoint, number) {
+                        // Crea un marcador personalizado para cada waypoint
+                        let title;
+                        if (waypointIndex === 0) {
+                            title = "You are here";
+                        } else if (controlRef.current && waypointIndex === controlRef.current.getWaypoints().length - 1) {
+                            title = "Destination";
+                        } else {
+                            title = `Stop #${waypointIndex}`;
+                        }
+                        const marker = L.marker(waypoint.latLng, {
+                            icon: customIcon,
+                            draggable: true
+                        });
+                        marker.bindPopup(title);
+                        return marker;
+                    }
+                }).addTo(map);
+                
+                controlRef.current = control; // Asignar el control de enrutamiento al ref
             }
-        }).addTo(map);
-
-        // Función de limpieza que se ejecuta al desmontar el componente
-        return () => {
-            map.remove();
-        };
+        });
     }, []);
 
     return (
