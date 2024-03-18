@@ -50,4 +50,7 @@
 .leaflet-routing-alt{
     background-color: aliceblue;
     border: solid 2px #30ff00;
+    overflow-y: auto;
+    max-height: 20rem;
+    max-width: 30rem;
 }

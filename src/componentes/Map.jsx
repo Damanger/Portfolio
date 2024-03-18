@@ -2,10 +2,12 @@ import React, { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import markerIcon from './placeholder.png';
-import yah from './yah.png'
+import yah from './yah.png';
 import 'leaflet-routing-machine';
 import NavBar from './NavBar';
 import '../assets/css/map.css';
+import 'leaflet-control-geocoder/dist/Control.Geocoder.css';
+import 'leaflet-control-geocoder/dist/Control.Geocoder.js';
 
 const Map = () => {
     const mapRef = useRef(null); // Se utiliza useRef para mantener una referencia al mapa
@@ -49,7 +51,7 @@ const Map = () => {
                         L.latLng(latitude + 0.0005, longitude + 0.0005)
                     ],
                     routeWhileDragging: true,
-                    createMarker: function(waypointIndex, waypoint, number) {
+                    createMarker: function(waypointIndex, waypoint) {
                         // Crea un marcador personalizado para cada waypoint
                         let title;
                         let markerIcon = customIcon;
@@ -71,6 +73,9 @@ const Map = () => {
                 }).addTo(map);
                 
                 controlRef.current = control; // Se asigna el control de enrutamiento al ref
+
+                // Agregar control de geocodificación
+                L.Control.geocoder().addTo(map);
             }
         });
     }, []);

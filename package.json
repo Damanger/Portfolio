@@ -23,6 +23,7 @@
     "jquery": "^3.7.1",
     "jspdf": "^2.5.1",
     "leaflet": "^1.9.4",
+    "leaflet-control-geocoder": "^2.4.0",
     "leaflet-routing-machine": "^3.2.12",
     "random-words": "^2.0.0",
     "react": "^18.2.0",
