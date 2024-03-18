@@ -296,7 +296,7 @@ const Inicio = () => {
                     <a className="certificado-link" href='https://app.aluracursos.com/degree/certificate/1fa2dc74-672d-4a1c-bd5b-e50077a537b9' target='_blank' rel='noreferrer'>
                         <img src="React.webp" alt="React" />
                     </a>
-                    <a className="certificado-link" href='https://www.linkedin.com/in/omar-cruzr97/details/certifications/' target='_blank' rel='noreferrer'>
+                    <a className="certificado-link" href='https://www.linkedin.com/in/omar-cruzr97/' target='_blank' rel='noreferrer'>
                         <img src="./plus.webp" alt="More certificates" />
                     </a>
                 </div>
