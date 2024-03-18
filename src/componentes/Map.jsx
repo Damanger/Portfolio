@@ -111,10 +111,10 @@ const Map = () => {
                     <div className="modal-content" style={{background: 'aliceblue'}}>
                     <h2 style={{ fontSize: '3rem', textAlign: 'center', marginBottom: '20px' }}>Instructions:</h2>
                         <ul style={{ fontSize: '1.5rem', textAlign: 'center', margin: 'auto', width: 'fit-content' }}>
-                            <li>Allow access to your location.</li>
-                            <li>Drag pins named "You are here" and "Destination" wherever you like.</li>
-                            <li>You can search for a destination.</li>
-                            <li>You can add stops along the way by clicking on the red path drawn.</li>
+                            <li style={{ marginBottom: '10px' }}>Allow access to your location.</li>
+                            <li style={{ marginBottom: '10px' }}>Drag pins named "You are here" and "Destination" wherever you like.</li>
+                            <li style={{ marginBottom: '10px' }}>You can search for a destination.</li>
+                            <li style={{ marginBottom: '10px' }}>You can add stops along the way by clicking on the red path drawn.</li>
                         </ul>
                     </div>
                 </div>
