@@ -3,6 +3,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import markerIcon from './placeholder.png';
 import 'leaflet-routing-machine';
+import NavBar from './NavBar';
 
 const Map = () => {
     const mapRef = useRef(null); // Utilizamos useRef para mantener una referencia al mapa
@@ -64,7 +65,8 @@ const Map = () => {
 
     return (
         <>
-            <h1 style={{ display : 'flex', justifyContent : 'center', alignContent : 'center', color : 'aliceblue'}}>Destination Discovery</h1>
+            <NavBar/>
+            <h1 style={{ display : 'flex', justifyContent : 'center', alignContent : 'center', color : 'aliceblue', marginTop : '1rem', marginBottom : '1rem', fontSize : '3rem'}}>Destination Discovery</h1>
             <div id="mi_mapa" style={{ width: '100%', height: '500px', border : 'solid 2px #30ff00', color : 'black' }}></div>
         </>
     );
