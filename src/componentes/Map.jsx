@@ -75,7 +75,17 @@ const Map = () => {
                 controlRef.current = control; // Se asigna el control de enrutamiento al ref
 
                 // Agregar control de geocodificación
-                L.Control.geocoder().addTo(map);
+                const geocoder = L.Control.geocoder().addTo(map);
+
+                // Listener para el evento markgeocode
+                geocoder.on('markgeocode', function(e) {
+                    const latlng = e.geocode.center;
+                    // Actualizar el segundo waypoint
+                    control.setWaypoints([
+                        control.getWaypoints()[0].latLng,
+                        latlng
+                    ]);
+                });
             }
         });
     }, []);
