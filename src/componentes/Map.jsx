@@ -77,7 +77,7 @@ const Map = () => {
         <>
             <NavBar/>
             <h1 style={{ display : 'flex', justifyContent : 'center', alignContent : 'center', color : 'aliceblue', marginTop : '1rem', marginBottom : '1rem', fontSize : '3rem'}}>Destination Discovery</h1>
-            <div id="mi_mapa" style={{ width: '100%', height: '500px', border : 'solid 2px #30ff00', color : 'black', zIndex : '90' }}></div>
+            <div id="mi_mapa" style={{ width: '100%', height: '600px', border : 'solid 2px #30ff00', color : 'black', zIndex : '90' }}></div>
             <div className="btn2-box btns">
                 <button style={{position : 'absolute', top : '85vh', left : '50%', transform : 'translate(-50%, -50%)'}} className="help-button" onClick={handleHelpButtonClick}>Help</button>
             </div>
