@@ -9,12 +9,12 @@ const Map = () => {
         // Crear el mapa
         const map = L.map('mi_mapa').setView([17.826701, -97.804359], 16);
 
-        // Añadir capa de mapa base
+        // Mapa
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        // Icono personalizado para marcadores
+        // Ícono personalizado para marcadores
         const customIcon = L.icon({
             iconUrl: markerIcon,
             iconSize: [38, 38],
