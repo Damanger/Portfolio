@@ -597,6 +597,19 @@ const Inicio = () => {
             <section className="education hidden" id="projects">
                 <h2 className="heading">My <span>Projects</span></h2>
                 <div className="education-column">
+                <h3 className="title">Route helping map!</h3>
+                    <div className="education-box projects">
+                        <div className="education-content">
+                            <a href="https://www.omar-cruz-rmz.com/map" target="_blank" rel='noreferrer' id="raffle-link">
+                                <div className="content">
+                                    <div className="year"><i className="bx bxs-calendar"></i>2024</div>
+                                    <h3>Oaxaca-México</h3>
+                                    <i className="fa-solid fa-link">Route helper for family trips on vehicules</i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
                 <h3 className="title">Binary-Text and Text-Binary converter</h3>
                     <div className="education-box projects">
                         <div className="education-content">
