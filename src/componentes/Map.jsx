@@ -4,10 +4,12 @@ import 'leaflet/dist/leaflet.css';
 import markerIcon from './placeholder.png';
 import 'leaflet-routing-machine';
 import NavBar from './NavBar';
+import '../assets/css/map.css';
 
 const Map = () => {
     const mapRef = useRef(null); // Utilizamos useRef para mantener una referencia al mapa
     const controlRef = useRef(null); // Utilizamos useRef para mantener una referencia al control de enrutamiento
+    const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
         // Obtener la ubicación actual del usuario
@@ -63,13 +65,36 @@ const Map = () => {
         });
     }, []);
 
+    const handleHelpButtonClick = () => {
+        setShowModal(true);
+    };
+
+    const handleCloseModal = () => {
+        setShowModal(false);
+    };
+
     return (
         <>
             <NavBar/>
             <h1 style={{ display : 'flex', justifyContent : 'center', alignContent : 'center', color : 'aliceblue', marginTop : '1rem', marginBottom : '1rem', fontSize : '3rem'}}>Destination Discovery</h1>
-            <div id="mi_mapa" style={{ width: '100%', height: '500px', border : 'solid 2px #30ff00', color : 'black' }}></div>
+            <div id="mi_mapa" style={{ width: '100%', height: '500px', border : 'solid 2px #30ff00', color : 'black', zIndex : '90' }}></div>
+            <div className="btn2-box btns">
+                <button style={{position : 'absolute', bottom : '20%', left : '50%', transform : 'translate(-50%, -50%)'}} className="help-button" onClick={handleHelpButtonClick}>Help</button>
+            </div>
+            {showModal && (
+                <div className="modal-background" onClick={handleCloseModal}>
+                    <div className="modal-content" style={{background: 'aliceblue'}}>
+                    <h2 style={{ fontSize: '3rem', textAlign: 'center', marginBottom: '20px' }}>Instructions:</h2>
+                        <ul style={{ fontSize: '1.5rem', textAlign: 'center', margin: 'auto', width: 'fit-content' }}>
+                            <li>Allow access to your location.</li>
+                            <li>Drag the pins from (My location and Destination).</li>
+                            <li>You can add stops along the way by clicking on the red path drawn.</li>
+                        </ul>
+                    </div>
+                </div>
+            )}
         </>
-    );
+    );    
 }
 
 export default Map;
