@@ -21,3 +21,7 @@
         font-size: 1rem !important;
     }
 }
+
+.Link-Project:hover{
+    color: #30ff00;
+}
