@@ -220,19 +220,19 @@ const Inicio = () => {
     return (
         <div>
             <header className="header">
-                <a href="#" className="logo" rel='noreferrer'>
+                <a href="#" className="logo" rel='noreferrer' aria-label="Main page">
                     <img className='logo-img' src="./omar.webp" alt="Omar Cruz" />
                 </a>
                 <div className="bx bx-menu" id="menu-icon"></div>
                 <nav className="navbar">
                     <input type="text" id="search-input" autoComplete='off' name="text" className="input" placeholder={placeholders[placeholderN]} value={searchQuery} onChange={handleSearchInputChange} onKeyPress={handleKeyPress}/>
-                    <button className='magnifying' onClick={handleSearch}><FontAwesomeIcon icon={faSearch} /></button>
-                    <a href="#home" className="active cipher" rel='noreferrer'>Home</a>
-                    <a href="#about" className="cipher" rel='noreferrer'>About</a>
-                    <a href="#journey" className="cipher" rel='noreferrer'>Journey</a>
-                    <a href="#skills" className="cipher" rel='noreferrer'>Skills</a>
-                    <a href="#projects" className="cipher" rel='noreferrer'>Projects</a>
-                    <a href="#contact" className="cipher" rel='noreferrer'>Contact</a>
+                    <button className='magnifying' aria-label="Magnifying" onClick={handleSearch}><FontAwesomeIcon icon={faSearch} /></button>
+                    <a href="#home" className="active cipher" rel='noreferrer' aria-label="Home">Home</a>
+                    <a href="#about" className="cipher" rel='noreferrer' aria-label="About">About</a>
+                    <a href="#journey" className="cipher" rel='noreferrer' aria-label="Journey">Journey</a>
+                    <a href="#skills" className="cipher" rel='noreferrer' aria-label="Skills">Skills</a>
+                    <a href="#projects" className="cipher" rel='noreferrer' aria-label="Projects">Projects</a>
+                    <a href="#contact" className="cipher" rel='noreferrer' aria-label="Contact">Contact</a>
                     <span className="active-nav"></span>
                 </nav>
                 <img className='views' src="https://hitwebcounter.com/counter/counter.php?page=9944997&style=0006&nbdigits=4&type=page&initCount=0" alt="Visit counter For Websites"/>
@@ -249,12 +249,12 @@ const Inicio = () => {
                     <p>I'm a Jr. Front-End Web Developer based in Oaxaca, México.</p><p>🚀 Looking to bring your web ideas to life? 🌐💡</p>
                     
                     <div className="btn-box">
-                        <a href="https://drive.google.com/file/d/1S97fyfYCfp-zmXnNoZGaJjFg1PL3HX8c/view?usp=drive_link" className="btn" download="CV.pdf">CV<i className="fas fa-cloud-download-alt"></i></a>
-                        <a href="#contact" className="btn">Let's talk.</a>
+                        <a href="https://drive.google.com/file/d/1S97fyfYCfp-zmXnNoZGaJjFg1PL3HX8c/view?usp=drive_link" className="btn" download="CV.pdf" aria-label="CV">CV<i className="fas fa-cloud-download-alt"></i></a>
+                        <a href="#contact" className="btn" aria-label="Let's talk">Let's talk.</a>
                     </div>
                     <div className="wrapper">
                         <div className="icon whats">
-                            <a href="https://wa.me/5219514084765?text=Buen%20d%C3%ADa,%20quise%20contactarlo%20para%20desarrollar%20un%20servicio%20web." target="_blank" rel='noreferrer'>
+                            <a href="https://wa.me/5219514084765?text=Buen%20d%C3%ADa,%20quise%20contactarlo%20para%20desarrollar%20un%20servicio%20web." target="_blank" rel='noreferrer' aria-label="Whatsapp">
                                 <span><i className="fab fa-whatsapp"></i></span>
                             </a>
                         </div>                
@@ -262,13 +262,13 @@ const Inicio = () => {
                             <div className="tooltip">
                                 LinkedIn
                             </div>
-                            <a href="https://www.linkedin.com/in/omar-cruzr97" target="_blank" rel='noreferrer'><span><i className="fab fa-linkedin"></i></span></a>
+                            <a href="https://www.linkedin.com/in/omar-cruzr97" target="_blank" rel='noreferrer' aria-label="LinkedIn"><span><i className="fab fa-linkedin"></i></span></a>
                         </div>
                         <div className="icon git">
                             <div className="tooltip">
                                 Github
                             </div>
-                            <a href="https://github.com/Damanger" target="_blank" rel='noreferrer'><span><i className="fab fa-github"></i></span></a>
+                            <a href="https://github.com/Damanger" target="_blank" rel='noreferrer' aria-label="Github"><span><i className="fab fa-github"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -286,16 +286,16 @@ const Inicio = () => {
                     <p>I am a responsible individual with a strong sense of initiative and a proactive mindset. Taking ownership of my responsibilities comes naturally to me, as I believe in delivering high-quality results and meeting deadlines consistently. Furthermore, I possess strong leadership qualities, which allow me to guide and inspire others towards achieving common goals. I thrive in collaborative environments, valuing teamwork and actively contributing to the success of the group.</p>
                 </div>
                 <div className="certificados">
-                    <a className="certificado-link" href="https://app.aluracursos.com/program/certificate/3b86f076-e7b1-420b-b3ac-f08d03cbf4d7" target="_blank" rel='noreferrer'>
+                    <a className="certificado-link" href="https://app.aluracursos.com/program/certificate/3b86f076-e7b1-420b-b3ac-f08d03cbf4d7" target="_blank" rel='noreferrer' aria-label="See certificate">
                         <img alt="Oracle + Alura LATAM certificate" src="./Front-End.webp"/>
                     </a>
-                    <a className="certificado-link" href='https://app.aluracursos.com/user/omar-cruzr97/fullCertificate/78801b3b7069693e6a6c314528f4b87f' target='_blank' rel='noreferrer'>
+                    <a className="certificado-link" href='https://app.aluracursos.com/user/omar-cruzr97/fullCertificate/78801b3b7069693e6a6c314528f4b87f' target='_blank' rel='noreferrer' aria-label="Jr. Developer certification">
                         <img alt="Jr. Developer" src="./Jr.webp"/>
                     </a>
-                    <a className="certificado-link" href='https://app.aluracursos.com/degree/certificate/1fa2dc74-672d-4a1c-bd5b-e50077a537b9' target='_blank' rel='noreferrer'>
+                    <a className="certificado-link" href='https://app.aluracursos.com/degree/certificate/1fa2dc74-672d-4a1c-bd5b-e50077a537b9' target='_blank' rel='noreferrer' aria-label="React certification">
                         <img src="React.webp" alt="React" />
                     </a>
-                    <a className="certificado-link" href='https://www.linkedin.com/in/omar-cruzr97/' target='_blank' rel='noreferrer'>
+                    <a className="certificado-link" href='https://www.linkedin.com/in/omar-cruzr97/' target='_blank' rel='noreferrer' aria-label="More certifications">
                         <img src="./plus.webp" alt="More certificates" />
                     </a>
                 </div>
@@ -310,7 +310,7 @@ const Inicio = () => {
                             <div className="education-content">
 
                                 <div className="content">
-                                    <a href='www.escolta.io/' target='_blank' rel='noreferrer'>
+                                    <a href='www.escolta.io/' target='_blank' rel='noreferrer' aria-label="Escolta.io">
                                         <div className="year"><i className="bx bxs-calendar"></i>2023 - Today</div>
                                         <h3>Private security company , San Francisco Ca. USA</h3>
                                         <p>Front-End developer, UI design</p>
@@ -318,7 +318,7 @@ const Inicio = () => {
                                 </div>
 
                                 <div className="content">
-                                    <a href='https://dropet.io/' target='_blank' rel='noreferrer'>
+                                    <a href='https://dropet.io/' target='_blank' rel='noreferrer' aria-label="Dropet.io">
                                         <div className="year"><i className="bx bxs-calendar"></i>2023</div>
                                         <h3>Automated deployments, San Francisco Ca. USA</h3>
                                         <p>Front-End developer, UI design</p>
@@ -326,7 +326,7 @@ const Inicio = () => {
                                 </div>
 
                                 <div className="content">
-                                    <a href='http://lapi.fi-p.unam.mx/' target='_blank' rel='noreferrer'>
+                                    <a href='http://lapi.fi-p.unam.mx/' target='_blank' rel='noreferrer' aria-label="LaPI">
                                         <div className="year"><i className="bx bxs-calendar"></i>2023</div>
                                         <h3>Laboratory of Advanced Image Processing (LAPI)-U.N.A.M.</h3>
                                         <p>Intern, Laboratory of Advanced Image Processing (LAPI), National Autonomous University of Mexico (UNAM)</p>
@@ -342,7 +342,7 @@ const Inicio = () => {
 
                             <div className="education-content">
                                 <div className="content">
-                                    <a href='https://www.aluracursos.com/cursos-online-front-end' target='_blank' rel='noreferrer'>
+                                    <a href='https://www.aluracursos.com/cursos-online-front-end' target='_blank' rel='noreferrer' aria-label="ONE - Oracle">
                                         <div className="year"><i className="bx bxs-calendar"></i>2023 - Today</div>
                                         <h3>ONE - Oracle & Alura</h3>
                                         <p>In this year, I enrolled in a course called Oracle Next Education (ONE), offered by Oracle and Alura. I am currently part of Group 5 and still actively pursuing the program.</p>
@@ -352,7 +352,7 @@ const Inicio = () => {
 
                             <div className="education-content">
                                 <div className="content">
-                                    <a href='https://www.utm.mx/investigacion.html#ic' target='_blank' rel='noreferrer'>
+                                    <a href='https://www.utm.mx/investigacion.html#ic' target='_blank' rel='noreferrer' aria-label="UTM">
                                         <div className="year"><i className="bx bxs-calendar"></i>2020 - Today</div>
                                         <h3>Computer Engineering - Universidad Tecnológica de la Mixteca</h3>
                                         <p>I am currently pursuing a Bachelor's degree in Computer Engineering and I am in my 7th semester out of 10.</p>
@@ -362,7 +362,7 @@ const Inicio = () => {
 
                             <div className="education-content">
                                 <div className="content">
-                                    <a href='https://www.harmonhall.com/' target='_blank' rel='noreferrer'>
+                                    <a href='https://www.harmonhall.com/' target='_blank' rel='noreferrer' aria-label="English">
                                         <div className="year"><i className="bx bxs-calendar"></i>2009  - 2013</div>
                                         <h3>English Courses - Harmon Hall</h3>
                                         <p>I completed over 50 levels of basic English for children and an additional 15 levels of intermediate English for young learners at a private school.</p>
@@ -599,7 +599,7 @@ const Inicio = () => {
                 <h3 className="title">Route helping map!</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://www.omar-cruz-rmz.com/map" target="_blank" rel='noreferrer'>
+                            <a href="https://www.omar-cruz-rmz.com/map" target="_blank" rel='noreferrer' aria-label="Route planning">
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2024</div>
                                     <h3>Oaxaca-México</h3>
@@ -612,7 +612,7 @@ const Inicio = () => {
                 <h3 className="title">Binary-Text and Text-Binary converter</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://www.omar-cruz-rmz.com/Binary" target="_blank" rel='noreferrer'>
+                            <a href="https://www.omar-cruz-rmz.com/Binary" target="_blank" rel='noreferrer' aria-label="Binary - Text and Text - Binary">
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2024</div>
                                     <h3>Oaxaca-México</h3>
@@ -625,7 +625,7 @@ const Inicio = () => {
                 <h3 className="title">E-commerce Ixvanna</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://ixvanna.vercel.app/" target="_blank" rel='noreferrer'>
+                            <a href="https://ixvanna.vercel.app/" target="_blank" rel='noreferrer' aria-label="E-commerce">
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2024</div>
                                     <h3>Oaxaca-México</h3>
@@ -637,7 +637,7 @@ const Inicio = () => {
                     <h3 className="title">Web-Assistant</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://www.omar-cruz-rmz.com/Assistant" target="_blank" rel='noreferrer'>
+                            <a href="https://www.omar-cruz-rmz.com/Assistant" target="_blank" rel='noreferrer' aria-label="Web - Assistant">
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2024-today</div>
                                     <h3>Oaxaca-México</h3>
@@ -649,7 +649,7 @@ const Inicio = () => {
                     <h3 className="title">ARM Instructions (In process)</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://www.omar-cruz-rmz.com/ARM" target="_blank" rel='noreferrer'>
+                            <a href="https://www.omar-cruz-rmz.com/ARM" target="_blank" rel='noreferrer' aria-label="ARM">
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
                                     <h3>Oaxaca-México</h3>
@@ -661,7 +661,7 @@ const Inicio = () => {
                     <h3 className="title">Typing game</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://www.omar-cruz-rmz.com/typing" target="_blank" rel='noreferrer'>
+                            <a href="https://www.omar-cruz-rmz.com/typing" target="_blank" rel='noreferrer' aria-label="Typing">
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
                                     <h3>Oaxaca-México</h3>
@@ -673,7 +673,7 @@ const Inicio = () => {
                     <h3 className="title">Headphone Raffle</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://damanger.github.io/Headphones-Raffle/" target="_blank" rel='noreferrer'>
+                            <a href="https://damanger.github.io/Headphones-Raffle/" target="_blank" rel='noreferrer' aria-label="Raffle">
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2023</div>
                                     <h3>Oaxaca-México</h3>
@@ -686,7 +686,7 @@ const Inicio = () => {
                     <h3 className="title">Web Browser</h3>
                     <div className="education-box">
                         <div className="education-content">
-                            <a href="https://github.com/Damanger/Squirrel-Web-Browser.git" target="_blank" rel='noreferrer' id="web-browser">
+                            <a href="https://github.com/Damanger/Squirrel-Web-Browser.git" target="_blank" rel='noreferrer' id="web-browser" aria-label="Web - Browser">
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
                                     <h3>Oaxaca-México</h3>
@@ -698,7 +698,7 @@ const Inicio = () => {
                     <h3 className="title">Virtual-Assistant</h3>
                     <div className="education-box">
                         <div className="education-content">
-                            <a href="https://github.com/Damanger/Virtual-Assistant" target="_blank" rel='noreferrer'>
+                            <a href="https://github.com/Damanger/Virtual-Assistant" target="_blank" rel='noreferrer' aria-label="Virtual - Assistant">
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
                                     <h3>Oaxaca-México</h3>
@@ -710,7 +710,7 @@ const Inicio = () => {
                     <h3 className="title">LaPI (React)</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://org-mu-seven.vercel.app/" target="_blank" rel='noreferrer'>
+                            <a href="https://org-mu-seven.vercel.app/" target="_blank" rel='noreferrer' aria-label="LaPI">
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2023</div>
                                     <h3>Oaxaca-México</h3>
@@ -722,7 +722,7 @@ const Inicio = () => {
                     <h3 className="title">Encrypter</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://damanger.github.io/Challenge1-Alura-Oracle-ONE/" target="_blank" rel='noreferrer'>
+                            <a href="https://damanger.github.io/Challenge1-Alura-Oracle-ONE/" target="_blank" rel='noreferrer' aria-label="Encrypter">
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2023</div>
                                     <h3>Oaxaca-México</h3>
@@ -734,7 +734,7 @@ const Inicio = () => {
                     <h3 className="title">Mexico Map</h3>
                     <div className="education-box">
                         <div className="education-content">
-                            <a href="https://damanger.github.io/Mexico-svg/" target="_blank" rel='noreferrer'>
+                            <a href="https://damanger.github.io/Mexico-svg/" target="_blank" rel='noreferrer' aria-label="Mexican map">
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2023</div>
                                     <h3>Universidad Nacional Autónoma de México</h3>
@@ -746,7 +746,7 @@ const Inicio = () => {
                     <h3 className="title">World Map</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://damanger.github.io/World-svg/" target="_blank" rel='noreferrer' >
+                            <a href="https://damanger.github.io/World-svg/" target="_blank" rel='noreferrer' aria-label="World map">
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2023</div>
                                     <h3>Universidad Nacional Autónoma de México</h3>
@@ -758,7 +758,7 @@ const Inicio = () => {
                     <h3 className="title">Rappi-like app</h3>
                     <div className="education-box">
                         <div className="education-content">
-                            <a href="https://damanger.github.io/login_UTasteM/" target="_blank" rel='noreferrer'>
+                            <a href="https://damanger.github.io/login_UTasteM/" target="_blank" rel='noreferrer' aria-label="Rappi - like">
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2022-2023</div>
                                     <h3>Universidad Tecnológica de la Mixteca</h3>
@@ -770,7 +770,7 @@ const Inicio = () => {
                     <h3 className="title">Spanish Version of Python (compiler)</h3>
                     <div className="education-box">
                         <div className="education-content">
-                            <a href="https://github.com/Damanger/Compilador-python" target="_blank" rel='noreferrer'>
+                            <a href="https://github.com/Damanger/Compilador-python" target="_blank" rel='noreferrer' aria-label="Python - Spanish">
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2022</div>
                                     <h3>Universidad Tecnológica de la Mixteca</h3>
@@ -782,7 +782,7 @@ const Inicio = () => {
                     <h3 className="title">3D Game</h3>
                     <div className="education-box">
                         <div className="education-content">
-                            <a href="https://github.com/Damanger/3DGame" target="_blank" rel='noreferrer'>
+                            <a href="https://github.com/Damanger/3DGame" target="_blank" rel='noreferrer' aria-label="3D - Game">
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2022</div>
                                     <h3>Universidad Tecnológica de la Mixteca</h3>
@@ -794,7 +794,7 @@ const Inicio = () => {
                     <h3 className="title">2D Game</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://damanger.github.io/Car-Game-Js/" target="_blank" rel='noreferrer'>
+                            <a href="https://damanger.github.io/Car-Game-Js/" target="_blank" rel='noreferrer' aria-label="2D - Game">
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2021</div>
                                     <h3>Universidad Tecnológica de la Mixteca</h3>
@@ -806,7 +806,7 @@ const Inicio = () => {
                     <h3 className="title">Career Project</h3>
                     <div className="education-box">
                         <div className="education-content">
-                            <a href="https://damanger.github.io/login-glassmorphism/" target="_blank" rel='noreferrer'>
+                            <a href="https://damanger.github.io/login-glassmorphism/" target="_blank" rel='noreferrer' aria-label="Login">
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2022</div>
                                     <h3>Universidad Tecnológica de la Mixteca</h3>
@@ -866,7 +866,7 @@ const Inicio = () => {
                         <span className="focus"></span>
                     </div>
                     <div className="btn-box btns">
-                        <button type="submit" className="btn">Submit</button>
+                        <button type="submit" className="btn" aria-label="Submit">Submit</button>
                     </div>
                 </form>
             </section>
@@ -877,7 +877,7 @@ const Inicio = () => {
                     <p>Copyright &copy; 2023 by Omar A. Cruz Ramírez All Rights Reserved. </p>
                     </div>
                     <div className="footer-iconTop">
-                        <a href="#"><i className="bx bx-up-arrow-alt"></i></a>
+                        <a href="#"><i className="bx bx-up-arrow-alt" aria-label="Main Page"></i></a>
                     </div>
                 </div>
             </footer>
