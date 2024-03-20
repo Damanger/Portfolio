@@ -225,7 +225,7 @@ const Inicio = () => {
             <header className="header">
                 <a href="#" className="logo" rel='noreferrer' aria-label="Main page">
                     <LazyLoad threshold={0.95}>
-                        <img className='logo-img' src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/omar.webp" alt="Omar Cruz" style={{ width: '15rem', height: 'auto' }} />
+                        <img className='logo-img' fetchpriority="high" src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/omar.webp" alt="Omar Cruz" style={{ width: '15rem', height: 'auto' }} />
                     </LazyLoad>
                 </a>
                 <div id="menu-icon">
@@ -243,7 +243,7 @@ const Inicio = () => {
                     <span className="active-nav"></span>
                 </nav>
                 <LazyLoad threshold={0.95}>
-                    <img className='views' src="https://hitwebcounter.com/counter/counter.php?page=9944997&style=0006&nbdigits=4&type=page&initCount=0" alt="Visit counter For Websites"/>
+                    <img className='views' src="https://hitwebcounter.com/counter/counter.php?page=9944997&style=0006&nbdigits=4&type=page&initCount=0" fetchpriority="high" alt="Visit counter For Websites"/>
                 </LazyLoad>
             </header>
 
