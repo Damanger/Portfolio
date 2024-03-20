@@ -6,6 +6,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { BsArrowUp } from 'react-icons/bs';
 
 const Inicio = () => {
     useEffect(() => {
@@ -254,28 +255,28 @@ const Inicio = () => {
                         <a href="#contact" className="btn" aria-label="Let's talk">Let's talk.</a>
                     </div>
                     <div className="wrapper">
-            <div className="icon whats">
-                <a href="https://wa.me/5219514084765?text=Buen%20d%C3%ADa,%20quise%20contactarlo%20para%20desarrollar%20un%20servicio%20web." target="_blank" rel='noreferrer' aria-label="Whatsapp">
-                    <span><FontAwesomeIcon icon={faWhatsapp} /></span>
-                </a>
-            </div>                
-            <div className="icon linked">
-                <div className="tooltip">
-                    LinkedIn
-                </div>
-                <a href="https://www.linkedin.com/in/omar-cruzr97" target="_blank" rel='noreferrer' aria-label="LinkedIn">
-                    <span><FontAwesomeIcon icon={faLinkedin} /></span>
-                </a>
-            </div>
-            <div className="icon git">
-                <div className="tooltip">
-                    Github
-                </div>
-                <a href="https://github.com/Damanger" target="_blank" rel='noreferrer' aria-label="Github">
-                    <span><FontAwesomeIcon icon={faGithub} /></span>
-                </a>
-            </div>
-        </div>
+                        <div className="icon whats">
+                            <a href="https://wa.me/5219514084765?text=Buen%20d%C3%ADa,%20quise%20contactarlo%20para%20desarrollar%20un%20servicio%20web." target="_blank" rel='noreferrer' aria-label="Whatsapp">
+                                <span><FontAwesomeIcon icon={faWhatsapp} /></span>
+                            </a>
+                        </div>                
+                        <div className="icon linked">
+                            <div className="tooltip">
+                                LinkedIn
+                            </div>
+                            <a href="https://www.linkedin.com/in/omar-cruzr97" target="_blank" rel='noreferrer' aria-label="LinkedIn">
+                                <span><FontAwesomeIcon icon={faLinkedin} /></span>
+                            </a>
+                        </div>
+                        <div className="icon git">
+                            <div className="tooltip">
+                                Github
+                            </div>
+                            <a href="https://github.com/Damanger" target="_blank" rel='noreferrer' aria-label="Github">
+                                <span><FontAwesomeIcon icon={faGithub} /></span>
+                            </a>
+                        </div>
+                    </div>
 
                 </div>
                 <div className="home-imgHover"><img src="./yoMemoji.webp" alt="selfie"/></div>
@@ -880,10 +881,12 @@ const Inicio = () => {
             <footer>
                 <div className="footer">
                     <div className="footer-text">
-                    <p>Copyright &copy; 2023 by Omar A. Cruz Ramírez All Rights Reserved. </p>
+                        <p>Copyright &copy; 2023 by Omar A. Cruz Ramírez All Rights Reserved. </p>
                     </div>
                     <div className="footer-iconTop">
-                        <a href="#"><i className="bx bx-up-arrow-alt" aria-label="Main Page"></i></a>
+                        <a href='#' rel='noreferrer' aria-label="Main Page">
+                            <BsArrowUp />
+                        </a>
                     </div>
                 </div>
             </footer>
