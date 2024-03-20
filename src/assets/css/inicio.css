@@ -97,7 +97,7 @@
 .navbar .cipher{
     font-size: 1.7rem;
     color: black;
-    font-weight: 500;
+    font-weight: bold;
     margin-left: 2.5rem;
     transition: 0.5s;
 }
@@ -869,9 +869,6 @@ width: 100%;
 }
 
 @media (max-width: 768px){
-    .header{
-        background: #79A9F6;
-    }
 
     .home-content h1{
         font-size: 5.5rem;
