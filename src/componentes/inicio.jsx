@@ -284,7 +284,7 @@ const Inicio = () => {
                     </div>
 
                 </div>
-                <div className="home-imgHover"><img src="./yoMemoji.webp" alt="selfie"/></div>
+                <div className="home-imgHover"><LazyLoad threshold={0.95}><img src="./yoMemoji.webp" alt="selfie"/></LazyLoad></div>
             </section>
 
             <section className="about hidden" id="about">
