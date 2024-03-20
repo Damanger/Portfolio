@@ -7,6 +7,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { BsArrowUp } from 'react-icons/bs';
+import LazyLoad from 'react-lazy-load';
 
 const Inicio = () => {
     useEffect(() => {
@@ -223,7 +224,9 @@ const Inicio = () => {
         <div>
             <header className="header">
                 <a href="#" className="logo" rel='noreferrer' aria-label="Main page">
-                    <img className='logo-img' src="./omar.webp" alt="Omar Cruz" style={{ width: '15rem', height: 'auto' }} />
+                    <LazyLoad threshold={0.95}>
+                        <img className='logo-img' src="./omar.webp" alt="Omar Cruz" style={{ width: '15rem', height: 'auto' }} />
+                    </LazyLoad>
                 </a>
                 <div className="bx bx-menu" id="menu-icon"></div>
                 <nav className="navbar">
@@ -237,7 +240,9 @@ const Inicio = () => {
                     <a href="#contact" className="cipher" rel='noreferrer' aria-label="Contact">Contact</a>
                     <span className="active-nav"></span>
                 </nav>
-                <img className='views' src="https://hitwebcounter.com/counter/counter.php?page=9944997&style=0006&nbdigits=4&type=page&initCount=0" alt="Visit counter For Websites"/>
+                <LazyLoad threshold={0.95}>
+                    <img className='views' src="https://hitwebcounter.com/counter/counter.php?page=9944997&style=0006&nbdigits=4&type=page&initCount=0" alt="Visit counter For Websites"/>
+                </LazyLoad>
             </header>
 
             <div className="scroll-watcher"></div>
@@ -285,7 +290,9 @@ const Inicio = () => {
             <section className="about hidden" id="about">
                 <h2 className="heading">About <span>Me</span></h2>
                 <div className="about-img">
-                    <img src="./yo.webp" alt="selfie" style={{width : '25rem', height : '25rem'}}/>
+                    <LazyLoad threshold={0.95}>
+                        <img src="./yo.webp" alt="selfie" style={{width : '25rem', height : '25rem'}}/>
+                    </LazyLoad>
                     <span className="circle-spin"></span>
                 </div>
                 <div className="about-content">
@@ -294,16 +301,24 @@ const Inicio = () => {
                 </div>
                 <div className="certificados">
                     <a className="certificado-link" href="https://app.aluracursos.com/program/certificate/3b86f076-e7b1-420b-b3ac-f08d03cbf4d7" target="_blank" rel='noreferrer' aria-label="See certificate">
-                        <img alt="Oracle + Alura LATAM certificate" src="./Front-End.webp" style={{width : 'auto', height : 'auto'}}/>
+                        <LazyLoad threshold={0.95}>
+                            <img alt="Oracle + Alura LATAM certificate" src="./Front-End.webp" style={{width : 'auto', height : 'auto'}}/>
+                        </LazyLoad>
                     </a>
                     <a className="certificado-link" href='https://app.aluracursos.com/user/omar-cruzr97/fullCertificate/78801b3b7069693e6a6c314528f4b87f' target='_blank' rel='noreferrer' aria-label="Jr. Developer certification">
-                        <img alt="Jr. Developer" src="./Jr.webp" style={{width : 'auto', height : 'auto'}}/>
+                        <LazyLoad threshold={0.95}>
+                            <img alt="Jr. Developer" src="./Jr.webp" style={{width : 'auto', height : 'auto'}}/>
+                        </LazyLoad>
                     </a>
                     <a className="certificado-link" href='https://app.aluracursos.com/degree/certificate/1fa2dc74-672d-4a1c-bd5b-e50077a537b9' target='_blank' rel='noreferrer' aria-label="React certification">
-                        <img src="React.webp" alt="React" style={{width : 'auto', height : 'auto'}}/>
+                        <LazyLoad threshold={0.95}>
+                            <img src="React.webp" alt="React" style={{width : 'auto', height : 'auto'}}/>
+                        </LazyLoad>
                     </a>
                     <a className="certificado-link" href='https://www.linkedin.com/in/omar-cruzr97/' target='_blank' rel='noreferrer' aria-label="More certifications">
-                        <img src="./plus.webp" alt="More certificates" style={{width : 'auto', height : 'auto'}}/>
+                        <LazyLoad threshold={0.95}>
+                            <img src="./plus.webp" alt="More certificates" style={{width : 'auto', height : 'auto'}}/>
+                        </LazyLoad>
                     </a>
                 </div>
             </section>
