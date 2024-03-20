@@ -6,7 +6,6 @@ import Inicio from './componentes/inicio';
 import ARM from './componentes/ARM'
 import Assistant from './componentes/WebAssistant';
 import Error404 from './componentes/Error404';
-import Raffle from './componentes/rifa';
 import Typing from './componentes/Typing'
 import Clock from './componentes/Clock';
 import Cargando from './componentes/Cargando';
@@ -42,7 +41,6 @@ function App() {
             <Route path='/' element={<Inicio/>} />
             <Route path='/ARM' element={<ARM/>} />
             <Route path='/Assistant' element={<Assistant/>} />
-            <Route path='/raffle' element={<Raffle/>} />
             <Route path='/typing' element={<Typing/>} />
             <Route path='/binary' element={<Binary/>} />
             <Route path='/map' element={<Map/>} />
