@@ -116,9 +116,6 @@
 }
 
 #menu-icon{
-    font-size: 3.6rem;
-    color: var(--tex-color);
-    cursor: pointer;
     display: none;
 }
 
@@ -145,8 +142,6 @@ section{
 
 .home img{
     border-radius: 15%;
-    height: 42rem;
-    width: 40rem;
     position: relative;
     top: 25%;
     left: 10%;
@@ -893,7 +888,7 @@ width: 100%;
 
     #menu-icon{
         display: block;
-        font-size: 2.6rem;
+        font-size: 2.5rem;
         position: fixed;
         right: 10%;
     }
@@ -954,6 +949,11 @@ width: 100%;
         opacity: 0.6;
         margin: 0;
         padding: 0;
+    }
+
+    .home-imgHover img{
+        width: 25rem !important;
+        height: 26rem !important;
     }
 
     .footer{

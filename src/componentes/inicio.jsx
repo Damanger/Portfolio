@@ -3,7 +3,7 @@ import '../assets/css/inicio.css';
 import Swal from 'sweetalert2';
 import emailjs from 'emailjs-com';
 import 'font-awesome/css/font-awesome.min.css';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { BsArrowUp } from 'react-icons/bs';
@@ -228,7 +228,9 @@ const Inicio = () => {
                         <img className='logo-img' src="./omar.webp" alt="Omar Cruz" style={{ width: '15rem', height: 'auto' }} />
                     </LazyLoad>
                 </a>
-                <div className="bx bx-menu" id="menu-icon"></div>
+                <div id="menu-icon">
+                    <FontAwesomeIcon icon={faBars} />
+                </div>
                 <nav className="navbar">
                     <input type="text" id="search-input" autoComplete='off' name="text" className="input" placeholder={placeholders[placeholderN]} value={searchQuery} onChange={handleSearchInputChange} onKeyPress={handleKeyPress}/>
                     <button className='magnifying' aria-label="Magnifying" onClick={handleSearch}><FontAwesomeIcon icon={faSearch} /></button>
@@ -284,7 +286,7 @@ const Inicio = () => {
                     </div>
 
                 </div>
-                <div className="home-imgHover"><LazyLoad threshold={0.95}><img src="./yoMemoji.webp" alt="selfie"/></LazyLoad></div>
+                <div className="home-imgHover"><LazyLoad threshold={0.95}><img src="./yoMemoji.webp" alt="selfie" style={{width : '40rem', height : '42rem', borderRadius : '15%', position : 'relative', top : '25vh', left : '0.2vw'}}/></LazyLoad></div>
             </section>
 
             <section className="about hidden" id="about">
