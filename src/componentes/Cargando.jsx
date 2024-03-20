@@ -1,19 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import '../assets/css/cargando.css';
 
 const Cargando = ({ imagen }) => {
-    const [mostrarLoader, setMostrarLoader] = useState(true);
-
     useEffect(() => {
         const timeout = setTimeout(() => {
-            setMostrarLoader(false);
+            const loader = document.querySelector('.cargando');
+            if (loader) {
+                loader.classList.add('oculto');
+            }
         }, 1500);
 
         return () => clearTimeout(timeout);
     }, []);
 
     return (
-        <div className={`cargando ${mostrarLoader ? 'visible' : 'oculto'}`}>
+        <div className="cargando">
             <img src={imagen} alt="Cargando..." />
         </div>
     );
