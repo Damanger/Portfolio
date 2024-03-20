@@ -672,7 +672,6 @@ const Inicio = () => {
                     </div>
                     <h3 className="title">Headphone Raffle</h3>
                     <div className="education-box projects">
-                        <img src="./rifa.webp" alt="raffle" className="hover-image" />
                         <div className="education-content">
                             <a href="https://damanger.github.io/Headphones-Raffle/" target="_blank" rel='noreferrer' id="raffle-link">
                                 <div className="content">
@@ -710,7 +709,6 @@ const Inicio = () => {
                     </div>
                     <h3 className="title">LaPI (React)</h3>
                     <div className="education-box projects">
-                        <img src="./lapi.webp" alt="lapi" className="hover-image" />
                         <div className="education-content">
                             <a href="https://org-mu-seven.vercel.app/" target="_blank" rel='noreferrer' id="raffle-link">
                                 <div className="content">
@@ -723,7 +721,6 @@ const Inicio = () => {
                     </div>
                     <h3 className="title">Encrypter</h3>
                     <div className="education-box projects">
-                        <img src="./encrypter.webp" alt="encrypter" className="hover-image" />
                         <div className="education-content">
                             <a href="https://damanger.github.io/Challenge1-Alura-Oracle-ONE/" target="_blank" rel='noreferrer' id="raffle-link">
                                 <div className="content">
@@ -748,7 +745,6 @@ const Inicio = () => {
                     </div>
                     <h3 className="title">World Map</h3>
                     <div className="education-box projects">
-                        <img src="./world.webp" alt="world" className="hover-image" />
                         <div className="education-content">
                             <a href="https://damanger.github.io/World-svg/" target="_blank" rel='noreferrer' id="raffle-link">
                                 <div className="content">
@@ -797,7 +793,6 @@ const Inicio = () => {
                     </div>
                     <h3 className="title">2D Game</h3>
                     <div className="education-box projects">
-                        <img src="./2DGame.webp" alt="2DGame" className="hover-image" />
                         <div className="education-content">
                             <a href="https://damanger.github.io/Car-Game-Js/" target="_blank" rel='noreferrer' id="raffle-link">
                                 <div className="content">
