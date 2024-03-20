@@ -43,7 +43,6 @@ function App() {
             <Route path='/Assistant' element={<Assistant />} />
             <Route path='/typing' element={<Typing />} />
             <Route path='/binary' element={<Binary />} />
-            {/* En esta ruta, envuelve tu componente Map en un div que contenga los recursos */}
             <Route path='/map' element={(
               <>
                 <MapResources />
