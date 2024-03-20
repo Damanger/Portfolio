@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../assets/css/arm.css';
 import NavBar from './NavBar';
+import LazyLoad from 'react-lazy-load';
 
 const ARM = () => {
     const [inputText, setInputText] = useState('Ingrese sus instrucciones :)\nSerán leidas linea por linea al dar clic en traducir');
@@ -251,7 +252,9 @@ const ARM = () => {
                     <textarea value={inputText} onChange={handleInputChange} style={textAreaStyle}></textarea>
                 </div>
             </div>
-            <img src='map.jpeg' alt="Imagen" className="mapa" />
+            <LazyLoad threshold={0.95}>
+                <img src='map.jpeg' alt="Imagen" className="mapa" />    
+            </LazyLoad>
             <div className="checkbox-wrapper">
                 <span style={checkboxStyle}>
                     Instrucción
