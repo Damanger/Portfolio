@@ -5,12 +5,6 @@
     <link rel="icon" href="%PUBLIC_URL%/Ardilla.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/Ardilla.webp" />
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-VR0KWHQLC7');
-    </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="My personal website">
     <link rel="robots" href="/robots.txt">
@@ -26,17 +20,34 @@
       <audio id="audio" loop src="./song.mp3"></audio>
     </div>
   </body>
-  <script>
-    const audioElement = document.getElementById("audio");
-    const playButton = document.getElementById("play-button");
-    function toggleAudio() {
-      if (audioElement.paused) {
-        audioElement.play();
-        playButton.classList.add("playing");
-      } else {
-        audioElement.pause();
-        playButton.classList.remove("playing");
+  <!-- Scripts -->
+  <script defer>
+    // Función para toggleAudio
+    (function() {
+      const audioElement = document.getElementById("audio");
+      const playButton = document.getElementById("play-button");
+
+      function toggleAudio() {
+        if (audioElement.paused) {
+          audioElement.play();
+          playButton.classList.add("playing");
+        } else {
+          audioElement.pause();
+          playButton.classList.remove("playing");
+        }
       }
-    }
+
+      window.toggleAudio = toggleAudio; // Exponer la función globalmente
+    })();
+  </script>
+  
+  <script async>
+    // Google Analytics
+    (function() {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VR0KWHQLC7');
+    })();
   </script>
 </html>
