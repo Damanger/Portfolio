@@ -3,8 +3,9 @@ import '../assets/css/inicio.css';
 import Swal from 'sweetalert2';
 import emailjs from 'emailjs-com';
 import 'font-awesome/css/font-awesome.min.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Inicio = () => {
     useEffect(() => {
@@ -253,24 +254,29 @@ const Inicio = () => {
                         <a href="#contact" className="btn" aria-label="Let's talk">Let's talk.</a>
                     </div>
                     <div className="wrapper">
-                        <div className="icon whats">
-                            <a href="https://wa.me/5219514084765?text=Buen%20d%C3%ADa,%20quise%20contactarlo%20para%20desarrollar%20un%20servicio%20web." target="_blank" rel='noreferrer' aria-label="Whatsapp">
-                                <span><i className="fab fa-whatsapp"></i></span>
-                            </a>
-                        </div>                
-                        <div className="icon linked">
-                            <div className="tooltip">
-                                LinkedIn
-                            </div>
-                            <a href="https://www.linkedin.com/in/omar-cruzr97" target="_blank" rel='noreferrer' aria-label="LinkedIn"><span><i className="fab fa-linkedin"></i></span></a>
-                        </div>
-                        <div className="icon git">
-                            <div className="tooltip">
-                                Github
-                            </div>
-                            <a href="https://github.com/Damanger" target="_blank" rel='noreferrer' aria-label="Github"><span><i className="fab fa-github"></i></span></a>
-                        </div>
-                    </div>
+            <div className="icon whats">
+                <a href="https://wa.me/5219514084765?text=Buen%20d%C3%ADa,%20quise%20contactarlo%20para%20desarrollar%20un%20servicio%20web." target="_blank" rel='noreferrer' aria-label="Whatsapp">
+                    <span><FontAwesomeIcon icon={faWhatsapp} /></span>
+                </a>
+            </div>                
+            <div className="icon linked">
+                <div className="tooltip">
+                    LinkedIn
+                </div>
+                <a href="https://www.linkedin.com/in/omar-cruzr97" target="_blank" rel='noreferrer' aria-label="LinkedIn">
+                    <span><FontAwesomeIcon icon={faLinkedin} /></span>
+                </a>
+            </div>
+            <div className="icon git">
+                <div className="tooltip">
+                    Github
+                </div>
+                <a href="https://github.com/Damanger" target="_blank" rel='noreferrer' aria-label="Github">
+                    <span><FontAwesomeIcon icon={faGithub} /></span>
+                </a>
+            </div>
+        </div>
+
                 </div>
                 <div className="home-imgHover"><img src="./yoMemoji.webp" alt="selfie"/></div>
             </section>
