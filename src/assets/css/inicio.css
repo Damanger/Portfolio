@@ -96,7 +96,7 @@
 
 .navbar .cipher{
     font-size: 1.7rem;
-    color: #40E0D0;
+    color: aliceblue;
     font-weight: 500;
     margin-left: 2.5rem;
     transition: 0.5s;
@@ -661,6 +661,7 @@ width: 100%;
 
 .footer-text p{
     font-size: 1.6rem;
+    color: aliceblue !important;
 }
 
 .footer-iconTop a{
