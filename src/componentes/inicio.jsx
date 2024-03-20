@@ -599,7 +599,7 @@ const Inicio = () => {
                 <h3 className="title">Route helping map!</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://www.omar-cruz-rmz.com/map" target="_blank" rel='noreferrer' id="raffle-link">
+                            <a href="https://www.omar-cruz-rmz.com/map" target="_blank" rel='noreferrer'>
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2024</div>
                                     <h3>Oaxaca-México</h3>
@@ -612,7 +612,7 @@ const Inicio = () => {
                 <h3 className="title">Binary-Text and Text-Binary converter</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://www.omar-cruz-rmz.com/Binary" target="_blank" rel='noreferrer' id="raffle-link">
+                            <a href="https://www.omar-cruz-rmz.com/Binary" target="_blank" rel='noreferrer'>
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2024</div>
                                     <h3>Oaxaca-México</h3>
@@ -625,7 +625,7 @@ const Inicio = () => {
                 <h3 className="title">E-commerce Ixvanna</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://ixvanna.vercel.app/" target="_blank" rel='noreferrer' id="raffle-link">
+                            <a href="https://ixvanna.vercel.app/" target="_blank" rel='noreferrer'>
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2024</div>
                                     <h3>Oaxaca-México</h3>
@@ -637,7 +637,7 @@ const Inicio = () => {
                     <h3 className="title">Web-Assistant</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://www.omar-cruz-rmz.com/Assistant" target="_blank" rel='noreferrer' id="raffle-link">
+                            <a href="https://www.omar-cruz-rmz.com/Assistant" target="_blank" rel='noreferrer'>
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2024-today</div>
                                     <h3>Oaxaca-México</h3>
@@ -649,7 +649,7 @@ const Inicio = () => {
                     <h3 className="title">ARM Instructions (In process)</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://www.omar-cruz-rmz.com/ARM" target="_blank" rel='noreferrer' id="raffle-link">
+                            <a href="https://www.omar-cruz-rmz.com/ARM" target="_blank" rel='noreferrer'>
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
                                     <h3>Oaxaca-México</h3>
@@ -661,7 +661,7 @@ const Inicio = () => {
                     <h3 className="title">Typing game</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://www.omar-cruz-rmz.com/typing" target="_blank" rel='noreferrer' id="raffle-link">
+                            <a href="https://www.omar-cruz-rmz.com/typing" target="_blank" rel='noreferrer'>
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
                                     <h3>Oaxaca-México</h3>
@@ -673,7 +673,7 @@ const Inicio = () => {
                     <h3 className="title">Headphone Raffle</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://damanger.github.io/Headphones-Raffle/" target="_blank" rel='noreferrer' id="raffle-link">
+                            <a href="https://damanger.github.io/Headphones-Raffle/" target="_blank" rel='noreferrer'>
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2023</div>
                                     <h3>Oaxaca-México</h3>
@@ -698,7 +698,7 @@ const Inicio = () => {
                     <h3 className="title">Virtual-Assistant</h3>
                     <div className="education-box">
                         <div className="education-content">
-                            <a href="https://github.com/Damanger/Virtual-Assistant" target="_blank" rel='noreferrer' id="raffle-link">
+                            <a href="https://github.com/Damanger/Virtual-Assistant" target="_blank" rel='noreferrer'>
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
                                     <h3>Oaxaca-México</h3>
@@ -710,7 +710,7 @@ const Inicio = () => {
                     <h3 className="title">LaPI (React)</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://org-mu-seven.vercel.app/" target="_blank" rel='noreferrer' id="raffle-link">
+                            <a href="https://org-mu-seven.vercel.app/" target="_blank" rel='noreferrer'>
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2023</div>
                                     <h3>Oaxaca-México</h3>
@@ -722,7 +722,7 @@ const Inicio = () => {
                     <h3 className="title">Encrypter</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://damanger.github.io/Challenge1-Alura-Oracle-ONE/" target="_blank" rel='noreferrer' id="raffle-link">
+                            <a href="https://damanger.github.io/Challenge1-Alura-Oracle-ONE/" target="_blank" rel='noreferrer'>
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2023</div>
                                     <h3>Oaxaca-México</h3>
@@ -734,7 +734,7 @@ const Inicio = () => {
                     <h3 className="title">Mexico Map</h3>
                     <div className="education-box">
                         <div className="education-content">
-                            <a href="https://damanger.github.io/Mexico-svg/" target="_blank" rel='noreferrer' id="raffle-link">
+                            <a href="https://damanger.github.io/Mexico-svg/" target="_blank" rel='noreferrer'>
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2023</div>
                                     <h3>Universidad Nacional Autónoma de México</h3>
@@ -746,7 +746,7 @@ const Inicio = () => {
                     <h3 className="title">World Map</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://damanger.github.io/World-svg/" target="_blank" rel='noreferrer' id="raffle-link">
+                            <a href="https://damanger.github.io/World-svg/" target="_blank" rel='noreferrer' >
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2023</div>
                                     <h3>Universidad Nacional Autónoma de México</h3>
@@ -758,7 +758,7 @@ const Inicio = () => {
                     <h3 className="title">Rappi-like app</h3>
                     <div className="education-box">
                         <div className="education-content">
-                            <a href="https://damanger.github.io/login_UTasteM/" target="_blank" rel='noreferrer' id="raffle-link">
+                            <a href="https://damanger.github.io/login_UTasteM/" target="_blank" rel='noreferrer'>
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2022-2023</div>
                                     <h3>Universidad Tecnológica de la Mixteca</h3>
@@ -770,7 +770,7 @@ const Inicio = () => {
                     <h3 className="title">Spanish Version of Python (compiler)</h3>
                     <div className="education-box">
                         <div className="education-content">
-                            <a href="https://github.com/Damanger/Compilador-python" target="_blank" rel='noreferrer' id="raffle-link">
+                            <a href="https://github.com/Damanger/Compilador-python" target="_blank" rel='noreferrer'>
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2022</div>
                                     <h3>Universidad Tecnológica de la Mixteca</h3>
@@ -782,7 +782,7 @@ const Inicio = () => {
                     <h3 className="title">3D Game</h3>
                     <div className="education-box">
                         <div className="education-content">
-                            <a href="https://github.com/Damanger/3DGame" target="_blank" rel='noreferrer' id="raffle-link">
+                            <a href="https://github.com/Damanger/3DGame" target="_blank" rel='noreferrer'>
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2022</div>
                                     <h3>Universidad Tecnológica de la Mixteca</h3>
@@ -794,7 +794,7 @@ const Inicio = () => {
                     <h3 className="title">2D Game</h3>
                     <div className="education-box projects">
                         <div className="education-content">
-                            <a href="https://damanger.github.io/Car-Game-Js/" target="_blank" rel='noreferrer' id="raffle-link">
+                            <a href="https://damanger.github.io/Car-Game-Js/" target="_blank" rel='noreferrer'>
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2021</div>
                                     <h3>Universidad Tecnológica de la Mixteca</h3>
@@ -806,7 +806,7 @@ const Inicio = () => {
                     <h3 className="title">Career Project</h3>
                     <div className="education-box">
                         <div className="education-content">
-                            <a href="https://damanger.github.io/login-glassmorphism/" target="_blank" rel='noreferrer' id="raffle-link">
+                            <a href="https://damanger.github.io/login-glassmorphism/" target="_blank" rel='noreferrer'>
                                 <div className="content">
                                     <div className="year"><i className="bx bxs-calendar"></i>2022</div>
                                     <h3>Universidad Tecnológica de la Mixteca</h3>
