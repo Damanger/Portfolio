@@ -286,7 +286,7 @@ const Inicio = () => {
                     </div>
 
                 </div>
-                <div className="home-imgHover"><LazyLoad threshold={0.95}><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/yoMemoji.webp" loading="eager" alt="selfie" style={{width : '40rem', height : '42rem', borderRadius : '15%', position : 'relative', top : '25vh', left : '0.2vw'}}/></LazyLoad></div>
+                <div className="home-imgHover"><LazyLoad threshold={0.95}><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/yoMemoji.webp" fetchpriority="high" loading="lazy" decoding="async" alt="selfie" style={{width : '40rem', height : '42rem', borderRadius : '15%', position : 'relative', top : '25vh', left : '0.2vw'}}/></LazyLoad></div>
             </section>
 
             <section className="about hidden" id="about">
