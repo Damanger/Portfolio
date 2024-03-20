@@ -8,7 +8,7 @@ const Cargando = ({ imagen }) => {
             if (loader) {
                 loader.classList.add('oculto');
             }
-        }, 1500);
+        }, 1000);
 
         return () => clearTimeout(timeout);
     }, []);
