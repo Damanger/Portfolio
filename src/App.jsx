@@ -17,7 +17,7 @@ function App() {
 
   setTimeout(() => {
     setIsLoading(false);
-  }, 2000);
+  }, 1500);
   return (
     <Router>
       {isLoading ? (
