@@ -225,7 +225,7 @@ const Inicio = () => {
             <header className="header">
                 <a href="#" className="logo" rel='noreferrer' aria-label="Main page">
                     <LazyLoad threshold={0.95}>
-                        <img className='logo-img' src="./omar.webp" alt="Omar Cruz" style={{ width: '15rem', height: 'auto' }} />
+                        <img className='logo-img' src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/omar.webp" alt="Omar Cruz" style={{ width: '15rem', height: 'auto' }} />
                     </LazyLoad>
                 </a>
                 <div id="menu-icon">
@@ -286,14 +286,14 @@ const Inicio = () => {
                     </div>
 
                 </div>
-                <div className="home-imgHover"><LazyLoad threshold={0.95}><img src="./yoMemoji.webp" alt="selfie" style={{width : '40rem', height : '42rem', borderRadius : '15%', position : 'relative', top : '25vh', left : '0.2vw'}}/></LazyLoad></div>
+                <div className="home-imgHover"><LazyLoad threshold={0.95}><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/yoMemoji.webp" alt="selfie" style={{width : '40rem', height : '42rem', borderRadius : '15%', position : 'relative', top : '25vh', left : '0.2vw'}}/></LazyLoad></div>
             </section>
 
             <section className="about hidden" id="about">
                 <h2 className="heading">About <span>Me</span></h2>
                 <div className="about-img">
                     <LazyLoad threshold={0.95}>
-                        <img src="./yo.webp" alt="selfie" style={{width : '25rem', height : '25rem'}}/>
+                        <img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/yo.webp" alt="selfie" style={{width : '25rem', height : '25rem'}}/>
                     </LazyLoad>
                     <span className="circle-spin"></span>
                 </div>
@@ -304,22 +304,22 @@ const Inicio = () => {
                 <div className="certificados">
                     <a className="certificado-link" href="https://app.aluracursos.com/program/certificate/3b86f076-e7b1-420b-b3ac-f08d03cbf4d7" target="_blank" rel='noreferrer' aria-label="See certificate">
                         <LazyLoad threshold={0.95}>
-                            <img alt="Oracle + Alura LATAM certificate" src="./Front-End.webp" style={{width : 'auto', height : 'auto'}}/>
+                            <img alt="Oracle + Alura LATAM certificate" src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/Front-End.webp" style={{width : 'auto', height : 'auto'}}/>
                         </LazyLoad>
                     </a>
                     <a className="certificado-link" href='https://app.aluracursos.com/user/omar-cruzr97/fullCertificate/78801b3b7069693e6a6c314528f4b87f' target='_blank' rel='noreferrer' aria-label="Jr. Developer certification">
                         <LazyLoad threshold={0.95}>
-                            <img alt="Jr. Developer" src="./Jr.webp" style={{width : 'auto', height : 'auto'}}/>
+                            <img alt="Jr. Developer" src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/Jr.webp" style={{width : 'auto', height : 'auto'}}/>
                         </LazyLoad>
                     </a>
                     <a className="certificado-link" href='https://app.aluracursos.com/degree/certificate/1fa2dc74-672d-4a1c-bd5b-e50077a537b9' target='_blank' rel='noreferrer' aria-label="React certification">
                         <LazyLoad threshold={0.95}>
-                            <img src="React.webp" alt="React" style={{width : 'auto', height : 'auto'}}/>
+                            <img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/React.webp" alt="React" style={{width : 'auto', height : 'auto'}}/>
                         </LazyLoad>
                     </a>
                     <a className="certificado-link" href='https://www.linkedin.com/in/omar-cruzr97/' target='_blank' rel='noreferrer' aria-label="More certifications">
                         <LazyLoad threshold={0.95}>
-                            <img src="./plus.webp" alt="More certificates" style={{width : 'auto', height : 'auto'}}/>
+                            <img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/plus.webp" alt="More certificates" style={{width : 'auto', height : 'auto'}}/>
                         </LazyLoad>
                     </a>
                 </div>

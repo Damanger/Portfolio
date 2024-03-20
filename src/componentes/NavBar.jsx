@@ -8,7 +8,7 @@ const NavBar = () =>{
         <nav className="navbar2" style={{backgroundColor: "#3b82f6", display: "flex", justifyContent: "space-between", padding: "1rem ", height: "10%", alignItems: "center"}}>
             <Link to="/" className="logo" rel='noreferrer'>
                 <LazyLoad threshold={0.95}>
-                    <img className='logo-img' src="./omar.webp" alt="Omar Cruz" style={{ width: '15rem', height: 'auto' }}/>
+                    <img className='logo-img' src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/omar.webp" alt="Omar Cruz" style={{ width: '15rem', height: 'auto' }}/>
                 </LazyLoad>
             </Link>
             <div className="cipher Project-Links" style={{fontSize: "1.75rem"}}>
