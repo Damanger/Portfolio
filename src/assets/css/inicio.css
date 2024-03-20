@@ -665,6 +665,7 @@ width: 100%;
 .footer-text p{
     font-size: 1.6rem;
     color: #00002E !important;
+    font-weight: bold;
 }
 
 .footer-iconTop a{
