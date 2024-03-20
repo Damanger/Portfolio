@@ -17,9 +17,7 @@ import {
 import useLocalPersistState from "../../../hooks/useLocalPersistState";
 import {
   ENGLISH_MODE,
-  CHINESE_MODE,
   ENGLISH_SENTENCE_MODE_TOOLTIP_TITLE,
-  CHINESE_SENTENCE_MODE_TOOLTIP_TITLE,
 } from "../../../constants/Constants";
 import { Tooltip } from "@mui/material";
 import { Dialog } from "@mui/material";
