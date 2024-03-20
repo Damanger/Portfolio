@@ -330,6 +330,8 @@ section{
 
 .about-img{
     position: relative;
+    width: 25rem;
+    height: 25rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
