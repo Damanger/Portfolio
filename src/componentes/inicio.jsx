@@ -3,7 +3,7 @@ import '../assets/css/inicio.css';
 import Swal from 'sweetalert2';
 import emailjs from 'emailjs-com';
 import 'font-awesome/css/font-awesome.min.css';
-import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faBars, faLink, faCalendar  } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { BsArrowUp } from 'react-icons/bs';
@@ -335,7 +335,7 @@ const Inicio = () => {
 
                                 <div className="content">
                                     <a href='www.escolta.io/' target='_blank' rel='noreferrer' aria-label="Escolta.io">
-                                        <div className="year"><i className="bx bxs-calendar"></i>2023 - Today</div>
+                                        <div className="year"><FontAwesomeIcon icon={faCalendar} />2023 - Today</div>
                                         <h3>Private security company , San Francisco Ca. USA</h3>
                                         <p>Front-End developer, UI design</p>
                                     </a>
@@ -343,7 +343,7 @@ const Inicio = () => {
 
                                 <div className="content">
                                     <a href='https://dropet.io/' target='_blank' rel='noreferrer' aria-label="Dropet.io">
-                                        <div className="year"><i className="bx bxs-calendar"></i>2023</div>
+                                        <div className="year"><FontAwesomeIcon icon={faCalendar} />2023</div>
                                         <h3>Automated deployments, San Francisco Ca. USA</h3>
                                         <p>Front-End developer, UI design</p>
                                     </a>
@@ -351,7 +351,7 @@ const Inicio = () => {
 
                                 <div className="content">
                                     <a href='http://lapi.fi-p.unam.mx/' target='_blank' rel='noreferrer' aria-label="LaPI">
-                                        <div className="year"><i className="bx bxs-calendar"></i>2023</div>
+                                        <div className="year"><FontAwesomeIcon icon={faCalendar} />2023</div>
                                         <h3>Laboratory of Advanced Image Processing (LAPI)-U.N.A.M.</h3>
                                         <p>Intern, Laboratory of Advanced Image Processing (LAPI), National Autonomous University of Mexico (UNAM)</p>
                                     </a>
@@ -367,7 +367,7 @@ const Inicio = () => {
                             <div className="education-content">
                                 <div className="content">
                                     <a href='https://www.aluracursos.com/cursos-online-front-end' target='_blank' rel='noreferrer' aria-label="ONE - Oracle">
-                                        <div className="year"><i className="bx bxs-calendar"></i>2023 - Today</div>
+                                        <div className="year"><FontAwesomeIcon icon={faCalendar} />2023 - Today</div>
                                         <h3>ONE - Oracle & Alura</h3>
                                         <p>In this year, I enrolled in a course called Oracle Next Education (ONE), offered by Oracle and Alura. I am currently part of Group 5 and still actively pursuing the program.</p>
                                     </a>
@@ -377,7 +377,7 @@ const Inicio = () => {
                             <div className="education-content">
                                 <div className="content">
                                     <a href='https://www.utm.mx/investigacion.html#ic' target='_blank' rel='noreferrer' aria-label="UTM">
-                                        <div className="year"><i className="bx bxs-calendar"></i>2020 - Today</div>
+                                        <div className="year"><FontAwesomeIcon icon={faCalendar} />2020 - Today</div>
                                         <h3>Computer Engineering - Universidad Tecnológica de la Mixteca</h3>
                                         <p>I am currently pursuing a Bachelor's degree in Computer Engineering and I am in my 7th semester out of 10.</p>
                                     </a>
@@ -387,7 +387,7 @@ const Inicio = () => {
                             <div className="education-content">
                                 <div className="content">
                                     <a href='https://www.harmonhall.com/' target='_blank' rel='noreferrer' aria-label="English">
-                                        <div className="year"><i className="bx bxs-calendar"></i>2009  - 2013</div>
+                                        <div className="year"><FontAwesomeIcon icon={faCalendar} />2009  - 2013</div>
                                         <h3>English Courses - Harmon Hall</h3>
                                         <p>I completed over 50 levels of basic English for children and an additional 15 levels of intermediate English for young learners at a private school.</p>
                                         <p>Also completed 4 advanced levels of conversational English for adults.</p>
@@ -403,7 +403,7 @@ const Inicio = () => {
 
                             <div className="education-content">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2022 - Today</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2022 - Today</div>
                                     <h3>Web Developer - Universidad Tecnológica de la Mixteca</h3>
                                     <p>I have been studying HTML, CSS, JavaScript, and TypeScript since the fifth semester, utilizing frameworks such as Angular. I have already created several web pages as part of my projects.</p>
                                 </div>
@@ -411,7 +411,7 @@ const Inicio = () => {
 
                             <div className="education-content">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2021 - Today</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2021 - Today</div>
                                     <h3>SQL - Universidad Tecnológica de la Mixteca</h3>
                                     <p>I have been studying SQL programming language since the fourth semester and have gained practical experience working with databases in various projects.</p>
                                 </div>
@@ -419,7 +419,7 @@ const Inicio = () => {
 
                             <div className="education-content">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2021  - Today</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2021  - Today</div>
                                     <h3>Java programming - Universidad Tecnológica de la Mixteca</h3>
                                     <p>Since the third semester, I have been studying the Java programming language and have already completed several projects, including a compiler and complex regex search.</p>
                                 </div>
@@ -427,7 +427,7 @@ const Inicio = () => {
 
                             <div className="education-content">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2020 - Today</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2020 - Today</div>
                                     <h3>Python programming - Universidad Tecnológica de la Mixteca</h3>
                                     <p>I have been studying the Python programming language since the first semester and have already completed several projects, including a compiled Spanish version of Python.</p>
                                 </div>
@@ -435,7 +435,7 @@ const Inicio = () => {
 
                             <div className="education-content">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2020  - Today</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2020  - Today</div>
                                     <h3>C programming - Universidad Tecnológica de la Mixteca</h3>
                                     <p>I have been studying the C programming language since the first semester and have already completed several projects, including a shell simulator.</p>
                                 </div>
@@ -625,9 +625,9 @@ const Inicio = () => {
                         <div className="education-content">
                             <a href="https://www.omar-cruz-rmz.com/map" target="_blank" rel='noreferrer' aria-label="Route planning">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2024</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2024</div>
                                     <h3>Oaxaca-México</h3>
-                                    <i className="fa-solid fa-link">Route helper for family trips on vehicules</i>
+                                    <FontAwesomeIcon icon={faLink} />Route helper for family trips on vehicules
                                 </div>
                             </a>
                         </div>
@@ -638,9 +638,9 @@ const Inicio = () => {
                         <div className="education-content">
                             <a href="https://www.omar-cruz-rmz.com/Binary" target="_blank" rel='noreferrer' aria-label="Binary - Text and Text - Binary">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2024</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2024</div>
                                     <h3>Oaxaca-México</h3>
-                                    <i className="fa-solid fa-link"> Binary-Text converter</i>
+                                    <FontAwesomeIcon icon={faLink} />Binary-Text converter
                                 </div>
                             </a>
                         </div>
@@ -651,9 +651,9 @@ const Inicio = () => {
                         <div className="education-content">
                             <a href="https://ixvanna.vercel.app/" target="_blank" rel='noreferrer' aria-label="E-commerce">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2024</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2024</div>
                                     <h3>Oaxaca-México</h3>
-                                    <i className="fa-solid fa-link"> E-commerce</i>
+                                    <FontAwesomeIcon icon={faLink} />E-commerce
                                 </div>
                             </a>
                         </div>
@@ -663,9 +663,9 @@ const Inicio = () => {
                         <div className="education-content">
                             <a href="https://www.omar-cruz-rmz.com/Assistant" target="_blank" rel='noreferrer' aria-label="Web - Assistant">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2024-today</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2024-today</div>
                                     <h3>Oaxaca-México</h3>
-                                    <i className="fa-solid fa-link"> Terminal to facilitate web searches</i>
+                                    <FontAwesomeIcon icon={faLink} />Terminal to facilitate web searches
                                 </div>
                             </a>
                         </div>
@@ -675,9 +675,9 @@ const Inicio = () => {
                         <div className="education-content">
                             <a href="https://www.omar-cruz-rmz.com/ARM" target="_blank" rel='noreferrer' aria-label="ARM">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2023-today</div>
                                     <h3>Oaxaca-México</h3>
-                                    <i className="fa-solid fa-link"> Computer Architecture and Organization</i>
+                                    <FontAwesomeIcon icon={faLink} />Computer Architecture and Organization
                                 </div>
                             </a>
                         </div>
@@ -687,9 +687,9 @@ const Inicio = () => {
                         <div className="education-content">
                             <a href="https://www.omar-cruz-rmz.com/typing" target="_blank" rel='noreferrer' aria-label="Typing">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2023-today</div>
                                     <h3>Oaxaca-México</h3>
-                                    <i className="fa-solid fa-link"> Typing game and practice</i>
+                                    <FontAwesomeIcon icon={faLink} />Typing game and practice
                                 </div>
                             </a>
                         </div>
@@ -699,9 +699,9 @@ const Inicio = () => {
                         <div className="education-content">
                             <a href="https://damanger.github.io/Headphones-Raffle/" target="_blank" rel='noreferrer' aria-label="Raffle">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2023</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2023</div>
                                     <h3>Oaxaca-México</h3>
-                                    <i className="fa-solid fa-link"> Raffle of a Sony headphone</i>
+                                    <FontAwesomeIcon icon={faLink} />Raffle of a Sony headphone
                                 </div>
                             </a>
                         </div>
@@ -712,9 +712,9 @@ const Inicio = () => {
                         <div className="education-content">
                             <a href="https://github.com/Damanger/Squirrel-Web-Browser.git" target="_blank" rel='noreferrer' id="web-browser" aria-label="Web - Browser">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2023-today</div>
                                     <h3>Oaxaca-México</h3>
-                                    <i className="fa-solid fa-link"> Simple Web Browser in Python </i>
+                                    <FontAwesomeIcon icon={faLink} />Simple Web Browser in Python
                                 </div>
                             </a>
                         </div>
@@ -724,9 +724,9 @@ const Inicio = () => {
                         <div className="education-content">
                             <a href="https://github.com/Damanger/Virtual-Assistant" target="_blank" rel='noreferrer' aria-label="Virtual - Assistant">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2023-today</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2023-today</div>
                                     <h3>Oaxaca-México</h3>
-                                    <i className="fa-solid fa-link"> Virtual-Assistant </i>
+                                    <FontAwesomeIcon icon={faLink} />Virtual-Assistant
                                 </div>
                             </a>
                         </div>
@@ -736,9 +736,9 @@ const Inicio = () => {
                         <div className="education-content">
                             <a href="https://org-mu-seven.vercel.app/" target="_blank" rel='noreferrer' aria-label="LaPI">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2023</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2023</div>
                                     <h3>Oaxaca-México</h3>
-                                    <i className="fa-solid fa-link"> LaPI Organization</i>
+                                    <FontAwesomeIcon icon={faLink} />LaPI Organization
                                 </div>
                             </a>
                         </div>
@@ -748,9 +748,9 @@ const Inicio = () => {
                         <div className="education-content">
                             <a href="https://damanger.github.io/Challenge1-Alura-Oracle-ONE/" target="_blank" rel='noreferrer' aria-label="Encrypter">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2023</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2023</div>
                                     <h3>Oaxaca-México</h3>
-                                    <i className="fa-solid fa-link"> Alura - Oracle Encrypter/Desencrypter</i>
+                                    <FontAwesomeIcon icon={faLink} />Alura - Oracle Encrypter/Desencrypter
                                 </div>
                             </a>
                         </div>
@@ -760,9 +760,9 @@ const Inicio = () => {
                         <div className="education-content">
                             <a href="https://damanger.github.io/Mexico-svg/" target="_blank" rel='noreferrer' aria-label="Mexican map">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2023</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2023</div>
                                     <h3>Universidad Nacional Autónoma de México</h3>
-                                    <i className="fa-solid fa-link"> Internship works (Mexico map)</i>
+                                    <FontAwesomeIcon icon={faLink} />Internship works (Mexico map)
                                 </div>
                             </a>
                         </div>
@@ -772,9 +772,9 @@ const Inicio = () => {
                         <div className="education-content">
                             <a href="https://damanger.github.io/World-svg/" target="_blank" rel='noreferrer' aria-label="World map">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2023</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2023</div>
                                     <h3>Universidad Nacional Autónoma de México</h3>
-                                    <i className="fa-solid fa-link"> Internship works (World map)</i>
+                                    <FontAwesomeIcon icon={faLink} />Internship works (World map)
                                 </div>
                             </a>
                         </div>
@@ -784,9 +784,9 @@ const Inicio = () => {
                         <div className="education-content">
                             <a href="https://damanger.github.io/login_UTasteM/" target="_blank" rel='noreferrer' aria-label="Rappi - like">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2022-2023</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2022-2023</div>
                                     <h3>Universidad Tecnológica de la Mixteca</h3>
-                                    <i className="fa-solid fa-link"> Rappi-like website (Contact me for more info)</i>
+                                    <FontAwesomeIcon icon={faLink} />Rappi-like website (Contact me for more info)
                                 </div>
                             </a>
                         </div>
@@ -796,9 +796,9 @@ const Inicio = () => {
                         <div className="education-content">
                             <a href="https://github.com/Damanger/Compilador-python" target="_blank" rel='noreferrer' aria-label="Python - Spanish">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2022</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2022</div>
                                     <h3>Universidad Tecnológica de la Mixteca</h3>
-                                    <i className="fa-solid fa-link"> A spanish compiled version of Python (Contact me for more info)</i>
+                                    <FontAwesomeIcon icon={faLink} />A spanish compiled version of Python (Contact me for more info)
                                 </div>
                             </a>
                         </div>
@@ -808,9 +808,9 @@ const Inicio = () => {
                         <div className="education-content">
                             <a href="https://github.com/Damanger/3DGame" target="_blank" rel='noreferrer' aria-label="3D - Game">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2022</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2022</div>
                                     <h3>Universidad Tecnológica de la Mixteca</h3>
-                                    <i className="fa-solid fa-link"> 3D basic cars game (Contact me for more info)</i>
+                                    <FontAwesomeIcon icon={faLink} />3D basic cars game (Contact me for more info)
                                 </div>
                             </a>
                         </div>
@@ -820,9 +820,9 @@ const Inicio = () => {
                         <div className="education-content">
                             <a href="https://damanger.github.io/Car-Game-Js/" target="_blank" rel='noreferrer' aria-label="2D - Game">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2021</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2021</div>
                                     <h3>Universidad Tecnológica de la Mixteca</h3>
-                                    <i className="fa-solid fa-link"> 2D basic cars game</i>
+                                    <FontAwesomeIcon icon={faLink} />2D basic cars game
                                 </div>
                             </a>
                         </div>
@@ -832,9 +832,9 @@ const Inicio = () => {
                         <div className="education-content">
                             <a href="https://damanger.github.io/login-glassmorphism/" target="_blank" rel='noreferrer' aria-label="Login">
                                 <div className="content">
-                                    <div className="year"><i className="bx bxs-calendar"></i>2022</div>
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2022</div>
                                     <h3>Universidad Tecnológica de la Mixteca</h3>
-                                    <i className="fa-solid fa-link"> Computer Engineering career project (Contact me for more info)</i>
+                                    <FontAwesomeIcon icon={faLink} />Computer Engineering career project (Contact me for more info)
                                 </div>
                             </a>
                         </div>
