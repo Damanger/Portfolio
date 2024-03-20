@@ -151,7 +151,7 @@ section{
     position: absolute;
     margin: 0;
     padding: 0;
-    top: 0;
+    top: 30%;
     right: 0;
     width: 50%;
     height: 100%;
@@ -952,8 +952,8 @@ width: 100%;
     }
 
     .home-imgHover img{
-        width: 25rem !important;
-        height: 26rem !important;
+        width: 20rem !important;
+        height: 22rem !important;
     }
 
     .footer{

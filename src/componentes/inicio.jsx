@@ -286,12 +286,10 @@ const Inicio = () => {
                     </div>
 
                 </div>
-                <div style={{width: '40rem', height: '42rem', position: 'relative', overflow: 'hidden'}}><LazyLoad threshold={0.95}>
-  <img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/yoMemoji.webp" fetchpriority="high"
-       alt="selfie"
-       style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', borderRadius: '15%', position: 'absolute', top: '0', left: '0'}}/></LazyLoad>
-</div>
-</section>
+                <div className="home-imgHover"><LazyLoad threshold={0.95}>
+                    <img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/yoMemoji.webp" fetchpriority="high" alt="selfie" style={{width: '40rem', height: '45rem', objectFit: 'cover', objectPosition: 'center'}}/></LazyLoad>
+                </div>
+                </section>
 
             <section className="about hidden" id="about">
                 <h2 className="heading">About <span>Me</span></h2>
