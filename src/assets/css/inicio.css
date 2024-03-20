@@ -64,8 +64,6 @@
 }
 
 .logo-img{
-    width: 15rem;
-    height: auto;
     margin: 0;
     padding: 0;
     filter: invert(100%);
@@ -319,8 +317,6 @@ section{
 
 .about-img img{
     border-radius: 50%;
-    height: 25rem;
-    width: 25rem;
     position: relative;
 }
 
@@ -392,7 +388,6 @@ section{
 .certificados img {
     display: block;
     max-width: 80%;
-    height: auto;
 }
 
 .certificado-link {
