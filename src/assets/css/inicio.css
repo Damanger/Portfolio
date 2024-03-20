@@ -45,7 +45,7 @@
     width: 100%;
     height: 10%;
     padding: 1rem 10%;
-    background: #3b82f6;
+    background: #5898FD;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,7 +96,7 @@
 
 .navbar .cipher{
     font-size: 1.7rem;
-    color: black;
+    color: #00002E;
     font-weight: bold;
     margin-left: 2.5rem;
     transition: 0.5s;
@@ -104,7 +104,10 @@
 
 .navbar .cipher:hover,
 .navbar .cipher.active{
-    color: #ffffff;
+    color: #00002E;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 0.15em;
 }
 
 .views{
@@ -259,7 +262,7 @@ section{
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
-    color: black;
+    color: #00002E;
     box-shadow: 0 0.125rem 0.125rem 0.125rem;
     z-index: 1;
     overflow: hidden;
@@ -421,7 +424,7 @@ section{
 }
 
 .education-column .education-box{
-    border-left: 0.2rem solid #3b82f6;
+    border-left: 0.2rem solid #5898FD;
 }
 
 .education-box .education-content{
@@ -443,7 +446,7 @@ section{
 .education-content .content{
     position: relative;
     padding: 1rem;
-    border: 0.2rem solid #3b82f6;
+    border: 0.2rem solid #5898FD;
     border-radius: 0.6rem;
     margin-bottom: 1rem;
     overflow: hidden;
@@ -653,7 +656,7 @@ width: 100%;
 .footer{
     display: flex;
     padding: 2rem 9%;
-    background: #3b82f6;
+    background: #5898FD;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -661,7 +664,7 @@ width: 100%;
 
 .footer-text p{
     font-size: 1.6rem;
-    color: aliceblue !important;
+    color: #00002E !important;
 }
 
 .footer-iconTop a{
@@ -915,7 +918,7 @@ width: 100%;
         left: -100%;
         width: 100%;
         height: 100%;
-        background: #3b82f6;
+        background: #5898FD;
         border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
         z-index: -1;
         transition: 0.25s ease;
