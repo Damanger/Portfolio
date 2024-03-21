@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import '../assets/css/cargando.css';
 
-const Cargando = ({ imagen }) => {
+const Cargando = ({ url }) => {
     useEffect(() => {
         const timeout = setTimeout(() => {
             const loader = document.querySelector('.cargando');
@@ -15,7 +15,7 @@ const Cargando = ({ imagen }) => {
 
     return (
         <div className="cargando">
-            <img src={imagen} alt="Cargando..." />
+            <img src={url} alt="Cargando..." />
         </div>
     );
 };

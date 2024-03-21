@@ -21,7 +21,7 @@ function App() {
   return (
     <Router>
       {isLoading ? (
-        <Cargando imagen="Ardilla.webp" />
+        <Cargando url="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/Ardilla.webp" />
       ) : (
         <div>
           <div className="wrap">
