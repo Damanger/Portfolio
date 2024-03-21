@@ -163,11 +163,6 @@ section{
     z-index: -1;
 }
 
-.home-imgHover:hover{
-    background: transparent;
-    opacity: 0.6;
-}
-
 .home-content{
     max-width: 60rem;
 }
@@ -947,10 +942,6 @@ width: 100%;
 
     .home-imgHover{
         pointer-events: none;
-        background: transparent;
-        opacity: 0.6;
-        margin: 0;
-        padding: 0;
     }
 
     .home-imgHover img{
