@@ -258,7 +258,7 @@ const Inicio = () => {
                     <p>I'm a Jr. Front-End Web Developer based in Oaxaca, México.</p><p>🚀 Looking to bring your web ideas to life? 🌐💡</p>
                     
                     <div className="btn-box">
-                        <a href="https://drive.google.com/file/d/1S97fyfYCfp-zmXnNoZGaJjFg1PL3HX8c/view?usp=drive_link" className="btn" download="CV.pdf" aria-label="CV">CV<i className="fas fa-cloud-download-alt"></i></a>
+                        <a href="https://drive.google.com/uc?export=download&id=1S97fyfYCfp-zmXnNoZGaJjFg1PL3HX8c" className="btn" download="Omar-A-Cruz-Ramirez-CV.pdf" aria-label="CV">CV<i className="fas fa-cloud-download-alt"></i></a>
                         <a href="#contact" className="btn" aria-label="Let's talk">Let's talk.</a>
                     </div>
                     <div className="wrapper">
