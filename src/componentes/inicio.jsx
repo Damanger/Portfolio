@@ -336,7 +336,7 @@ const Inicio = () => {
                             <div className="education-content">
 
                                 <div className="content">
-                                    <a href='www.escolta.io/' target='_blank' rel='noreferrer' aria-label="Escolta.io">
+                                    <a href='http://www.escolta.io/' target='_blank' rel='noreferrer' aria-label="Escolta.io">
                                         <div className="year"><FontAwesomeIcon icon={faCalendar} />2023 - Today</div>
                                         <h3>Private security company , San Francisco Ca. USA</h3>
                                         <p>Front-End developer, UI design</p>
