@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Inicio from './componentes/inicio';
 import ARM from './componentes/ARM';
 import Assistant from './componentes/WebAssistant';
@@ -14,9 +14,11 @@ import Map from './componentes/Map';
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
-  setTimeout(() => {
-    setIsLoading(false);
-  }, 1000);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1250);
+  }, []);
 
   return (
     <Router>
