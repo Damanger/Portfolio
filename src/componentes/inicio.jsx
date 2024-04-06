@@ -253,9 +253,9 @@ const Inicio = () => {
                 <div className="home-content">
                     <h1>Hello, I'm <span> Omar Cruz</span></h1>
                     <div className="text-animate">
-                        <h2>Jr. Web Developer</h2>
+                        <h2>Full-Stack Developer</h2>
                     </div>
-                    <p>I'm a Jr. Front-End Web Developer based in Oaxaca, México.</p><p>🚀 Looking to bring your web ideas to life? 🌐💡</p>
+                    <p>I'm a Full-Stack Developer based in Oaxaca, México.</p><p>🚀 Looking to bring your web ideas to life? 🌐💡</p>
                     
                     <div className="btn-box">
                         <a href="https://drive.google.com/uc?export=download&id=1S97fyfYCfp-zmXnNoZGaJjFg1PL3HX8c" className="btn" download="Omar-A-Cruz-Ramirez-CV.pdf" aria-label="CV">CV<i className="fas fa-cloud-download-alt"></i></a>
