@@ -19,45 +19,8 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 750);
+    }, 500);
   }, []);
-
-  const Wrap = styled.div`
-  position: fixed;
-  bottom: -180px;
-  height: 50px;
-  width: 50px;
-  z-index: -1;
-  background-color: #000000;
-  box-shadow: 0 0 50px #00ff5e, 0 0 100px #00ff5e, 0 0 150px #00ff5e, 0 0 200px #00ff5e;
-  animation: animate 10s linear infinite;
-
-  &:nth-child(1) {
-    left: 60px;
-    animation-delay: 0.6s;
-  }
-
-  &:nth-child(2) {
-    left: 10%;
-    animation-delay: 3s;
-    width: 60px;
-    height: 60px;
-  }
-
-  @keyframes animate {
-    0% {
-      transform: translateY(0);
-      opacity: 0.3;
-    }
-    80% {
-      opacity: .1;
-    }
-    100% {
-      transform: translateY(-800px) rotate(360deg);
-      opacity: 0;
-    }
-  }
-`;
 
   return (
     <Router>
@@ -65,18 +28,6 @@ function App() {
         <Cargando url="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/Ardilla.webp" />
       ) : (
         <>
-          <Wrap>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </Wrap>
           <Clock />
           <ChatBot
           steps={[
