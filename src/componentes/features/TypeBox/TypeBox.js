@@ -774,6 +774,7 @@ const TypeBox = ({
         ref={textInputRef}
         type="text"
         className="hidden-input"
+        aria-label="type"
         onKeyDown={(e) => handleKeyDown(e)}
         onKeyUp={(e) => handleKeyUp(e)}
         value={currInput}
