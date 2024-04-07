@@ -19,7 +19,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 1250);
+    }, 750);
   }, []);
 
   const Wrap = styled.div`
