@@ -14,34 +14,8 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <div class="play-button" id="play-button" onclick="toggleAudio()">
-      <LazyLoad threshold={0.95}>
-        <img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/Ardilla.webp" alt="Ardilla" id="sticky-image" style="width: 7rem; height: auto;">
-      </LazyLoad>
-      <audio id="audio" loop src="./song.mp3"></audio>
-    </div>
   </body>
   <!-- Scripts -->
-  <script defer>
-    // Función para toggleAudio
-    (function() {
-      const audioElement = document.getElementById("audio");
-      const playButton = document.getElementById("play-button");
-
-      function toggleAudio() {
-        if (audioElement.paused) {
-          audioElement.play();
-          playButton.classList.add("playing");
-        } else {
-          audioElement.pause();
-          playButton.classList.remove("playing");
-        }
-      }
-
-      window.toggleAudio = toggleAudio; // Exponer la función globalmente
-    })();
-  </script>
-  
   <script async>
     // Google Analytics
     (function() {

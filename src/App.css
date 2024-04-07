@@ -112,34 +112,6 @@ section{
     cursor: pointer;
 }
 
-#sticky-image {
-    position: fixed;
-    bottom: 2rem;
-    right: 4rem;
-    z-index: 999;
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-}
-
-.play-button::before {
-    content: "Press to play/pause music";
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    z-index: 100;
-}
-
-.play-button:hover::before {
-    display: block;
-}
-
 ::-webkit-scrollbar{
     width: 0.8rem;
 }
@@ -147,4 +119,20 @@ section{
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(transparent, #30ff00);
     border-radius: 0.5rem;
+}
+
+.custom-floating-icon {
+    background: url('https://raw.githubusercontent.com/Damanger/Portfolio/main/public/Ardilla.webp') no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+}
+
+.rsc-footer input{
+    color: black;
+}
+
+.sc-bxivhb.ipSaXD.rsc-os-option-element {
+    width: auto;
+    padding: 0 16px;
 }

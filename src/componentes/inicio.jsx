@@ -232,7 +232,7 @@ const Inicio = () => {
                     <FontAwesomeIcon icon={faBars} />
                 </div>
                 <nav className="navbar">
-                    <input type="text" id="search-input" autoComplete='off' name="text" className="input" placeholder={placeholders[placeholderN]} value={searchQuery} onChange={handleSearchInputChange} onKeyPress={handleKeyPress}/>
+                    <input type="text" id="search-input" autoComplete='off' name="text" className="input" placeholder={placeholders[placeholderN]} value={searchQuery} onChange={handleSearchInputChange} onKeyDown={handleKeyPress}/>
                     <button className='magnifying' aria-label="Magnifying" onClick={handleSearch}><FontAwesomeIcon icon={faSearch} /></button>
                     <a href="#home" className="active cipher" rel='noreferrer' aria-label="Home">Home</a>
                     <a href="#about" className="cipher" rel='noreferrer' aria-label="About">About</a>
