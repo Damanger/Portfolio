@@ -10,6 +10,7 @@ import Clock from './componentes/Clock';
 import Binary from './componentes/binary';
 import Map from './componentes/Map';
 import ChatBot from 'react-simple-chatbot';
+import styled from 'styled-components';
 const Cargando = lazy(() => import('./componentes/Cargando'));
 
 function App() {
@@ -21,13 +22,50 @@ function App() {
     }, 1250);
   }, []);
 
+  const Wrap = styled.div`
+  position: fixed;
+  bottom: -180px;
+  height: 50px;
+  width: 50px;
+  z-index: -1;
+  background-color: #000000;
+  box-shadow: 0 0 50px #00ff5e, 0 0 100px #00ff5e, 0 0 150px #00ff5e, 0 0 200px #00ff5e;
+  animation: animate 10s linear infinite;
+
+  &:nth-child(1) {
+    left: 60px;
+    animation-delay: 0.6s;
+  }
+
+  &:nth-child(2) {
+    left: 10%;
+    animation-delay: 3s;
+    width: 60px;
+    height: 60px;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translateY(0);
+      opacity: 0.3;
+    }
+    80% {
+      opacity: .1;
+    }
+    100% {
+      transform: translateY(-800px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+`;
+
   return (
     <Router>
       {isLoading ? (
         <Cargando url="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/Ardilla.webp" />
       ) : (
-        <div>
-          <div className="wrap">
+        <>
+          <Wrap>
             <span></span>
             <span></span>
             <span></span>
@@ -38,7 +76,7 @@ function App() {
             <span></span>
             <span></span>
             <span></span>
-          </div>
+          </Wrap>
           <Clock />
           <ChatBot
           steps={[
@@ -177,7 +215,7 @@ function App() {
             )} />
             <Route path="*" element={<><Error404 /><Navigate to="/not-found" replace /></>} />
           </Routes>
-        </div>
+        </>
       )}
     </Router>
   );
