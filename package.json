@@ -34,7 +34,6 @@
     "react-simple-chatbot": "^0.6.1",
     "styled-components": "^4.0.0",
     "sweetalert2": "^11.7.32",
-    "use-sound": "^4.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
