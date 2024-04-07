@@ -1,16 +1,16 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy } from 'react';
 import Inicio from './componentes/inicio';
 import ARM from './componentes/ARM';
 import Assistant from './componentes/WebAssistant';
 import Error404 from './componentes/Error404';
 import Typing from './componentes/Typing';
 import Clock from './componentes/Clock';
-import Cargando from './componentes/Cargando';
 import Binary from './componentes/binary';
 import Map from './componentes/Map';
 import ChatBot from 'react-simple-chatbot';
+const Cargando = lazy(() => import('./componentes/Cargando'));
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
