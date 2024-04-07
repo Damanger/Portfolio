@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { BsArrowUp } from 'react-icons/bs';
 import LazyLoad from 'react-lazy-load';
+import { Link } from 'react-router-dom';
 
 const Inicio = () => {
     useEffect(() => {
@@ -20,6 +21,13 @@ const Inicio = () => {
             scrollWatcher.style.width = scrolled + '%'; // Establecer el ancho de la barra de desplazamiento según el porcentaje de desplazamiento
         });
     }, []);
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
 
     useEffect(() => {
         //navbar icon
@@ -223,11 +231,11 @@ const Inicio = () => {
     return (
         <div>
             <header className="header">
-                <a href="#" className="logo" rel='noreferrer' aria-label="Main page">
+                <Link to="/" className="logo" rel='noreferrer' aria-label="Main page" onClick={scrollToTop}>
                     <LazyLoad threshold={0.95}>
                         <img className='logo-img' fetchpriority="high" src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/omar.webp" alt="Omar Cruz" style={{ width: '15rem', height: 'auto' }} />
                     </LazyLoad>
-                </a>
+                </Link>
                 <div id="menu-icon">
                     <FontAwesomeIcon icon={faBars} />
                 </div>
@@ -903,9 +911,9 @@ const Inicio = () => {
                         <p>Copyright &copy; 2023 by Omar A. Cruz Ramírez All Rights Reserved. </p>
                     </div>
                     <div className="footer-iconTop">
-                        <a href='#' rel='noreferrer' aria-label="Main Page">
+                        <Link to='/' rel='noreferrer' aria-label="Main Page" onClick={scrollToTop}>
                             <BsArrowUp />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </footer>
