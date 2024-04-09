@@ -630,6 +630,19 @@ const Inicio = () => {
             <section className="education hidden" id="projects">
                 <h2 className="heading">My <span>Projects</span></h2>
                 <div className="education-column">
+                <h3 className="title">URL Shortener!</h3>
+                    <div className="education-box projects">
+                        <div className="education-content">
+                            <a href="https://url-shortener-wine-tau.vercel.app/" target="_blank" rel='noreferrer' aria-label="URL Shortener">
+                                <div className="content">
+                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2024</div>
+                                    <h3>Oaxaca-México</h3>
+                                    <FontAwesomeIcon icon={faLink} />URL Shortener
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
                 <h3 className="title">Route helping map!</h3>
                     <div className="education-box projects">
                         <div className="education-content">
