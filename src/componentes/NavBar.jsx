@@ -24,9 +24,6 @@ const NavBar = () =>{
                 <Link className="Link-Project" to="https://www.omar-cruz-rmz.com/Assistant" target="_blank" rel='noreferrer'>
                     Assistant
                 </Link>
-                <Link className="Link-Project" to="https://www.omar-cruz-rmz.com/ARM" target="_blank" rel='noreferrer'>
-                    ARM
-                </Link>
                 <Link className="Link-Project" to="https://www.omar-cruz-rmz.com/typing" target="_blank" rel='noreferrer'>
                     Typing
                 </Link>

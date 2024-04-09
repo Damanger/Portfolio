@@ -680,18 +680,6 @@ const Inicio = () => {
                             </a>
                         </div>
                     </div>
-                    <h3 className="title">ARM Instructions (In process)</h3>
-                    <div className="education-box projects">
-                        <div className="education-content">
-                            <a href="https://www.omar-cruz-rmz.com/ARM" target="_blank" rel='noreferrer' aria-label="ARM">
-                                <div className="content">
-                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2023-today</div>
-                                    <h3>Oaxaca-México</h3>
-                                    <FontAwesomeIcon icon={faLink} />Computer Architecture and Organization
-                                </div>
-                            </a>
-                        </div>
-                    </div>
                     <h3 className="title">Typing game</h3>
                     <div className="education-box projects">
                         <div className="education-content">
