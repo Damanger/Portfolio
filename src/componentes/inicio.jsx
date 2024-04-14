@@ -629,9 +629,11 @@ const Inicio = () => {
 
             <section className="education hidden" id="projects">
                 <h2 className="heading">My <span>Projects</span></h2>
+
                 <div className="wrapperP">
                     <div className="grid1">
                         <a href="https://www.omar-cruz-rmz.com/map" target="_blank" rel='noreferrer' aria-label="Route planning"><img src="./maps.webp" alt="maps" /></a>
+
                     </div>
                     <div className="grid2">
                         <a href="https://www.omar-cruz-rmz.com/Binary" target="_blank" rel='noreferrer' aria-label="Binary to text"><img src="./binary.webp" alt="maps" /></a>
@@ -642,11 +644,13 @@ const Inicio = () => {
                     <div className="grid4">
                         <a href="https://www.omar-cruz-rmz.com/Assistant" target="_blank" rel='noreferrer' aria-label="Web assistant"><img src="./assistant.webp" alt="Assistant" /></a>
                     </div>
+
                     <div className="grid5">
                         <a href="https://url-shortener-wine-tau.vercel.app/" target="_blank" rel='noreferrer' aria-label="URL Shortener"><img src="./shortener.webp" alt="" /></a>
                     </div>
                     <div className="grid6">
                         <a href="https://damanger.github.io/Headphones-Raffle/" target="_blank" rel='noreferrer' aria-label="Raffle"><img src="./raffle.webp" alt="" /></a>
+
                     </div>
                     <div className="grid7">
                         <a href="https://www.omar-cruz-rmz.com/typing" target="_blank" rel='noreferrer' aria-label="Typing game"><img src="./typing.webp" alt="" /></a>
