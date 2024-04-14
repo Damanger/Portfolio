@@ -646,7 +646,7 @@ const Inicio = () => {
                     </div>
 
                     <div className="grid5">
-                        <a href="https://url-shortener-wine-tau.vercel.app/" target="_blank" rel='noreferrer' aria-label="URL Shortener"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/shortener.webp" alt="" /></a>
+                        <a href="https://url-shortener-wine-tau.vercel.app/" target="_blank" rel='noreferrer' aria-label="URL Shortener"><img src="./QR-URL.webp" alt="" /></a>
                     </div>
                     <div className="grid6">
                         <a href="https://damanger.github.io/Headphones-Raffle/" target="_blank" rel='noreferrer' aria-label="Raffle"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/raffle.webp" alt="" /></a>
@@ -655,9 +655,11 @@ const Inicio = () => {
                     <div className="grid7">
                         <a href="https://www.omar-cruz-rmz.com/typing" target="_blank" rel='noreferrer' aria-label="Typing game"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/typing.webp" alt="" /></a>
                     </div>
+                    
                     <div className="grid8">
-                        <a href="https://github.com/Damanger/Squirrel-Web-Browser.git" target="_blank" rel='noreferrer' aria-label="Web - Browser"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/browser.webp" alt="" /></a>
+                    <a href="https://github.com/Damanger/Squirrel-Web-Browser.git" target="_blank" rel='noreferrer' aria-label="Web - Browser"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/browser.webp" alt="" /></a>
                     </div>
+                    
                 </div>
             </section>
 
