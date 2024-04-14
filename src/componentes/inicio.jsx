@@ -632,31 +632,31 @@ const Inicio = () => {
 
                 <div className="wrapperP">
                     <div className="grid1">
-                        <a href="https://www.omar-cruz-rmz.com/map" target="_blank" rel='noreferrer' aria-label="Route planning"><img src="./maps.webp" alt="maps" /></a>
+                        <a href="https://www.omar-cruz-rmz.com/map" target="_blank" rel='noreferrer' aria-label="Route planning"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/maps.webp" alt="maps" /></a>
 
                     </div>
                     <div className="grid2">
-                        <a href="https://www.omar-cruz-rmz.com/Binary" target="_blank" rel='noreferrer' aria-label="Binary to text"><img src="./binary.webp" alt="maps" /></a>
+                        <a href="https://www.omar-cruz-rmz.com/Binary" target="_blank" rel='noreferrer' aria-label="Binary to text"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/binary.webp" alt="maps" /></a>
                     </div>
                     <div className="grid3">
-                        <a href="https://ixvanna.vercel.app/" target="_blank" rel='noreferrer' aria-label="E-commerce"><img src="./ixvanna.webp" alt="Ixvanna" /></a>
+                        <a href="https://ixvanna.vercel.app/" target="_blank" rel='noreferrer' aria-label="E-commerce"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/ixvanna.webp" alt="Ixvanna" /></a>
                     </div>
                     <div className="grid4">
-                        <a href="https://www.omar-cruz-rmz.com/Assistant" target="_blank" rel='noreferrer' aria-label="Web assistant"><img src="./assistant.webp" alt="Assistant" /></a>
+                        <a href="https://www.omar-cruz-rmz.com/Assistant" target="_blank" rel='noreferrer' aria-label="Web assistant"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/assistant.webp" alt="Assistant" /></a>
                     </div>
 
                     <div className="grid5">
-                        <a href="https://url-shortener-wine-tau.vercel.app/" target="_blank" rel='noreferrer' aria-label="URL Shortener"><img src="./shortener.webp" alt="" /></a>
+                        <a href="https://url-shortener-wine-tau.vercel.app/" target="_blank" rel='noreferrer' aria-label="URL Shortener"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/shortener.webp" alt="" /></a>
                     </div>
                     <div className="grid6">
-                        <a href="https://damanger.github.io/Headphones-Raffle/" target="_blank" rel='noreferrer' aria-label="Raffle"><img src="./raffle.webp" alt="" /></a>
+                        <a href="https://damanger.github.io/Headphones-Raffle/" target="_blank" rel='noreferrer' aria-label="Raffle"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/raffle.webp" alt="" /></a>
 
                     </div>
                     <div className="grid7">
-                        <a href="https://www.omar-cruz-rmz.com/typing" target="_blank" rel='noreferrer' aria-label="Typing game"><img src="./typing.webp" alt="" /></a>
+                        <a href="https://www.omar-cruz-rmz.com/typing" target="_blank" rel='noreferrer' aria-label="Typing game"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/typing.webp" alt="" /></a>
                     </div>
                     <div className="grid8">
-                        <a href="https://github.com/Damanger/Squirrel-Web-Browser.git" target="_blank" rel='noreferrer' aria-label="Web - Browser"><img src="./browser.webp" alt="" /></a>
+                        <a href="https://github.com/Damanger/Squirrel-Web-Browser.git" target="_blank" rel='noreferrer' aria-label="Web - Browser"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/browser.webp" alt="" /></a>
                     </div>
                 </div>
             </section>
