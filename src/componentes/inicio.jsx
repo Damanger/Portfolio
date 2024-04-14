@@ -3,7 +3,7 @@ import '../assets/css/inicio.css';
 import Swal from 'sweetalert2';
 import emailjs from 'emailjs-com';
 import 'font-awesome/css/font-awesome.min.css';
-import { faSearch, faBars, faLink, faCalendar  } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faBars, faCalendar  } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { BsArrowUp } from 'react-icons/bs';
@@ -629,225 +629,30 @@ const Inicio = () => {
 
             <section className="education hidden" id="projects">
                 <h2 className="heading">My <span>Projects</span></h2>
-                <div className="education-column">
-                <h3 className="title">Route helping map!</h3>
-                    <div className="education-box projects">
-                        <div className="education-content">
-                            <a href="https://www.omar-cruz-rmz.com/map" target="_blank" rel='noreferrer' aria-label="Route planning">
-                                <div className="content">
-                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2024</div>
-                                    <h3>Oaxaca-México</h3>
-                                    <FontAwesomeIcon icon={faLink} />Route helper for family trips on vehicules
-                                </div>
-                            </a>
-                        </div>
+                <div className="wrapperP">
+                    <div className="grid1">
+                        <a href="https://www.omar-cruz-rmz.com/map" target="_blank" rel='noreferrer' aria-label="Route planning"><img src="./maps.webp" alt="maps" /></a>
                     </div>
-
-                <h3 className="title">Binary-Text and Text-Binary converter</h3>
-                    <div className="education-box projects">
-                        <div className="education-content">
-                            <a href="https://www.omar-cruz-rmz.com/Binary" target="_blank" rel='noreferrer' aria-label="Binary - Text and Text - Binary">
-                                <div className="content">
-                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2024</div>
-                                    <h3>Oaxaca-México</h3>
-                                    <FontAwesomeIcon icon={faLink} />Binary-Text converter
-                                </div>
-                            </a>
-                        </div>
+                    <div className="grid2">
+                        <a href="https://www.omar-cruz-rmz.com/Binary" target="_blank" rel='noreferrer' aria-label="Binary to text"><img src="./binary.webp" alt="maps" /></a>
                     </div>
-
-                <h3 className="title">E-commerce Ixvanna</h3>
-                    <div className="education-box projects">
-                        <div className="education-content">
-                            <a href="https://ixvanna.vercel.app/" target="_blank" rel='noreferrer' aria-label="E-commerce">
-                                <div className="content">
-                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2024</div>
-                                    <h3>Oaxaca-México</h3>
-                                    <FontAwesomeIcon icon={faLink} />E-commerce
-                                </div>
-                            </a>
-                        </div>
+                    <div className="grid3">
+                        <a href="https://ixvanna.vercel.app/" target="_blank" rel='noreferrer' aria-label="E-commerce"><img src="./ixvanna.webp" alt="Ixvanna" /></a>
                     </div>
-                    <h3 className="title">Web-Assistant</h3>
-                    <div className="education-box projects">
-                        <div className="education-content">
-                            <a href="https://www.omar-cruz-rmz.com/Assistant" target="_blank" rel='noreferrer' aria-label="Web - Assistant">
-                                <div className="content">
-                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2024-today</div>
-                                    <h3>Oaxaca-México</h3>
-                                    <FontAwesomeIcon icon={faLink} />Terminal to facilitate web searches
-                                </div>
-                            </a>
-                        </div>
+                    <div className="grid4">
+                        <a href="https://www.omar-cruz-rmz.com/Assistant" target="_blank" rel='noreferrer' aria-label="Web assistant"><img src="./assistant.webp" alt="Assistant" /></a>
                     </div>
-                    <h3 className="title">ARM Instructions (In process)</h3>
-                    <div className="education-box projects">
-                        <div className="education-content">
-                            <a href="https://www.omar-cruz-rmz.com/ARM" target="_blank" rel='noreferrer' aria-label="ARM">
-                                <div className="content">
-                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2023-today</div>
-                                    <h3>Oaxaca-México</h3>
-                                    <FontAwesomeIcon icon={faLink} />Computer Architecture and Organization
-                                </div>
-                            </a>
-                        </div>
+                    <div className="grid5">
+                        <a href="https://url-shortener-wine-tau.vercel.app/" target="_blank" rel='noreferrer' aria-label="URL Shortener"><img src="./shortener.webp" alt="" /></a>
                     </div>
-                    <h3 className="title">Typing game</h3>
-                    <div className="education-box projects">
-                        <div className="education-content">
-                            <a href="https://www.omar-cruz-rmz.com/typing" target="_blank" rel='noreferrer' aria-label="Typing">
-                                <div className="content">
-                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2023-today</div>
-                                    <h3>Oaxaca-México</h3>
-                                    <FontAwesomeIcon icon={faLink} />Typing game and practice
-                                </div>
-                            </a>
-                        </div>
+                    <div className="grid6">
+                        <a href="https://damanger.github.io/Headphones-Raffle/" target="_blank" rel='noreferrer' aria-label="Raffle"><img src="./raffle.webp" alt="" /></a>
                     </div>
-                    <h3 className="title">Headphone Raffle</h3>
-                    <div className="education-box projects">
-                        <div className="education-content">
-                            <a href="https://damanger.github.io/Headphones-Raffle/" target="_blank" rel='noreferrer' aria-label="Raffle">
-                                <div className="content">
-                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2023</div>
-                                    <h3>Oaxaca-México</h3>
-                                    <FontAwesomeIcon icon={faLink} />Raffle of a Sony headphone
-                                </div>
-                            </a>
-                        </div>
+                    <div className="grid7">
+                        <a href="https://www.omar-cruz-rmz.com/typing" target="_blank" rel='noreferrer' aria-label="Typing game"><img src="./typing.webp" alt="" /></a>
                     </div>
-                    <div className="education-column"></div>
-                    <h3 className="title">Web Browser</h3>
-                    <div className="education-box">
-                        <div className="education-content">
-                            <a href="https://github.com/Damanger/Squirrel-Web-Browser.git" target="_blank" rel='noreferrer' id="web-browser" aria-label="Web - Browser">
-                                <div className="content">
-                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2023-today</div>
-                                    <h3>Oaxaca-México</h3>
-                                    <FontAwesomeIcon icon={faLink} />Simple Web Browser in Python
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 className="title">Virtual-Assistant</h3>
-                    <div className="education-box">
-                        <div className="education-content">
-                            <a href="https://github.com/Damanger/Virtual-Assistant" target="_blank" rel='noreferrer' aria-label="Virtual - Assistant">
-                                <div className="content">
-                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2023-today</div>
-                                    <h3>Oaxaca-México</h3>
-                                    <FontAwesomeIcon icon={faLink} />Virtual-Assistant
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 className="title">LaPI (React)</h3>
-                    <div className="education-box projects">
-                        <div className="education-content">
-                            <a href="https://org-mu-seven.vercel.app/" target="_blank" rel='noreferrer' aria-label="LaPI">
-                                <div className="content">
-                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2023</div>
-                                    <h3>Oaxaca-México</h3>
-                                    <FontAwesomeIcon icon={faLink} />LaPI Organization
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 className="title">Encrypter</h3>
-                    <div className="education-box projects">
-                        <div className="education-content">
-                            <a href="https://damanger.github.io/Challenge1-Alura-Oracle-ONE/" target="_blank" rel='noreferrer' aria-label="Encrypter">
-                                <div className="content">
-                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2023</div>
-                                    <h3>Oaxaca-México</h3>
-                                    <FontAwesomeIcon icon={faLink} />Alura - Oracle Encrypter/Desencrypter
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 className="title">Mexico Map</h3>
-                    <div className="education-box">
-                        <div className="education-content">
-                            <a href="https://damanger.github.io/Mexico-svg/" target="_blank" rel='noreferrer' aria-label="Mexican map">
-                                <div className="content">
-                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2023</div>
-                                    <h3>Universidad Nacional Autónoma de México</h3>
-                                    <FontAwesomeIcon icon={faLink} />Internship works (Mexico map)
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 className="title">World Map</h3>
-                    <div className="education-box projects">
-                        <div className="education-content">
-                            <a href="https://damanger.github.io/World-svg/" target="_blank" rel='noreferrer' aria-label="World map">
-                                <div className="content">
-                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2023</div>
-                                    <h3>Universidad Nacional Autónoma de México</h3>
-                                    <FontAwesomeIcon icon={faLink} />Internship works (World map)
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 className="title">Rappi-like app</h3>
-                    <div className="education-box">
-                        <div className="education-content">
-                            <a href="https://damanger.github.io/login_UTasteM/" target="_blank" rel='noreferrer' aria-label="Rappi - like">
-                                <div className="content">
-                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2022-2023</div>
-                                    <h3>Universidad Tecnológica de la Mixteca</h3>
-                                    <FontAwesomeIcon icon={faLink} />Rappi-like website (Contact me for more info)
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 className="title">Spanish Version of Python (compiler)</h3>
-                    <div className="education-box">
-                        <div className="education-content">
-                            <a href="https://github.com/Damanger/Compilador-python" target="_blank" rel='noreferrer' aria-label="Python - Spanish">
-                                <div className="content">
-                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2022</div>
-                                    <h3>Universidad Tecnológica de la Mixteca</h3>
-                                    <FontAwesomeIcon icon={faLink} />A spanish compiled version of Python (Contact me for more info)
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 className="title">3D Game</h3>
-                    <div className="education-box">
-                        <div className="education-content">
-                            <a href="https://github.com/Damanger/3DGame" target="_blank" rel='noreferrer' aria-label="3D - Game">
-                                <div className="content">
-                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2022</div>
-                                    <h3>Universidad Tecnológica de la Mixteca</h3>
-                                    <FontAwesomeIcon icon={faLink} />3D basic cars game (Contact me for more info)
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 className="title">2D Game</h3>
-                    <div className="education-box projects">
-                        <div className="education-content">
-                            <a href="https://damanger.github.io/Car-Game-Js/" target="_blank" rel='noreferrer' aria-label="2D - Game">
-                                <div className="content">
-                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2021</div>
-                                    <h3>Universidad Tecnológica de la Mixteca</h3>
-                                    <FontAwesomeIcon icon={faLink} />2D basic cars game
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 className="title">Career Project</h3>
-                    <div className="education-box">
-                        <div className="education-content">
-                            <a href="https://damanger.github.io/login-glassmorphism/" target="_blank" rel='noreferrer' aria-label="Login">
-                                <div className="content">
-                                    <div className="year"><FontAwesomeIcon icon={faCalendar} />2022</div>
-                                    <h3>Universidad Tecnológica de la Mixteca</h3>
-                                    <FontAwesomeIcon icon={faLink} />Computer Engineering career project (Contact me for more info)
-                                </div>
-                            </a>
-                        </div>
+                    <div className="grid8">
+                        <a href="https://github.com/Damanger/Squirrel-Web-Browser.git" target="_blank" rel='noreferrer' aria-label="Web - Browser"><img src="./browser.webp" alt="" /></a>
                     </div>
                 </div>
             </section>

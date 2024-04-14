@@ -33,7 +33,7 @@ section{
 
 #sticky-clock {
     position: fixed;
-    bottom: 10rem;
+    bottom: 12rem;
     right: 4rem;
     z-index: 999;
     cursor: pointer;
