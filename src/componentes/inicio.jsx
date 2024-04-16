@@ -633,31 +633,34 @@ const Inicio = () => {
                 <div className="wrapperP">
                     <div className="grid1">
                         <a href="https://www.omar-cruz-rmz.com/map" target="_blank" rel='noreferrer' aria-label="Route planning"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/maps.webp" alt="Maps" /></a>
-
                     </div>
+
                     <div className="grid2">
                         <a href="https://www.omar-cruz-rmz.com/Binary" target="_blank" rel='noreferrer' aria-label="Binary to text"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/binary.webp" alt="Binary-Text" /></a>
                     </div>
+
                     <div className="grid3">
                         <a href="https://ixvanna.vercel.app/" target="_blank" rel='noreferrer' aria-label="E-commerce"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/ixvanna.webp" alt="Ixvanna" /></a>
                     </div>
-                    <div className="grid4">
-                        <a href="https://www.omar-cruz-rmz.com/Assistant" target="_blank" rel='noreferrer' aria-label="Web assistant"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/assistant.webp" alt="Assistant" /></a>
-                    </div>
 
+                    <div className="grid4">
+                        <a href="https://sql-converter-zeta.vercel.app/" target="_blank" rel='noreferrer' aria-label="Web - Browser"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/sql.webp" alt="SQL Converter" /></a>
+                    </div>
+                    
                     <div className="grid5">
                         <a href="https://qr-generator-and-url-shortener.vercel.app/" target="_blank" rel='noreferrer' aria-label="QR generator & URL Shortener"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/QR-URL.webp" alt="QR-URL Generator" /></a>
                     </div>
+
                     <div className="grid6">
                         <a href="https://damanger.github.io/Headphones-Raffle/" target="_blank" rel='noreferrer' aria-label="Raffle"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/raffle.webp" alt="Raffle" /></a>
-
                     </div>
+
                     <div className="grid7">
                         <a href="https://www.omar-cruz-rmz.com/typing" target="_blank" rel='noreferrer' aria-label="Typing game"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/typing.webp" alt="Typing game" /></a>
                     </div>
                     
                     <div className="grid8">
-                    <a href="https://sql-converter-zeta.vercel.app/" target="_blank" rel='noreferrer' aria-label="Web - Browser"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/sql.webp" alt="SQL Converter" /></a>
+                        <a href="https://www.omar-cruz-rmz.com/Assistant" target="_blank" rel='noreferrer' aria-label="Web assistant"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/assistant.webp" alt="Assistant" /></a>
                     </div>
                     
                 </div>
