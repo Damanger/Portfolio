@@ -73,8 +73,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ![Assistant](https://raw.githubusercontent.com/Damanger/Portfolio/main/public/assistant.webp)
 
 # omar-cruz-rmz.com/binary
-![Assistant](https://raw.githubusercontent.com/Damanger/Portfolio/main/public/binary.webp)
+![Binary](https://raw.githubusercontent.com/Damanger/Portfolio/main/public/binary.webp)
 
 # omar-cruz-rmz.com/map
-
 ![Mapa](https://raw.githubusercontent.com/Damanger/Portfolio/main/public/maps.webp)
+
+# omar-cruz-rmz.com/typing
+![Typing game](https://raw.githubusercontent.com/Damanger/Portfolio/main/public/typing.webp)
