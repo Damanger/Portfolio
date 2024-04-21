@@ -29,13 +29,13 @@
 .btn2-box .help-button{
     width: 10rem;
     height: 4rem;
-    background: #7dd3fc;
-    border: 0.2rem solid #7dd3fc;
+    background: #3b82f6;
+    border: 0.2rem solid #3853a5;
     border-radius: 1rem;
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
-    color: #3b82f6;
+    color: #fff;
     box-shadow: 0 0.125rem 0.125rem 0.125rem;
     z-index: 90;
     overflow: hidden;
@@ -44,7 +44,7 @@
 
 .btn2-box .help-button:hover{
     background: aliceblue;
-    color: #7dd3fc;
+    color: #3b82f6;
 }
 
 .leaflet-routing-alt{
