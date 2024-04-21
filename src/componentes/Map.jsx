@@ -10,41 +10,34 @@ import 'leaflet-control-geocoder/dist/Control.Geocoder.css';
 import 'leaflet-control-geocoder/dist/Control.Geocoder.js';
 
 const Map = () => {
-    const mapRef = useRef(null); // Se utiliza useRef para mantener una referencia al mapa
-    const controlRef = useRef(null); // Se utiliza useRef para mantener una referencia al control de enrutamiento
+    const mapRef = useRef(null);
+    const controlRef = useRef(null);
     const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
-        // Obtener la ubicación actual del usuario
         navigator.geolocation.getCurrentPosition(position => {
             const { latitude, longitude } = position.coords;
 
-            // Verificar si el mapa ya está inicializado
             if (!mapRef.current) {
-                // Crear el mapa con la ubicación actual del usuario
                 const map = L.map('mi_mapa').setView([latitude, longitude], 16);
-                mapRef.current = map; // Asignar el mapa al ref
+                mapRef.current = map;
 
-                // Mapa
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 }).addTo(map);
 
-                // Ícono personalizado para marcadores
                 const customIcon = L.icon({
                     iconUrl: markerIcon,
                     iconSize: [38, 38],
                     iconAnchor: [20, 40]
                 });
 
-                // Ícono personalizado para el primer marcador
                 const firstMarkerIcon = L.icon({
                     iconUrl: yah,
                     iconSize: [45, 45],
                     iconAnchor: [20, 40]
                 });
 
-                // Crear control de enrutamiento
                 const control = L.Routing.control({
                     waypoints: [
                         L.latLng(latitude, longitude),
@@ -52,12 +45,11 @@ const Map = () => {
                     ],
                     routeWhileDragging: true,
                     createMarker: function(waypointIndex, waypoint) {
-                        // Crea un marcador personalizado para cada waypoint
                         let title;
                         let markerIcon = customIcon;
                         if (waypointIndex === 0) {
                             title = "You are here";
-                            markerIcon = firstMarkerIcon; // Icono para el primer marcador
+                            markerIcon = firstMarkerIcon;
                         } else if (controlRef.current && waypointIndex === controlRef.current.getWaypoints().length - 1) {
                             title = "Destination";
                         } else {
@@ -72,19 +64,19 @@ const Map = () => {
                     }
                 }).addTo(map);
                 
-                controlRef.current = control; // Se asigna el control de enrutamiento al ref
+                controlRef.current = control;
 
-                // Agregar control de geocodificación
                 const geocoder = L.Control.geocoder().addTo(map);
 
-                // Listener para el evento markgeocode
                 geocoder.on('markgeocode', function(e) {
                     const latlng = e.geocode.center;
-                    // Actualizar el segundo waypoint
                     control.setWaypoints([
                         control.getWaypoints()[0].latLng,
                         latlng
                     ]);
+
+                    // Ajustar el zoom y la posición del mapa después de realizar la búsqueda
+                    map.setView(latlng, 16);
                 });
             }
         });
