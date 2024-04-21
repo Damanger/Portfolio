@@ -119,7 +119,7 @@ const Map = () => {
             )}
             {!showMap && (
                 <div className="location-button-container btn2-box btns" style={{ position : 'absolute', top : '50%', left : '50%', transform : 'translate(-50%, -50%)', display:'flex', justifyContent:'center', alignContent:'center', textAlign:'center' }}>
-                    <button className="location-button help-button" onClick={handleLocationButtonClick} >Allow Location Access</button>
+                    <button className="location-button help-button" onClick={handleLocationButtonClick} >Share Location</button>
                 </div>
             )}
             {showModal && (
