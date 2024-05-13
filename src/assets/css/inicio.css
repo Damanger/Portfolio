@@ -673,20 +673,11 @@ width: 100%;
     color: #22c55e;
 }
 
-#label_toggle{
-    position: fixed;
-    font-size: 1.8em;
-    cursor: pointer;
-    z-index: 100;
-}
-
-#label_toggle img{
-    position: fixed;
-    width: 38px;
-    height: 38px;
-    top: 2%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.tools{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
 }
 
 .wrapper{
@@ -956,12 +947,6 @@ width: 100%;
         z-index: -1;
     }
 
-    .tools{
-        display: flex;
-        flex-direction: column;
-        margin-right: 2px;
-    }
-
     .footer{
         left: 5rem;
     }
@@ -997,13 +982,13 @@ width: 100%;
     }
 
     .contact form .input-box .input-field{
-        width: 90%;
-        margin: 0rem 0;
+        width: 100%;
+        margin: 1rem 0;
     }
 
     .contact form .textarea-field{
-        width: 90%;
-        margin: 0rem 0;
+        width: 100%;
+        margin: 1rem 0;
     }
 
     .footer{
