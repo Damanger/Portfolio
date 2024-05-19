@@ -4,9 +4,9 @@
     position: fixed;
     top: 10%;
     left: 0;
-    width: 0; /* Por defecto, la barra de desplazamiento está oculta */
+    width: 0;
     z-index: 1000;
-    transition: width 0.3s ease; /* Agregamos una transición para suavizar el cambio de tamaño */
+    transition: width 0.3s ease;
 }
 
 .header{
@@ -675,7 +675,7 @@ width: 100%;
 
 .tools{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     justify-items: center;
 }
@@ -1072,7 +1072,7 @@ input[type="text"]:invalid, input[type="email"]:invalid, input[type="number"]:in
 
 .grid1{
     grid-column: 1/5;
-    }
+}
 .grid2{
     grid-column: 5/7;
     grid-row: 1/3;
