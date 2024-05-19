@@ -572,7 +572,7 @@ const Inicio = () => {
                     </div>
 
                     <div className="grid6">
-                        <a href="https://damanger.github.io/Headphones-Raffle/" target="_blank" rel='noreferrer' aria-label="Raffle"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/raffle.webp" alt="Raffle" /></a>
+                        <a href="https://squirrel-trello.vercel.app/" target="_blank" rel='noreferrer' aria-label="Raffle"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/Trello.webp" alt="SquirrelTrello" /></a>
                     </div>
 
                     <div className="grid7">
