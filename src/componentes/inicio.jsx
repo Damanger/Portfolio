@@ -560,7 +560,7 @@ const Inicio = () => {
                     </div>
 
                     <div className="grid3">
-                        <a href="https://ixvanna.vercel.app/" target="_blank" rel='noreferrer' aria-label="E-commerce"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/ixvanna.webp" alt="Ixvanna" /></a>
+                        <a href="https://utemitas-asesorias.vercel.app/" target="_blank" rel='noreferrer' aria-label="Students web page"><img src="https://raw.githubusercontent.com/Damanger/Portfolio/main/public/Asesorias.webp" alt="Asesorías" /></a>
                     </div>
 
                     <div className="grid4">
