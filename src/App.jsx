@@ -9,6 +9,7 @@ import Clock from './componentes/Clock';
 import Binary from './componentes/binary';
 import Map from './componentes/Map';
 import ChatBot from 'react-simple-chatbot';
+import Knn from './componentes/Knn';
 const Cargando = lazy(() => import('./componentes/Cargando'));
 const LazyTyping = lazy(() => import('./componentes/Typing'));
 
@@ -164,6 +165,7 @@ function App() {
                 <Map />
               </>
             )} />
+            <Route path='/knn' element={<Knn />} />
             <Route path="*" element={<><Error404 /><Navigate to="/not-found" replace /></>} />
           </Routes>
         </>

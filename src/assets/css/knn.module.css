@@ -1,0 +1,29 @@
+.knn{
+    display: flex;
+    height: 100vh;
+}
+
+.chart{
+    width: 70vw;
+    height: 100vh;
+    display: gird;
+    place-items: center;
+}
+
+#chart{
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.knnInputs{
+    width: 30vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.formChart{
+    display: grid;
+    place-items: center;
+}
