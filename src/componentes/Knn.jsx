@@ -125,7 +125,7 @@ const Knn = () => {
         return {
             datasets: [
                 {
-                    label: 'Datos sobre probabilidad de Lluvia',
+                    label: 'Datos sobre humedad',
                     data: trainingSet().map((point) => {
                         return { x: point.humidity, y: point.pressure };
                     }),
@@ -134,10 +134,9 @@ const Knn = () => {
                     }),
                     pointRadius: 5,
                     showLine: false,
-                    backgroundColor: 'black',
                 },
                 {
-                    label: 'Datos nuevos',
+                    label: 'Datos sobre presión',
                     data: [],
                     pointBackgroundColor: [],
                     pointRadius: [],
