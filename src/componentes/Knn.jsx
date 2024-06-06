@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Chart, ScatterController, PointElement, LinearScale, Title, Tooltip, Legend } from 'chart.js';
 import annotationPlugin from 'chartjs-plugin-annotation';
 import { trainingSet } from '../scripts/data.js';
@@ -8,9 +8,17 @@ import Styled from '../assets/css/knn.module.css';
 Chart.register(ScatterController, PointElement, LinearScale, Title, Tooltip, Legend, annotationPlugin);
 
 const Knn = () => {
+    const [k, setK] = useState(5); // Valor inicial de k
+    const chartRef = useRef(null); // Referencia para almacenar la instancia del gráfico
+
     useEffect(() => {
         const ctx = document.getElementById(`${Styled.chart}`).getContext('2d');
-        const chart = new Chart(ctx, {
+
+        if (chartRef.current) {
+            chartRef.current.destroy(); // Destruye la instancia previa del gráfico
+        }
+
+        chartRef.current = new Chart(ctx, {
             type: 'scatter',
             data: chartData(),
             options: chartOptions(),
@@ -20,88 +28,98 @@ const Knn = () => {
         const predictButton = document.querySelector(`#predict`);
 
         if (plotButton) {
-            plotButton.addEventListener('click', () => {
-                const newPoint = {
-                    x: Number(document.querySelector(`#humidity`).value),
-                    y: Number(document.querySelector(`#pressure`).value),
-                };
-
-                // Punto nuevo al dataset
-                chart.data.datasets[1].data.push(newPoint);
-
-                // Punto nuevo tamaño 5 y color verde
-                chart.data.datasets[1].pointBackgroundColor.push('green');
-                chart.data.datasets[1].pointRadius.push(5);
-
-                const radius = 1.5; // Radio del círculo para los vecinos más cercanos
-                chart.options.plugins.annotation.annotations = {
-                    circle: {
-                        type: 'ellipse',
-                        xMin: newPoint.x - radius,
-                        xMax: newPoint.x + radius,
-                        yMin: newPoint.y - radius,
-                        yMax: newPoint.y + radius,
-                        backgroundColor: 'transparent',
-                        borderColor: 'green',
-                        borderWidth: 2,
-                    },
-                };
-
-                chart.update();
-            });
+            plotButton.addEventListener('click', handlePlot);
         }
 
         if (predictButton) {
-            predictButton.addEventListener('click', () => {
-                const newPointIndex = chart.data.datasets[1].data.length - 1;
-                const newPoint = chart.data.datasets[1].data[newPointIndex];
-                const x = newPoint.x;
-                const y = newPoint.y;
-                let distances = [];
-
-                trainingSet().forEach((point) => {
-                    distances.push(Math.sqrt((point.humidity - x) ** 2 + (point.pressure - y) ** 2));
-                });
-
-                let redNeighbors = 0;
-                let blueNeighbors = 0;
-                let nearestNeighbors = [];
-
-                for (let k = 1; k <= 5; k++) {
-                    let min = Math.min.apply(Math, distances);
-                    const index = distances.indexOf(min);
-                    trainingSet()[index].rain ? redNeighbors++ : blueNeighbors++;
-                    distances[index] = +Infinity;
-                    nearestNeighbors.push(index);
-                }
-
-                // Resaltar los vecinos más cercanos
-                chart.data.datasets[0].pointRadius = trainingSet().map((_, index) =>
-                    nearestNeighbors.includes(index) ? 7 : 5
-                );
-
-                if (redNeighbors > blueNeighbors) {
-                    document.querySelector(`#output`).innerHTML = 'Probablemente llueva';
-                    chart.data.datasets[1].pointBackgroundColor[newPointIndex] = 'blue';
-                } else {
-                    document.querySelector(`#output`).innerHTML = 'Probablemente no llueva';
-                    chart.data.datasets[1].pointBackgroundColor[newPointIndex] = 'red';
-                }
-
-                chart.update();
-            });
+            predictButton.addEventListener('click', handlePredict);
         }
 
         // Cleanup event listeners on unmount
         return () => {
             if (plotButton) {
-                plotButton.removeEventListener('click', () => { });
+                plotButton.removeEventListener('click', handlePlot);
             }
             if (predictButton) {
-                predictButton.removeEventListener('click', () => { });
+                predictButton.removeEventListener('click', handlePredict);
+            }
+            if (chartRef.current) {
+                chartRef.current.destroy(); // Destruye la instancia del gráfico al desmontar el componente
             }
         };
-    }, []);
+    }, [k]); // Vuelve a ejecutar el efecto cuando cambia k
+
+    const handlePlot = () => {
+        const newPoint = {
+            x: Number(document.querySelector(`#humidity`).value),
+            y: Number(document.querySelector(`#pressure`).value),
+        };
+
+        const chart = chartRef.current;
+
+        // Punto nuevo al dataset
+        chart.data.datasets[1].data.push(newPoint);
+
+        // Punto nuevo tamaño 5 y color verde
+        chart.data.datasets[1].pointBackgroundColor.push('green');
+        chart.data.datasets[1].pointRadius.push(5);
+
+        const radius = 1.5; // Radio del círculo para los vecinos más cercanos
+        chart.options.plugins.annotation.annotations = {
+            circle: {
+                type: 'ellipse',
+                xMin: newPoint.x - radius,
+                xMax: newPoint.x + radius,
+                yMin: newPoint.y - radius,
+                yMax: newPoint.y + radius,
+                backgroundColor: 'transparent',
+                borderColor: 'green',
+                borderWidth: 2,
+            },
+        };
+
+        chart.update();
+    };
+
+    const handlePredict = () => {
+        const chart = chartRef.current;
+        const newPointIndex = chart.data.datasets[1].data.length - 1;
+        const newPoint = chart.data.datasets[1].data[newPointIndex];
+        const x = newPoint.x;
+        const y = newPoint.y;
+        let distances = [];
+
+        trainingSet().forEach((point) => {
+            distances.push(Math.sqrt((point.humidity - x) ** 2 + (point.pressure - y) ** 2));
+        });
+
+        let redNeighbors = 0;
+        let blueNeighbors = 0;
+        let nearestNeighbors = [];
+
+        for (let i = 0; i < k; i++) { // Usar el valor de k seleccionado
+            let min = Math.min.apply(Math, distances);
+            const index = distances.indexOf(min);
+            trainingSet()[index].rain ? redNeighbors++ : blueNeighbors++;
+            distances[index] = +Infinity;
+            nearestNeighbors.push(index);
+        }
+
+        // Resaltar los vecinos más cercanos
+        chart.data.datasets[0].pointRadius = trainingSet().map((_, index) =>
+            nearestNeighbors.includes(index) ? 7 : 5
+        );
+
+        if (redNeighbors > blueNeighbors) {
+            document.querySelector(`#output`).innerHTML = 'Probablemente llueva';
+            chart.data.datasets[1].pointBackgroundColor[newPointIndex] = 'blue';
+        } else {
+            document.querySelector(`#output`).innerHTML = 'Probablemente no llueva';
+            chart.data.datasets[1].pointBackgroundColor[newPointIndex] = 'red';
+        }
+
+        chart.update();
+    };
 
     function chartData() {
         return {
@@ -192,6 +210,22 @@ const Knn = () => {
                     <br />
                     <span>
                         Valor de presión (y): <input type="text" id="pressure" />
+                    </span>
+                    <br />
+                    <span>
+                        Número de vecinos (k): 
+                        <select 
+                            id="neighbors" 
+                            value={k} 
+                            onChange={(e) => setK(Number(e.target.value))}
+                        >
+                            <option value={5}>5</option>
+                            <option value={7}>7</option>
+                            <option value={9}>9</option>
+                            <option value={11}>11</option>
+                            <option value={13}>13</option>
+                            <option value={15}>15</option>
+                        </select>
                     </span>
                     <br />
                     <span>
