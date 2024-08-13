@@ -342,10 +342,18 @@ const Inicio = () => {
                         <h3 className="title">Professional Experience</h3>
                         <div className="education-box">
                             <div className="education-content">
+                            
+                                <div className="content">
+                                    <a href='https://www.dal.ca/faculty/computerscience/hci-visualization-graphics.html' target='_blank' rel='noreferrer' aria-label="Dalhousie University">
+                                        <div className="year"><FontAwesomeIcon icon={faCalendar} /> 2024 - Today</div>
+                                        <h3>HCI, Visualization & Graphics , Halifax, Nova Scotia Canada</h3>
+                                        <p>Researcher, Mobile developer, Front-End developer</p>
+                                    </a>
+                                </div>
 
                                 <div className="content">
                                     <a href='http://www.escolta.io/' target='_blank' rel='noreferrer' aria-label="Escolta.io">
-                                        <div className="year"><FontAwesomeIcon icon={faCalendar} /> 2023 - Today</div>
+                                        <div className="year"><FontAwesomeIcon icon={faCalendar} /> 2023</div>
                                         <h3>Private security company , San Francisco Ca. USA</h3>
                                         <p>Front-End developer, UI design</p>
                                     </a>
